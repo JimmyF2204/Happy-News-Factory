@@ -825,6 +825,71 @@ def render_about():
     return _base_render_about().replace("<h3>Photos</h3>", note + "<h3>Photos</h3>", 1)
 # --- end translation and reader languages ---
 
+# --- Technology topic ---
+def add_words(pattern, words):
+    return re.compile(pattern.pattern + "|" + rx(words).pattern, re.I)
+
+
+TECH = rx([
+    "tech", r"technolog\w*", "ai", "artificial intelligence", "machine learning", "chatgpt",
+    "openai", r"robot\w*", "software", "apps?", r"smartphone\w*", "iphone", "ipad", "android",
+    r"gadget\w*", r"comput\w*", r"laptop\w*", "chip", r"chipmaker\w*", r"microchip\w*",
+    r"semiconductor\w*", r"processor\w*", "internet", "broadband", "5g", "6g", "wi-?fi",
+    "bluetooth", r"drone\w*", r"batter(?:y|ies)", r"3d[- ]print\w*", "quantum", "gaming",
+    r"video ?games?", r"console\w*", "playstation", "xbox", "nintendo", "tesla", "apple",
+    "google", "microsoft", "samsung", "nvidia", "linux", "windows", r"digital\w*",
+    r"headphone\w*", r"camera\w*", r"wearable\w*", r"smartwatch\w*", "vr", "virtual reality",
+    r"electric (?:car|vehicle|bike|truck)s?", "evs?", r"self-driving", r"engineer\w*",
+    r"invent\w*", r"innovat\w*", r"prototype\w*", r"open[- ]source",
+    r"teknik\w*", r"teknolog\w*", r"dator\w*", r"mobil\w*", "appen", "appar", r"pryl\w*",
+    r"mjukvar\w*", r"programvar\w*", r"batteri\w*", r"elbil\w*", r"drönar\w*", r"uppfinn\w*",
+    r"bredband\w*", r"hörlur\w*", r"kamera\w*", r"skärm\w*", r"datorspel\w*", r"tv-spel\w*",
+    r"spelkonsol\w*", r"självkörande", "nätet", r"smartklock\w*",
+])
+TOPICS = [("Technology", TECH)] + [
+    ("Science & research" if name == "Science & technology" else name, pattern)
+    for name, pattern in TOPICS if name != "Technology"
+]
+NEGATIVE = add_words(NEGATIVE, [
+    r"breach\w*", "malware", "ransomware", "spyware", "phishing", r"vulnerabilit\w*",
+    r"exploit\w*", r"outage\w*", r"recall\w*", r"bann(?:ed|ing)", "bans", "fined", "fines",
+    "antitrust", r"deepfake\w*", "surveillance", r"misinformation", r"disinformation",
+    r"intrång\w*", r"dataläck\w*", r"sårbarhet\w*", r"driftstör\w*", r"återkall\w*", "böter",
+    r"förbjud\w*", r"övervak\w*", r"desinformation\w*",
+])
+TECH_FEEDS = {s["feed"] for s in SOURCES if s.get("tech")}
+_tech_base_collect = collect
+
+
+def collect(stories, state):
+    before = set(stories)
+    _tech_base_collect(stories, state)
+    for sid, story in stories.items():
+        tech = story.get("feed") in TECH_FEEDS
+        topic = topic_for(story["title"] + " " + story["excerpt"])
+        story["topic"] = "Technology" if tech and topic == "Feel-good" else topic
+        if (tech and sid not in before and story["status"] == "excluded"
+                and story["reason"] == "No clear positive signal"):
+            access, note, image = check_access(story["link"])
+            if access == "restricted":
+                story["reason"] = f"Not free to read: {note}"
+            else:
+                story.update(status="published", score=0.6, image=image,
+                             reason="Technology news with no bad-news words")
+                print(f"tech      0.60  {story['title'][:70]}")
+
+
+_tech_base_render_index = render_index
+
+
+def render_index(published):
+    if CONFIG.get("tech_lead", True):
+        lead = next((s for s in published if s["topic"] == "Technology"), None)
+        if lead:
+            published = [lead] + [s for s in published if s is not lead]
+    return _tech_base_render_index(published)
+# --- end Technology topic ---
+
 def main():
     DATA.mkdir(exist_ok=True)
     OUT.mkdir(exist_ok=True)

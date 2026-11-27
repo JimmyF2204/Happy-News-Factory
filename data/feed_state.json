@@ -1,4 +1,5 @@
 {
+ "_version": 2,
  "https://www.svt.se/nyheter/rss.xml": {
   "etag": null,
   "modified": null
@@ -7,11 +8,23 @@
   "etag": null,
   "modified": null
  },
+ "https://www.svt.se/kultur/rss.xml": {
+  "etag": null,
+  "modified": null
+ },
  "https://feeds.expressen.se/nyheter/": {
-  "etag": "W/\"3862-rrbJmyZjfXPs8tBQAnYWVxTasmY\"",
+  "etag": "W/\"36a1-G5ZKrcB7AcCyU25k+Y7XYlEoYiY\"",
+  "modified": null
+ },
+ "https://rss.aftonbladet.se/rss2/small/pages/sections/senastenytt/": {
+  "etag": null,
   "modified": null
  },
  "https://api.sr.se/api/rss/program/83": {
+  "etag": null,
+  "modified": null
+ },
+ "https://api.sr.se/api/rss/program/2054": {
   "etag": null,
   "modified": null
  },
@@ -22,6 +35,62 @@
  "https://www.sverigesnatur.org/feed/": {
   "etag": "\"8d75bf057d915a3a1fcfd7bd5a540668\"",
   "modified": "Thu, 26 Nov 2026 15:00:40 GMT"
+ },
+ "https://feeds.bbci.co.uk/news/world/europe/rss.xml": {
+  "etag": null,
+  "modified": null
+ },
+ "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml": {
+  "etag": null,
+  "modified": null
+ },
+ "https://www.theguardian.com/world/europe-news/rss": {
+  "etag": "W/\"hash8740166934677143563\"",
+  "modified": null
+ },
+ "https://www.theguardian.com/science/rss": {
+  "etag": "W/\"hash3158888997565986351\"",
+  "modified": null
+ },
+ "https://rss.dw.com/rdf/rss-en-all": {
+  "etag": null,
+  "modified": null
+ },
+ "https://www.france24.com/en/europe/rss": {
+  "etag": null,
+  "modified": null
+ },
+ "https://www.euronews.com/rss?format=mrss&level=theme&name=news": {
+  "etag": "\"f03ec3d941721af6cf5b1395785dda26-gzip\"",
+  "modified": "Fri, 27 Nov 2026 13:33:04 GMT"
+ },
+ "https://feeds.yle.fi/uutiset/v1/recent.rss?publisherIds=YLE_NEWS": {
+  "etag": "W/\"25b4-3rmeMfHRP1RrEpcI6qPpWKImN/o\"",
+  "modified": null
+ },
+ "https://www.rte.ie/feeds/rss/?index=/news/": {
+  "etag": null,
+  "modified": "Fri, 27 Nov 2026 13:34:54 GMT"
+ },
+ "https://english.radio.cz/rcz-rss/en": {
+  "etag": "\"1795786028-1\"",
+  "modified": "Fri, 27 Nov 2026 13:27:08 GMT"
+ },
+ "https://notesfrompoland.com/feed/": {
+  "etag": "\"d099f9c05de0a724b3ad4b4415a6e824-gzip\"",
+  "modified": "Fri, 27 Nov 2026 12:53:01 GMT"
+ },
+ "https://www.dutchnews.nl/feed/": {
+  "etag": "\"e5d055a7319591e141d1a767eb009f7e-gzip\"",
+  "modified": "Fri, 27 Nov 2026 13:20:51 GMT"
+ },
+ "https://www.theportugalnews.com/rss": {
+  "etag": null,
+  "modified": null
+ },
+ "https://squirrel-news.net/feed/": {
+  "etag": "\"55c49f6acf97614d9a503d21137f1af5\"",
+  "modified": "Wed, 25 Nov 2026 15:05:20 GMT"
  },
  "https://www.goodnewsnetwork.org/feed/": {
   "etag": "W/\"eae5a12290894e34296091783da6efb0\"",

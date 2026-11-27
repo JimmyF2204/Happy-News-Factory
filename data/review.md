@@ -1,0 +1,216 @@
+# Review queue
+
+Open each story and check it is positive and free to read in full.
+To publish one, add its link to `approve` in `overrides.json`.
+To reject one or remove a published story, add its link to `block`.
+
+- **After Years Cleaning Toxic Oil Tanks, This Merchant Navy Captain Built a Robot To Keep Workers Safe** (The Better India, score 0.6)
+  - from a dedicated good-news publisher
+  - https://thebetterindia.com/web-stories/technology/robotic-oil-tank-cleaning-betatank-dc-sekhar-bengaluru-12846311
+- **From Village Gatherings to Beachside Book Talks: How To Pick Your Perfect Lit Fest This Winter** (The Better India, score 0.6)
+  - from a dedicated good-news publisher
+  - https://thebetterindia.com/culture/literature-festivals-india-winter-2026-2027-guide-12845624
+- **How a Football Tournament in Nagaland Brought 30 Villages Together to Ban Pangolin Hunting** (The Better India, score 1.0)
+  - Positive signals: conservation, healthy, help, helped, helping · from a dedicated good-news publisher · Free access not confirmed: possible paywall marker found
+  - https://thebetterindia.com/wildlife/india-community-led-wildlife-conservation-pangolin-whale-shark-rescue-12845533
+- **How 3 Lakh Indian Students Are Learning to Code on Their Phones** (The Better India, score 0.6)
+  - from a dedicated good-news publisher
+  - https://thebetterindia.com/web-stories/technology/coding-on-smartphones-codeyogi-edtech-india-12844947
+- **6 Indian Childhood Games to Get Your Kids Moving, Laughing & Off Screens This Winter Break** (The Better India, score 0.75)
+  - Positive signals: comeback, generous, help, helps, heroes · from a dedicated good-news publisher · negative words in summary: kill · Free access not confirmed: possible paywall marker found
+  - https://thebetterindia.com/parenting/traditional-indian-games-stapu-lagori-kho-kho-screen-free-childhood-india-12843878
+- **No God, Just the Constitution! Inside Kerala’s Unique Temple** (The Better India, score 0.75)
+  - Positive signals: celebrated, celebrates, help · from a dedicated good-news publisher · Free access not confirmed: possible paywall marker found
+  - https://thebetterindia.com/videos/lifestyle/no-god-just-the-constitution-inside-keralas-unique-temple-12845341
+- **‘I Want My Own Home’: Trans Actor Jeeva on Finding Her Place in Tamil Cinema & Making It to Toronto** (The Better India, score 0.6)
+  - Positive signals: celebrate, celebrated, celebration, happiness, help · from a dedicated good-news publisher · negative words in summary: abuse, floods, shoot, stable
+  - https://thebetterindia.com/culture/jeeva-subramaniam-dorothy-transgender-actor-12843865
+- **Almsjukan minskar på Gotland efter rekordåret: ”Jätteglädjande”** (SVT Nyheter, score 0.4)
+  - Positive signals: rekordåret
+  - https://www.svt.se/nyheter/lokalt/ost/almsjukan-minskar-pa-gotland-efter-rekordaret-jattegladjande
+- **Batman on a Buffalo?! Meet the Creator Behind Desi Batman!** (The Better India, score 0.6)
+  - from a dedicated good-news publisher
+  - https://thebetterindia.com/videos/film/batman-on-a-buffalo-meet-the-creator-behind-desi-batman-12844399
+- **He Spent 4 Years Learning Farming on Weekends. Here Are His 7 Tips to Start an Organic Farm** (The Better India, score 0.6)
+  - from a dedicated good-news publisher
+  - https://thebetterindia.com/web-stories/organic-farming/deepak-sabharwal-organic-farming-business-lessons-12840226
+- **After giving away one car, Texas husband and wife give away eight more** (Not All News Is Bad, score 0.6)
+  - from a dedicated good-news publisher
+  - https://notallnewsisbad.com/after-giving-away-one-car-texas-husband-and-wife-give-away-eight-more/
+- **Family Is Thankful Their Baby, Given Weeks to Live on Christmas Eve, Now Brain Cancer-Free** (Good News Network, score 0.65)
+  - Positive signals: recovery · from a dedicated good-news publisher
+  - https://www.goodnewsnetwork.org/girl-given-weeks-to-live-on-christmas-eve-makes-miracle-recovery-after-serendipitous-call-to-st-jude/
+- **‘The Kids Love It’: Meet the B’luru Mum Turning 100 Kg of Waste Fabric Into Decor You Can Rent** (The Better India, score 1.0)
+  - Positive signals: celebrate, celebrating, celebration, celebrations, donate · from a dedicated good-news publisher · Free access not confirmed: possible paywall marker found
+  - https://thebetterindia.com/startup/reusable-birthday-party-decorations-textile-waste-bengaluru-startup-matter-party-12843776
+- **Texans Work for Free on Farms That Aren’t Theirs to Send Others’ Kids to College** (Good News Network, score 0.65)
+  - Positive signals: help · from a dedicated good-news publisher
+  - https://www.goodnewsnetwork.org/texans-work-for-free-on-farms-that-arent-theirs-to-send-others-kids-to-college/
+- **5 Artists Used Bamboo, Thread & Even Egg Trays To Create India’s Award-Winning Venice Exhibition** (The Better India, score 0.9)
+  - Positive signals: celebrated, help, helped, inspiration, inspired · from a dedicated good-news publisher · Free access not confirmed: possible paywall marker found
+  - https://thebetterindia.com/culture/indian-artists-winner-venice-biennale-exhibition-2026-12843418
+- **Before Directing Ramayana, Nitesh Tiwari Was an IIT Bombay Grad Who Quit His Tech Job to Write** (The Better India, score 0.5)
+  - Sensitive words in headline (bombay)
+  - https://thebetterindia.com/culture/iit-bombay-engineer-nitesh-tiwari-ramayana-filmmaker-journey-12842210
+- **This Arunachal Frog Eats Entire Snails & Scientists Just Found It After 5 Years Of Searching** (The Better India, score 0.7)
+  - Positive signals: conservation, helping · from a dedicated good-news publisher · Free access not confirmed: possible paywall marker found
+  - https://thebetterindia.com/wildlife/new-frog-species-eastern-himalayas-research-delhi-university-harvard-arunachal-pradesh-12826972
+- **Good News in History, November 26** (Good News Network, score 0.6)
+  - from a dedicated good-news publisher
+  - https://www.goodnewsnetwork.org/events061125-2/
+- **Tukaram Omble: The 26/11 Hero Whose Sacrifice Helped Bring Justice** (The Better India, score 0.6)
+  - Positive signals: helped, helping, hero, heroes, protect · from a dedicated good-news publisher · negative words in summary: attacks, terror, tragic
+  - https://thebetterindia.com/videos/society/tukaram-omble-the-2611-hero-whose-sacrifice-helped-bring-justice-12843078
+- **He Mixed Rajasthani Folk With Beatboxing!** (The Better India, score 0.65)
+  - Positive signals: win · from a dedicated good-news publisher
+  - https://thebetterindia.com/videos/entertainment/he-mixed-rajasthani-folk-with-beatboxing-12843932
+- **From Washing Dishes to Singing for Millions: Talwiinder Gets Candid About How He Taught Himself Music** (The Better India, score 0.85)
+  - Positive signals: fred, help, helps, peace, won · from a dedicated good-news publisher · Free access not confirmed: possible paywall marker found
+  - https://thebetterindia.com/culture/talwiinder-subway-job-self-taught-musician-fred-again-12840958
+- **Podcast Transcript Thanksgiving 2026— What we’re most thankful for this year (hint: it’s you!)** (The Optimist Daily, score 0.6)
+  - from a dedicated good-news publisher
+  - https://www.optimistdaily.com/2026/11/podcast-transcript-thanksgiving-2026-what-were-most-thankful-for-this-year-hint-its-you/
+- **Roman Glass Among the Silk Road Treasures Unearthed in Nomadic Noble’s Tomb** (Good News Network, score 0.6)
+  - from a dedicated good-news publisher
+  - https://www.goodnewsnetwork.org/roman-glass-among-the-silk-road-treasures-unearthed-in-nomadic-nobles-tomb/
+- **8 Simple Ways Our Grandparents Kept Their Homes Warm in Winter Without Using Room Heaters** (The Better India, score 0.8)
+  - Positive signals: healthy, help, helps, inspiration · from a dedicated good-news publisher · Free access not confirmed: possible paywall marker found
+  - https://thebetterindia.com/sustainability/traditional-ways-keep-home-warm-winter-12840930
+- **From Zero to ₹31 Cr/Month! | Yash Kalra's Story** (The Better India, score 0.75)
+  - Positive signals: healthy, healthybreakfast, milestone · from a dedicated good-news publisher · Free access not confirmed: possible paywall marker found
+  - https://thebetterindia.com/videos/lifestyle/from-zero-to-31-crmonth-yash-kalras-story-12841746
+- **The Burger Dock offers a free Thanksgiving-themed meal** (Not All News Is Bad, score 0.6)
+  - from a dedicated good-news publisher
+  - https://notallnewsisbad.com/the-burger-dock-offers-a-free-thanksgiving-themed-meal/
+- **What We’re Reading: Building a Walkable City From Scratch** (Reasons to be Cheerful, score 0.6)
+  - from a dedicated good-news publisher
+  - https://reasonstobecheerful.world/what-were-reading-walkable-utah-city/
+- **‘Autos for Love’ Owners Delight in Giving Away Cars to Needy Neighbors** (Good News Network, score 0.65)
+  - Positive signals: donated · from a dedicated good-news publisher
+  - https://www.goodnewsnetwork.org/texas-auto-shop-couple-is-hungry-to-keep-giving-cars-away-to-neighbors-in-need/
+- **Peepal Baba, Who’s Planted 2.5 Crore Trees, Explains What Mumbai Loses When It Cuts 25-Year-Old Trees** (The Better India, score 0.4)
+  - Positive signals: health, help, protect, protected, protecting · from a dedicated good-news publisher · negative words in summary: bombay, death, died, flooding
+  - https://thebetterindia.com/sustainability/peepal-baba-nana-nani-park-mumbai-mature-trees-felling-12840429
+- **Land Returned to Native American Ownership 400 Years After the First Thanksgiving** (Good News Network, score 0.6)
+  - from a dedicated good-news publisher
+  - https://www.goodnewsnetwork.org/land-returned-indigenous-care-first-encounter-beach/
+- **WEIGHT UP? COULD YOUR BLOOD PRESSURE BE CHANGING TOO?** (The Better India, score 0.7)
+  - Positive signals: health, help · from a dedicated good-news publisher · Free access not confirmed: possible paywall marker found
+  - https://thebetterindia.com/videos/lifestyle/weight-up-could-your-blood-pressure-be-changing-too-12841772
+- **Former Army Major Shares 6 Simple Tips to Grow Fresh Basil in a 6-Inch Pot at Home** (The Better India, score 0.6)
+  - from a dedicated good-news publisher
+  - https://thebetterindia.com/web-stories/gardening/how-to-grow-fresh-basil-at-home-in-pot-expert-tips-12839041
+- **In This Ladakh Village, Families Stay Up at Night Guarding Water So Every Farmer Gets Their Share** (The Better India, score 0.55)
+  - Positive signals: protected, protecting · from a dedicated good-news publisher · negative words in summary: crisis
+  - https://thebetterindia.com/governance/phey-ladakh-water-lord-household-rota-cattle-jail-12838106
+- **Sunscreen, sweat and permastank: the science of stubborn laundry stains** (The Optimist Daily, score 0.6)
+  - from a dedicated good-news publisher
+  - https://www.optimistdaily.com/2026/11/sunscreen-sweat-and-permastank-the-science-of-stubborn-laundry-stains/
+- **Retired Teacher Turns Retired Musical Instruments into Bird Feeders (LOOK)** (Good News Network, score 0.6)
+  - from a dedicated good-news publisher
+  - https://www.goodnewsnetwork.org/retired-teacher-turns-retired-musical-instruments-into-bird-feeders-look/
+- **From Raichand Mansion To Kuch Kuch Hota Hai** (The Better India, score 0.65)
+  - Positive signals: helped · from a dedicated good-news publisher
+  - https://thebetterindia.com/videos/hobby/from-raichand-mansion-to-kuch-kuch-hota-hai-12840490
+- **Why Gangtok Could Be India’s Most Walkable City!** (The Better India, score 0.75)
+  - Positive signals: healthier, help, protected · from a dedicated good-news publisher · Free access not confirmed: possible paywall marker found
+  - https://thebetterindia.com/videos/tourism/why-gangtok-could-be-indias-most-walkable-city-12838687
+- **Age-Friendly initiative works to help Sask. seniors stay in their home communities** (Not All News Is Bad, score 0.8)
+  - Positive signals: health, help · from a dedicated good-news publisher · Free access not confirmed: possible paywall marker found
+  - https://notallnewsisbad.com/age-friendly-initiative-works-to-help-sask-seniors-stay-in-their-home-communities/
+- **No Forest Fires in 20+ Yrs: These Uttarakhand Women Revived 28 Acres of Barren Forest & Became Its Guardians** (The Better India, score 1.0)
+  - Positive signals: conservation, healthier, help, helped, helps · from a dedicated good-news publisher · negative words in summary: died · Free access not confirmed: possible paywall marker found
+  - https://thebetterindia.com/conservation/nature/uttarakhand-women-community-forest-restoration-fire-prevention-12838354
+- **Watching a Press Wallah Discard Charcoal Inspired This Schoolgirl to Design a Solar Ironing Cart** (The Better India, score 0.75)
+  - Positive signals: inspired · from a dedicated good-news publisher · Free access not confirmed: possible paywall marker found
+  - https://thebetterindia.com/culture/vinisha-umashankar-solar-powered-ironing-cart-charcoal-iron-history-12838368
+- **Meet the Young Innovator Using Data to Understand India’s Vanishing Groundwater** (The Better India, score 0.85)
+  - Positive signals: conservation, help, protect, wins, won · from a dedicated good-news publisher · Free access not confirmed: possible paywall marker found
+  - https://thebetterindia.com/innovation/surat-student-ai-groundwater-prediction-dheyay-shah-winner-vivo-ignite-2026-winner-12826809
+- **Charity Swaps Tuition Fees for Coconuts So Every Islander Can Afford School** (Good News Network, score 0.65)
+  - Positive signals: help · from a dedicated good-news publisher
+  - https://www.goodnewsnetwork.org/charity-swaps-tuition-fees-for-coconuts-so-every-islander-can-afford-school/
+- **This 26-YO Pays Weavers Up to 35% More To Keep a 300-YO Tamil Nadu Craft Alive** (The Better India, score 0.6)
+  - from a dedicated good-news publisher
+  - https://thebetterindia.com/culture/bhavani-jamakkalam-tamil-nadu-weaving-varsha-sivakumar-12838063
+- **From Hiring Disabled People to Helping Artisans Earn: 5 CEOs Building a Better India** (The Better India, score 1.0)
+  - Positive signals: achieve, celebrated, health, healthcare, help · from a dedicated good-news publisher · Free access not confirmed: possible paywall marker found
+  - https://thebetterindia.com/changemakers/indian-businesses-creating-social-impact-lijjat-papad-jaipur-rugs-12837473
+- **Fall hunger is real: four reasons your appetite changes with the season** (The Optimist Daily, score 0.6)
+  - from a dedicated good-news publisher
+  - https://www.optimistdaily.com/2026/11/fall-hunger-is-real-four-reasons-your-appetite-changes-with-the-season/
+- **Why a Viagra-like blood flow drug may open a new front against Alzheimer’s** (The Optimist Daily, score 0.6)
+  - from a dedicated good-news publisher
+  - https://www.optimistdaily.com/2026/11/why-a-viagra-like-blood-flow-drug-may-open-a-new-front-against-alzheimers/
+- **33 Kids Wrote Letters to a Wounded Veteran. 60 Years Later, His Son Is Searching to Thank Each One** (Good News Network, score 0.6)
+  - from a dedicated good-news publisher
+  - https://www.goodnewsnetwork.org/dave-jacobson-letters-from-gloucester-project/
+- **Massive hope for pancreatic cancer pill after trial saw tumours vanish** (Not All News Is Bad, score 0.75)
+  - Positive signals: hope · from a dedicated good-news publisher · Free access not confirmed: possible paywall marker found
+  - https://notallnewsisbad.com/massive-hope-for-pancreatic-cancer-pill-after-trial-saw-tumours-vanish/
+- **Freddie Nole Waits at the Prison Gates So No One Walks Out Alone** (Good News Network, score 0.55)
+  - Positive signals: joy, joydrops · from a dedicated good-news publisher · negative words in summary: tragedy
+  - https://www.goodnewsnetwork.org/freddie-nole-waits-at-the-prison-gates-so-no-one-walks-out-alone/
+- **First of 3 Consecutive Supermoons to Begin Tonight – Look to the East for the Beaver Moon** (Good News Network, score 0.6)
+  - from a dedicated good-news publisher
+  - https://www.goodnewsnetwork.org/first-of-3-consecutive-supermoons-to-begin-tonight-look-to-the-east-for-the-beaver-moon/
+- **The City That Kicked Out Cars Before It Was Cool** (Reasons to be Cheerful, score 0.45)
+  - from a dedicated good-news publisher · negative words in summary: crisis
+  - https://reasonstobecheerful.world/pontevedra-car-free-city/
+- **New Method Treats Severe Thumb Arthritis With Joint Replacement – Just like a New Hip or Shoulder** (Good News Network, score 0.6)
+  - from a dedicated good-news publisher
+  - https://www.goodnewsnetwork.org/new-way-to-treat-severe-thumb-arthritis-with-joint-replacement/
+- **Bored of your holiday decorations? 6 ways to make old holiday decorations feel new** (The Optimist Daily, score 0.6)
+  - from a dedicated good-news publisher
+  - https://www.optimistdaily.com/2026/11/bored-of-your-holiday-decorations-6-ways-to-make-old-holiday-decorations-feel-new/
+- **First Museum Built Inside a Children’s Hospital Fulfills Dying Boy’s Wish For Diversion During Chemo** (Good News Network, score 0.45)
+  - from a dedicated good-news publisher · negative words in summary: died
+  - https://www.goodnewsnetwork.org/the-first-museum-built-in-a-childrens-hospital-fulfills-dying-boys-wish/
+- **She Checked on Her ‘Loud’ Upstairs Neighbor, Inspiring Strangers to Raise More Than $100,000 – Good News Network** (Not All News Is Bad, score 0.75)
+  - Positive signals: inspiring · from a dedicated good-news publisher · Free access not confirmed: possible paywall marker found
+  - https://notallnewsisbad.com/she-checked-on-her-loud-upstairs-neighbor-inspiring-strangers-to-raise-more-than-100000-good-news-network/
+- **Breath of a Whale Captured by Drone Allows Full Genome Sequencing Without Intrusion** (Good News Network, score 0.6)
+  - from a dedicated good-news publisher
+  - https://www.goodnewsnetwork.org/breath-of-whale-captured-via-drone-to-complete-genome-sequence/
+- **Pub Owner Spends Thousands on Stunning Holiday Display–All to Cheer Up Depressed Locals** (Good News Network, score 0.6)
+  - from a dedicated good-news publisher
+  - https://www.goodnewsnetwork.org/pub-owner-spends-thousands-on-stunning-holiday-display-all-to-cheer-up-depressed-locals/
+- **“Ukraine Is Fighting for Us”: ABBA Legend Björn Ulvaeus Donates Over €100,000 and Calls for More Support** (Not All News Is Bad, score 0.75)
+  - Positive signals: donates · from a dedicated good-news publisher · Free access not confirmed: possible paywall marker found
+  - https://notallnewsisbad.com/ukraine-is-fighting-for-us-abba-legend-bjorn-ulvaeus-donates-over-e100000-and-calls-for-more-support/
+- **First Human Trial to Slash Bad Cholesterol by 50% With One Injection of CRISPR Gene-Editing Therapy** (Good News Network, score 0.6)
+  - from a dedicated good-news publisher
+  - https://www.goodnewsnetwork.org/first-human-trial-to-slash-bad-cholesterol-by-50pt-with-one-crispr-injection/
+- **Your Positive Weekly Horoscope: ‘Free Will Astrology’ by Rob Brezsny** (Good News Network, score 0.65)
+  - Positive signals: celebrating · from a dedicated good-news publisher
+  - https://www.goodnewsnetwork.org/horoscope-from-rob-brezsnys-free-will-astrology-11-21-2026/
+- **Podcast Transcript November 20th, 2026— A Tourette’s wristband, a trash map and why you dread your plans** (The Optimist Daily, score 0.6)
+  - from a dedicated good-news publisher
+  - https://www.optimistdaily.com/2026/11/podcast-transcript-november-20th-2026-a-tourettes-wristband-a-trash-map-and-why-you-dread-your-plans/
+- **Seller Learns the Story Behind a Tow Truck and Makes a Decision That Brings a Family to Tears** (Not All News Is Bad, score 0.6)
+  - from a dedicated good-news publisher
+  - https://notallnewsisbad.com/seller-learns-the-story-behind-a-tow-truck-and-makes-a-decision-that-brings-a-family-to-tears/
+- **Montreal Is Harnessing Soothing Ocean Sounds to Combat Traffic Noise** (Reasons to be Cheerful, score 0.6)
+  - from a dedicated good-news publisher
+  - https://reasonstobecheerful.world/montreal-harnessing-ocean-sounds-countering-traffic-noise/
+- **6 hosting habits that leave holiday guests feeling uneasy (and how to avoid them)** (The Optimist Daily, score 0.6)
+  - from a dedicated good-news publisher
+  - https://www.optimistdaily.com/2026/11/6-hosting-habits-that-leave-holiday-guests-feeling-uneasy-and-how-to-avoid-them/
+- **Healing through horses: Sask. program builds confidence, connection and reconciliation** (Not All News Is Bad, score 0.8)
+  - Positive signals: healing, helping · from a dedicated good-news publisher · Free access not confirmed: possible paywall marker found
+  - https://notallnewsisbad.com/healing-through-horses-sask-program-builds-confidence-connection-and-reconciliation/
+- **The Waterless, Hyper-Efficient Machines That Clean Clothes With Carbon Dioxide** (Reasons to be Cheerful, score 0.6)
+  - from a dedicated good-news publisher
+  - https://reasonstobecheerful.world/carbon-dioxide-laundry-machine/
+- **Scientists Develop a Seaweed Coating to Extend the Freshness of Fruit | Happy Eco News** (Not All News Is Bad, score 0.75)
+  - Positive signals: happy · from a dedicated good-news publisher · Free access not confirmed: possible paywall marker found
+  - https://notallnewsisbad.com/scientists-develop-a-seaweed-coating-to-extend-the-freshness-of-fruit-happy-eco-news/
+- **Cameras Capture First Animal To Use World’s Largest Wildlife Crossing, Which Stretches Over 10 Freeway Lanes and Cost $114 Million** (Not All News Is Bad, score 0.6)
+  - from a dedicated good-news publisher
+  - https://notallnewsisbad.com/cameras-capture-first-animal-to-use-worlds-largest-wildlife-crossing-which-stretches-over-10-freeway-lanes-and-cost-114-million/
+- **The People Who Became Wildlife** (Reasons to be Cheerful, score 0.6)
+  - from a dedicated good-news publisher
+  - https://reasonstobecheerful.world/people-became-wildlife-river-tone/
+- **Maui Is Becoming a Living Laboratory for Regenerative Tourism** (Reasons to be Cheerful, score 0.45)
+  - from a dedicated good-news publisher · negative words in summary: wildfires
+  - https://reasonstobecheerful.world/maui-living-laboratory-regenerative-tourism/

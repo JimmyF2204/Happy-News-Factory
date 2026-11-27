@@ -4,6 +4,12 @@ Open each story and check it is positive and free to read in full.
 To publish one, add its link to `approve` in `overrides.json`.
 To reject one or remove a published story, add its link to `block`.
 
+- **From cyberbullying to extremist content, can EU Kids Act protect minors online?** (France 24 Europe, score 0.5)
+  - Mixed headline (extremist), needs a human look
+  - https://www.france24.com/en/tv-shows/talking-europe/20261127-from-cyberbullying-to-extremist-content-can-eu-kids-act-protect-minors-online
+- **Severe Thanksgiving storms leave roads flooded and trees fallen** (BBC Science & Environment, score 0.5)
+  - Mixed headline (flooded), needs a human look
+  - https://www.bbc.co.uk/news/videos/ckvg20y511p4o?at_medium=RSS&at_campaign=rss
 - **BAE Hägglunds säljer Stridsfordon 90 i rekordaffär** (Feber, score 0.5)
   - Mixed headline (stridsfordon), needs a human look
   - https://feber.se/samhalle/bae-hagglunds-saljer-stridsfordon-90-i-rekordaffar/500141/?utm_source=rss&utm_medium=feed

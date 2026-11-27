@@ -4,9 +4,15 @@ Open each story and check it is positive and free to read in full.
 To publish one, add its link to `approve` in `overrides.json`.
 To reject one or remove a published story, add its link to `block`.
 
+- **BAE Hägglunds säljer Stridsfordon 90 i rekordaffär** (Feber, score 0.5)
+  - Mixed headline (stridsfordon), needs a human look
+  - https://feber.se/samhalle/bae-hagglunds-saljer-stridsfordon-90-i-rekordaffar/500141/?utm_source=rss&utm_medium=feed
 - **”Vi lever i en allt farligare fred”** (SVT Nyheter, score 0.5)
   - Mixed headline (farligare), needs a human look
   - https://www.svt.se/nyheter/inrikes/vi-lever-i-en-allt-farligare-fred
+- **Grand Theft Auto VI is a different kind of GTA — so it needed a different kind of ending** (The Verge, score 0.5)
+  - Mixed headline (theft), needs a human look
+  - https://www.theverge.com/entertainment/1043362/grand-theft-auto-6-ending
 - **Estonia's defense tech sector accelerates innovation amid war in Ukraine** (ERR News, score 0.5)
   - Mixed headline (war), needs a human look
   - https://news.err.ee/1610208820/estonia-s-defense-tech-sector-accelerates-innovation-amid-war-in-ukraine
@@ -34,6 +40,12 @@ To reject one or remove a published story, add its link to `block`.
 - **Man who cares for wife with brain injury wins carer award** (RTÉ News, score 0.5)
   - Mixed headline (injury), needs a human look
   - https://www.rte.ie/news/ireland/2026/1126/1600794-ireland-carer-awards/
+- **Cheaper Zuku wins back customers, but losses continue under Axian** (TechCabal, score 0.5)
+  - Mixed headline (losses), needs a human look
+  - https://techcabal.com/2026/11/26/zuku-wins-back-customers-under-axian/
+- **Hackers help themselves to 1Password's source code and customer data** (The Register, score 0.5)
+  - Mixed headline (hackers), needs a human look
+  - https://www.theregister.com/security/2026/11/26/hackers-help-themselves-to-1passwords-source-code-and-customer-data/5312317
 - **US Army says controlled blast of explosives in Iowa was 'huge success'** (BBC Science & Environment, score 0.5)
   - Mixed headline (army, blast, explosives), needs a human look
   - https://www.bbc.co.uk/news/articles/cwg7l5ve251ko?at_medium=RSS&at_campaign=rss
@@ -43,6 +55,12 @@ To reject one or remove a published story, add its link to `block`.
 - **California warns of flooding as King Tides peak over Thanksgiving** (BBC Science & Environment, score 0.5)
   - Mixed headline (flooding, warns), needs a human look
   - https://www.bbc.co.uk/news/articles/ckn806qq760po?at_medium=RSS&at_campaign=rss
+- **Allstate suffers multiday tech outage ahead of Thanksgiving** (TechCrunch, score 0.5)
+  - Mixed headline (outage), needs a human look
+  - https://techcrunch.com/2026/11/25/allstate-suffers-multi-day-tech-outage-ahead-of-thanksgiving/
+- **The unexpected joy hiding in Grand Theft Auto VI’s chaos? A little routine** (The Guardian Technology, score 0.5)
+  - Mixed headline (chaos, theft), needs a human look
+  - https://www.theguardian.com/games/2026/nov/25/the-secret-to-grand-theft-auto-vi-routine-rockstar-games
 - **Finland's oldest man is last surviving male Winter War veteran** (Yle News, score 0.5)
   - Mixed headline (war), needs a human look
   - https://yle.fi/a/74-20258938?origin=rss

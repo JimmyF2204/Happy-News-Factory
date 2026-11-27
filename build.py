@@ -605,7 +605,7 @@ def render_review(stories):
     lines = [
         "# Review queue", "",
         "Open each story and check it is positive and free to read in full.",
-        "To publish one, add its link to `approve` in `overrides.json`.",
+        "To publish one, add its link s to `approve` in `overrides.json`.",
         "To reject one or remove a published story, add its link to `block`.", "",
     ]
     for story in pending:

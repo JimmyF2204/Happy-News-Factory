@@ -65,12 +65,28 @@ text-transform:uppercase;color:var(--accent)}
 .grin-item p{margin:.25rem 0 0;font:11px/1.4 system-ui,sans-serif;color:var(--soft)}
 @media(max-width:900px){.layout{grid-template-columns:1fr}.grin{order:2}}
 @media(max-width:600px){.layout .grid{grid-template-columns:1fr}}
+
+.punbox{border:1px solid var(--ink);outline:1px solid var(--ink);outline-offset:3px;
+padding:.8rem .9rem .7rem;margin:3px 3px 1.5rem;text-align:center}
+.punbox.solo{max-width:420px;margin:1.5rem auto 0}
+.punbox h2{margin:0;font:italic 700 1.35rem/1.1 Georgia,"Times New Roman",serif}
+.pun-tag{margin:.25rem 0 .6rem;padding-bottom:.5rem;border-bottom:1px solid var(--hair);
+font:700 10px/1.4 system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.pun-text{margin:0;min-height:8.2em;display:flex;align-items:center;justify-content:center;
+font:1rem/1.35 Georgia,"Times New Roman",serif;transition:opacity .4s}
+.punbox.solo .pun-text{min-height:4.5em}
+.punbox button{margin:.5rem 0 .3rem;padding:.3rem .8rem;border:1px solid var(--ink);
+background:transparent;color:var(--ink);font:700 10px/1.4 system-ui,sans-serif;
+letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
+.punbox button:hover{background:var(--ink);color:var(--paper)}
+.pun-credit{margin:0;font:10px/1.4 system-ui,sans-serif;color:var(--soft)}
+.pun-credit a{color:inherit}
 </style></head><body><div class="wrap">
 <header class="masthead"><h1><a href="index.html">Smiling Times</a></h1>
 <p class="tagline">Good news from around the world</p>
 <div class="dateline"><span>Friday, 27 November 2026</span>
 <nav><a href="index.html">Front page</a><a href="about.html">About</a><a href="feed.xml">RSS</a></nav>
-<span>Updated 15:51 UTC</span></div></header>
+<span>Updated 16:02 UTC</span></div></header>
 <div class="langbar" translate="no"><label for="lang">Language</label>
 <select id="lang" onchange="setLanguage(this.value)">
 <option value="" selected disabled>Choose…</option>

@@ -1,0 +1,15 @@
+[
+  {"name": "SVT Nyheter", "feed": "https://www.svt.se/nyheter/rss.xml", "region": "Sweden", "positive_outlet": false},
+  {"name": "SVT Vetenskap", "feed": "https://www.svt.se/nyheter/vetenskap/rss.xml", "region": "Sweden", "positive_outlet": false},
+  {"name": "Expressen", "feed": "https://feeds.expressen.se/nyheter/", "region": "Sweden", "positive_outlet": false},
+  {"name": "Sveriges Radio Ekot", "feed": "https://api.sr.se/api/rss/program/83", "region": "Sweden", "positive_outlet": false},
+  {"name": "Forskning.se", "feed": "https://www.forskning.se/feed/", "region": "Sweden", "positive_outlet": false},
+  {"name": "Sveriges Natur", "feed": "https://www.sverigesnatur.org/feed/", "region": "Sweden", "positive_outlet": false},
+  {"name": "Warp News", "feed": "https://www.warpnews.se/rss/", "region": "Sweden", "positive_outlet": true},
+  {"name": "Good News Network", "feed": "https://www.goodnewsnetwork.org/feed/", "region": "Global", "positive_outlet": true},
+  {"name": "Positive News", "feed": "https://www.positive.news/feed/", "region": "Europe", "positive_outlet": true},
+  {"name": "Reasons to be Cheerful", "feed": "https://reasonstobecheerful.world/feed/", "region": "Global", "positive_outlet": true},
+  {"name": "The Optimist Daily", "feed": "https://www.optimistdaily.com/feed/", "region": "Global", "positive_outlet": true},
+  {"name": "The Better India", "feed": "https://www.thebetterindia.com/feed/", "region": "Asia", "positive_outlet": true},
+  {"name": "Not All News Is Bad", "feed": "https://notallnewsisbad.com/feed/", "region": "Global", "positive_outlet": true}
+]

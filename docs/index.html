@@ -43,12 +43,28 @@ footer{border-top:3px double var(--ink);margin-top:1rem;padding:1rem 0 2rem;text
 font:13px/1.5 system-ui,sans-serif;color:var(--soft)}
 @media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.grid,.card.lead{grid-template-columns:1fr}.card.lead{gap:0}}
+
+.langbar{text-align:center;padding:.7rem 0 0;font:12px/1.4 system-ui,sans-serif;
+letter-spacing:.08em;text-transform:uppercase}
+.langbar select{margin-left:.5rem}
 </style></head><body><div class="wrap">
 <header class="masthead"><h1><a href="index.html">Smiling Times</a></h1>
 <p class="tagline">Good news from around the world</p>
 <div class="dateline"><span>Friday, 27 November 2026</span>
 <nav><a href="index.html">Front page</a><a href="about.html">About</a><a href="feed.xml">RSS</a></nav>
-<span>Updated 13:49 UTC</span></div></header>
+<span>Updated 14:01 UTC</span></div></header>
+<div class="langbar" translate="no"><label for="lang">Language</label>
+<select id="lang" onchange="setLanguage(this.value)">
+<option value="" selected disabled>Choose…</option>
+<option value="en">English (original)</option><option value="sv">Svenska</option><option value="de">Deutsch</option><option value="fr">Français</option><option value="es">Español</option><option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option><option value="pt">Português</option><option value="fi">Suomi</option><option value="no">Norsk</option><option value="da">Dansk</option><option value="uk">Українська</option><option value="ar">العربية</option><option value="zh-CN">中文</option><option value="ja">日本語</option><option value="hi">हिन्दी</option></select></div>
+<script>
+function setLanguage(code) {
+  const file = location.pathname.split('/').pop() || 'index.html';
+  const url = "https://github.io/jimmyf2204/smiling-times" + '/' + file;
+  window.top.location.href = code === 'en' ? url
+    : 'https://translate.google.com/translate?sl=en&tl=' + code + '&u=' + encodeURIComponent(url);
+}
+</script>
 <main><div class="filters"><select id="region" aria-label="All regions"><option value="">All regions</option><option value="Asia">Asia</option><option value="Europe">Europe</option><option value="Global">Global</option><option value="Sweden">Sweden</option></select><select id="topic" aria-label="All topics"><option value="">All topics</option><option value="Animals &amp; wildlife">Animals &amp; wildlife</option><option value="Arts &amp; culture">Arts &amp; culture</option><option value="Clean energy &amp; climate solutions">Clean energy &amp; climate solutions</option><option value="Community &amp; kindness">Community &amp; kindness</option><option value="Education &amp; young people">Education &amp; young people</option><option value="Feel-good">Feel-good</option><option value="Food &amp; travel">Food &amp; travel</option><option value="Health &amp; medicine">Health &amp; medicine</option><option value="Nature &amp; environment">Nature &amp; environment</option><option value="Peace &amp; diplomacy">Peace &amp; diplomacy</option><option value="Progress &amp; economy">Progress &amp; economy</option><option value="Science &amp; technology">Science &amp; technology</option><option value="Space &amp; discovery">Space &amp; discovery</option><option value="Sport &amp; achievement">Sport &amp; achievement</option></select><select id="source" aria-label="All sources"><option value="">All sources</option><option value="Aftonbladet">Aftonbladet</option><option value="BBC Science &amp; Environment">BBC Science &amp; Environment</option><option value="DW">DW</option><option value="DutchNews.nl">DutchNews.nl</option><option value="Euronews">Euronews</option><option value="Expressen">Expressen</option><option value="France 24 Europe">France 24 Europe</option><option value="Good News Network">Good News Network</option><option value="Not All News Is Bad">Not All News Is Bad</option><option value="RTÉ News">RTÉ News</option><option value="Radio Prague International">Radio Prague International</option><option value="Reasons to be Cheerful">Reasons to be Cheerful</option><option value="SVT Kultur">SVT Kultur</option><option value="SVT Nyheter">SVT Nyheter</option><option value="Squirrel News">Squirrel News</option><option value="Sveriges Natur">Sveriges Natur</option><option value="The Better India">The Better India</option><option value="The Guardian Europe">The Guardian Europe</option><option value="The Guardian Science">The Guardian Science</option><option value="The Optimist Daily">The Optimist Daily</option><option value="The Portugal News">The Portugal News</option><option value="Yle News">Yle News</option></select><select id="days" aria-label="Any date"><option value="">Any date</option><option value="1">Last 24 hours</option><option value="7">Last 7 days</option></select></div><div class="grid"><article class="card lead" id="scb8d81046885" data-region="Asia"
  data-topic="Science &amp; technology" data-source="The Better India" data-ts="1795784822">
 <div class="photo"><a href="https://thebetterindia.com/web-stories/technology/robotic-oil-tank-cleaning-betatank-dc-sekhar-bengaluru-12846311" rel="noopener noreferrer"><img src="https://img-cdn.publive.online/fit-in/1280x960/english-betterindia/media/media_files/2026/11/27/beta-tank-2026-11-27-18-12-29.png" alt="" loading="eager" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: The Better India</span></div><div class="text">
@@ -103,11 +119,12 @@ font:13px/1.5 system-ui,sans-serif;color:var(--soft)}
  data-topic="Sport &amp; achievement" data-source="Expressen" data-ts="1795775948">
 <div class="photo"><a href="https://www.expressen.se/nyheter/sverige/brand-i-guldgruva-27-personer-ar-kvar-i-kammare/" rel="noopener noreferrer"><img src="https://static.bonniernews.se/images/69/9e/699ecb4afe5a4f6dae0c6225d464c73e/16x9/original.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: Expressen</span></div><div class="text">
 <p class="kicker">Sport &amp; achievement</p>
-<h2><a href="https://www.expressen.se/nyheter/sverige/brand-i-guldgruva-27-personer-ar-kvar-i-kammare/" rel="noopener noreferrer">Brand i guldgruva – 27 personer är kvar i kammare</a></h2>
-<p class="excerpt">27 personer är fast i en livräddningskammare under branden i Björkdalsgruvan. – Ett antal blir kvar i kammaren under räddningsarbetet, säger HR-chefen Anna Magnusson till SVT Nyheter Västerbotten .…</p>
+<h2><a href="https://www.expressen.se/nyheter/sverige/brand-i-guldgruva-27-personer-ar-kvar-i-kammare/" rel="noopener noreferrer">Fire in gold mine – 27 people remain trapped in chambers</a></h2>
+<p class="excerpt">27 people are trapped in a life-saving chamber during the fire at the Björkdals mine. &quot;A number of people will remain in the chamber during the rescue operation,&quot; HR Manager Anna Magnusson told SVT Nyheter Västerbotten .…</p>
 <p class="byline">Read the full story at <a href="https://www.expressen.se/nyheter/sverige/brand-i-guldgruva-27-personer-ar-kvar-i-kammare/" rel="noopener noreferrer">Expressen</a>
  · Sweden · 27 Nov 2026</p>
 <p class="why">Why this story is here: Positive signals: guldgruva, räddningsarbetet</p>
+<p class="why">Machine-translated from Swedish. Original headline: <span translate="no">Brand i guldgruva – 27 personer är kvar i kammare</span></p>
 </div></article>
 <article class="card" id="s0754191d0fb8" data-region="Asia"
  data-topic="Space &amp; discovery" data-source="The Better India" data-ts="1795775437">
@@ -163,11 +180,12 @@ font:13px/1.5 system-ui,sans-serif;color:var(--soft)}
  data-topic="Sport &amp; achievement" data-source="Aftonbladet" data-ts="1795769494">
 <div class="photo"><a href="https://www.aftonbladet.se/nyheter/a/VxbyKW/guldgruva-utryms-efter-brand?utm_medium=rss" rel="noopener noreferrer"><img src="https://akamai.vgc.no/v2/images/d0d4fa05-2844-3972-918c-20267bfec8bc?format=auto&amp;w=1000&amp;s=adc9d89a9c3d61be7da891a718d44d52f2cb53b6" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: Aftonbladet</span></div><div class="text">
 <p class="kicker">Sport &amp; achievement</p>
-<h2><a href="https://www.aftonbladet.se/nyheter/a/VxbyKW/guldgruva-utryms-efter-brand?utm_medium=rss" rel="noopener noreferrer">Personal evakuerades från brand i guldgruva</a></h2>
-<p class="excerpt">En brand bröt ut i ett fordon i Björkdalsgruvan nära Sandfors i Skellefteå kommun under…</p>
+<h2><a href="https://www.aftonbladet.se/nyheter/a/VxbyKW/guldgruva-utryms-efter-brand?utm_medium=rss" rel="noopener noreferrer">Personnel evacuated from fire in gold mine</a></h2>
+<p class="excerpt">A fire broke out in a vehicle at the Björkdalsgruvan mine near Sandfors in Skellefteå Municipality during…</p>
 <p class="byline">Read the full story at <a href="https://www.aftonbladet.se/nyheter/a/VxbyKW/guldgruva-utryms-efter-brand?utm_medium=rss" rel="noopener noreferrer">Aftonbladet</a>
  · Sweden · 27 Nov 2026</p>
 <p class="why">Why this story is here: Positive signals: guldgruva</p>
+<p class="why">Machine-translated from Swedish. Original headline: <span translate="no">Personal evakuerades från brand i guldgruva</span></p>
 </div></article>
 <article class="card" id="s87ff57818d22" data-region="Europe"
  data-topic="Health &amp; medicine" data-source="RTÉ News" data-ts="1795767763">
@@ -193,11 +211,12 @@ font:13px/1.5 system-ui,sans-serif;color:var(--soft)}
  data-topic="Sport &amp; achievement" data-source="Expressen" data-ts="1795767235">
 <div class="photo"><a href="https://www.expressen.se/nyheter/expressen-direkt/?post=83312080-82be-4cf8-94c7-7c0bc1a8fd85" rel="noopener noreferrer"><img src="https://static.bonniernews.se/images/60/f9/60f9718a9e2947c6a21855b91be6842c/16x9/original.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: Expressen</span></div><div class="text">
 <p class="kicker">Sport &amp; achievement</p>
-<h2><a href="https://www.expressen.se/nyheter/expressen-direkt/?post=83312080-82be-4cf8-94c7-7c0bc1a8fd85" rel="noopener noreferrer">Brand i guldgruva</a></h2>
-<p class="excerpt">Räddningstjänsten är på plats, enligt P4</p>
+<h2><a href="https://www.expressen.se/nyheter/expressen-direkt/?post=83312080-82be-4cf8-94c7-7c0bc1a8fd85" rel="noopener noreferrer">Fire in a gold mine</a></h2>
+<p class="excerpt">The fire and rescue service is on the scene, according to P4.</p>
 <p class="byline">Read the full story at <a href="https://www.expressen.se/nyheter/expressen-direkt/?post=83312080-82be-4cf8-94c7-7c0bc1a8fd85" rel="noopener noreferrer">Expressen</a>
  · Sweden · 27 Nov 2026</p>
 <p class="why">Why this story is here: Positive signals: guldgruva, räddningstjänsten</p>
+<p class="why">Machine-translated from Swedish. Original headline: <span translate="no">Brand i guldgruva</span></p>
 </div></article>
 <article class="card" id="se7e37475e514" data-region="Europe"
  data-topic="Peace &amp; diplomacy" data-source="The Portugal News" data-ts="1795766460">
@@ -233,11 +252,12 @@ font:13px/1.5 system-ui,sans-serif;color:var(--soft)}
  data-topic="Sport &amp; achievement" data-source="SVT Nyheter" data-ts="1795765000">
 <div class="photo"><a href="https://www.svt.se/nyheter/lokalt/vasterbotten/brand-i-bjorkdalsgruvan-raddningstjanst-pa-plats" rel="noopener noreferrer"><img src="https://www.svtstatic.se/image-news/1200/1.91:1/0.56/0.48/39e79f1409ca192054a2e720cb48c64c4d097d55125e4c33132a7a66bd5af744" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: SVT Nyheter</span></div><div class="text">
 <p class="kicker">Sport &amp; achievement</p>
-<h2><a href="https://www.svt.se/nyheter/lokalt/vasterbotten/brand-i-bjorkdalsgruvan-raddningstjanst-pa-plats" rel="noopener noreferrer">Brand i Björkdalsgruvan utanför Kåge – 27 personer blev fast under jord</a></h2>
-<p class="excerpt">En personbil började brinna kraftigt under jord i en guldgruva utanför Kåge, Skellefteå kommun. 27 gruvarbetare blev fast under jord – tre sattes i räddningskammare. Samtliga har nu evakuerats.</p>
+<h2><a href="https://www.svt.se/nyheter/lokalt/vasterbotten/brand-i-bjorkdalsgruvan-raddningstjanst-pa-plats" rel="noopener noreferrer">Fire in the Björkdals mine outside Kåge – 27 people were trapped underground</a></h2>
+<p class="excerpt">A passenger car caught fire underground in a gold mine outside Kåge, Skellefteå Municipality. Twenty-seven miners were trapped underground – three were placed in rescue chambers. All have now been evacuated.</p>
 <p class="byline">Read the full story at <a href="https://www.svt.se/nyheter/lokalt/vasterbotten/brand-i-bjorkdalsgruvan-raddningstjanst-pa-plats" rel="noopener noreferrer">SVT Nyheter</a>
  · Sweden · 27 Nov 2026</p>
 <p class="why">Why this story is here: Positive signals: guldgruva, räddningskammare</p>
+<p class="why">Machine-translated from Swedish. Original headline: <span translate="no">Brand i Björkdalsgruvan utanför Kåge – 27 personer blev fast under jord</span></p>
 </div></article>
 <article class="card" id="s22849f6e2127" data-region="Asia"
  data-topic="Education &amp; young people" data-source="The Better India" data-ts="1795764637">
@@ -333,11 +353,22 @@ font:13px/1.5 system-ui,sans-serif;color:var(--soft)}
  data-topic="Sport &amp; achievement" data-source="SVT Nyheter" data-ts="1795712404">
 <div class="photo"><a href="https://www.svt.se/nyheter/lokalt/jonkoping/nu-saljs-stefan-livs-guldklubba-for-tredje-gangen" rel="noopener noreferrer"><img src="https://www.svtstatic.se/image-news/1200/1.91:1/0.69/0.49/c703a1cc72035c5bbb1cabf01e804d74f5e9de08c765a1923b369d6b1a44cae5" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: SVT Nyheter</span></div><div class="text">
 <p class="kicker">Sport &amp; achievement</p>
-<h2><a href="https://www.svt.se/nyheter/lokalt/jonkoping/nu-saljs-stefan-livs-guldklubba-for-tredje-gangen" rel="noopener noreferrer">Nu säljs Stefan Livs guldklubba – för tredje gången</a></h2>
-<p class="excerpt">För tredje gången kommer den ikoniska HV-målvakten Stefan Livs klubba säljas på auktion. Klubban användes i den avgörande SM-finalen 2004. – Jag vill att den ska göra skillnad, säger Jan Thorén som…</p>
+<h2><a href="https://www.svt.se/nyheter/lokalt/jonkoping/nu-saljs-stefan-livs-guldklubba-for-tredje-gangen" rel="noopener noreferrer">Stefan Liv&#x27;s gold stick is now being sold – for the third time</a></h2>
+<p class="excerpt">For the third time, the stick of the iconic HV goalie Stefan Liv will be sold at auction. The stick was used in the decisive Swedish Championship final in 2004. &quot;I want it to make a difference,&quot; says Jan Thorén, who…</p>
 <p class="byline">Read the full story at <a href="https://www.svt.se/nyheter/lokalt/jonkoping/nu-saljs-stefan-livs-guldklubba-for-tredje-gangen" rel="noopener noreferrer">SVT Nyheter</a>
  · Sweden · 26 Nov 2026</p>
 <p class="why">Why this story is here: Positive signals: guldklubba</p>
+<p class="why">Machine-translated from Swedish. Original headline: <span translate="no">Nu säljs Stefan Livs guldklubba – för tredje gången</span></p>
+</div></article>
+<article class="card" id="sbc83bd77648d" data-region="Global"
+ data-topic="Community &amp; kindness" data-source="Good News Network" data-ts="1795710618">
+<div class="photo"><a href="https://www.goodnewsnetwork.org/town-rewards-a-woman-whose-thanksgiving-meal-feeds-thousands-with-a-new-car/" rel="noopener noreferrer"><img src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/maxresdefault-7.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: Good News Network</span></div><div class="text">
+<p class="kicker">Community &amp; kindness</p>
+<h2><a href="https://www.goodnewsnetwork.org/town-rewards-a-woman-whose-thanksgiving-meal-feeds-thousands-with-a-new-car/" rel="noopener noreferrer">Town Rewards a Woman Whose Thanksgiving Meal Feeds Thousands with a New Car</a></h2>
+<p class="excerpt">After 37 years of eating Gloria Kennard’s Thanksgiving dinners, a Texas community was hungry to return the kindness. The devout woman cooks for 2,000 people every year, but as she prepared for this…</p>
+<p class="byline">Read the full story at <a href="https://www.goodnewsnetwork.org/town-rewards-a-woman-whose-thanksgiving-meal-feeds-thousands-with-a-new-car/" rel="noopener noreferrer">Good News Network</a>
+ · Global · 26 Nov 2026</p>
+<p class="why">Why this story is here: From a dedicated good-news publisher</p>
 </div></article>
 <article class="card" id="scb6452bf4625" data-region="Europe"
  data-topic="Food &amp; travel" data-source="BBC Science &amp; Environment" data-ts="1795709910">
@@ -348,6 +379,16 @@ font:13px/1.5 system-ui,sans-serif;color:var(--soft)}
 <p class="byline">Read the full story at <a href="https://www.bbc.co.uk/news/videos/c6n4e3yypylxo?at_medium=RSS&amp;at_campaign=rss" rel="noopener noreferrer">BBC Science &amp; Environment</a>
  · Europe · 26 Nov 2026</p>
 <p class="why">Why this story is here: Positive signals: thanksgiving</p>
+</div></article>
+<article class="card" id="scdb65a294c5b" data-region="Global"
+ data-topic="Food &amp; travel" data-source="Good News Network" data-ts="1795709731">
+<div class="photo"><a href="https://www.goodnewsnetwork.org/for-this-nyc-restaurant-owner-thanksgiving-comes-every-wednesday/" rel="noopener noreferrer"><img src="https://www.goodnewsnetwork.org/wp-content/uploads/2015/11/turkey-tribune-video-permission.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: Good News Network</span></div><div class="text">
+<p class="kicker">Food &amp; travel</p>
+<h2><a href="https://www.goodnewsnetwork.org/for-this-nyc-restaurant-owner-thanksgiving-comes-every-wednesday/" rel="noopener noreferrer">For This NYC Restaurant Owner, Thanksgiving Comes Every Wednesday</a></h2>
+<p class="excerpt">This story came to us from PassItOn.com, which is part of The Foundation for a Better Life. Their goal is to offer inspirational messages to people everywhere as a contribution toward promoting…</p>
+<p class="byline">Read the full story at <a href="https://www.goodnewsnetwork.org/for-this-nyc-restaurant-owner-thanksgiving-comes-every-wednesday/" rel="noopener noreferrer">Good News Network</a>
+ · Global · 26 Nov 2026</p>
+<p class="why">Why this story is here: From a dedicated good-news publisher</p>
 </div></article>
 <article class="card" id="s1229194b8395" data-region="Europe"
  data-topic="Education &amp; young people" data-source="The Portugal News" data-ts="1795709460">
@@ -493,11 +534,12 @@ font:13px/1.5 system-ui,sans-serif;color:var(--soft)}
  data-topic="Clean energy &amp; climate solutions" data-source="Sveriges Natur" data-ts="1795680168">
 <div class="photo"><a href="https://www.sverigesnatur.org/aktuellt/naturskyddsforeningen-satter-fokus-pa-att-aterskapa-naturen/" rel="noopener noreferrer"><img src="https://media.arto.se/app/uploads/sites/13/2026/11/23151512/mnemosynefjaril-foto-mats-hellmark-1.jpg?auto=format&amp;crop=auto&amp;facepad=10&amp;fit=crop&amp;q=50&amp;w=1200&amp;h=630" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: Sveriges Natur</span></div><div class="text">
 <p class="kicker">Clean energy &amp; climate solutions</p>
-<h2><a href="https://www.sverigesnatur.org/aktuellt/naturskyddsforeningen-satter-fokus-pa-att-aterskapa-naturen/" rel="noopener noreferrer">Naturskydds­föreningen sätter fokus på att återskapa naturen</a></h2>
-<p class="excerpt">Hästar som skapar mångfald, försvunna fjärilar och rewilding stod på agendan när Naturskyddsföreningens länsförbund i Blekinge och Skåne arrangerade konferens om biologisk mångfald. Jämshögs…</p>
+<h2><a href="https://www.sverigesnatur.org/aktuellt/naturskyddsforeningen-satter-fokus-pa-att-aterskapa-naturen/" rel="noopener noreferrer">The Swedish Society for Nature Conservation focuses on restoring nature</a></h2>
+<p class="excerpt">Horses that create diversity, missing butterflies and rewilding were on the agenda when the Swedish Society for Nature Conservation&#x27;s county associations in Blekinge and Skåne organized a conference on biodiversity. Jämshög…</p>
 <p class="byline">Read the full story at <a href="https://www.sverigesnatur.org/aktuellt/naturskyddsforeningen-satter-fokus-pa-att-aterskapa-naturen/" rel="noopener noreferrer">Sveriges Natur</a>
  · Sweden · 26 Nov 2026</p>
 <p class="why">Why this story is here: Positive signals: prisades, rewilding</p>
+<p class="why">Machine-translated from Swedish. Original headline: <span translate="no">Naturskydds­föreningen sätter fokus på att återskapa naturen</span></p>
 </div></article>
 <article class="card" id="s48a7ebe65e0a" data-region="Global"
  data-topic="Community &amp; kindness" data-source="Reasons to be Cheerful" data-ts="1795680037">
@@ -783,11 +825,12 @@ font:13px/1.5 system-ui,sans-serif;color:var(--soft)}
  data-topic="Feel-good" data-source="SVT Kultur" data-ts="1795528550">
 <div class="photo"><a href="https://www.svt.se/kultur/klart-steven-spielberg-far-gora-sin-dromfilm" rel="noopener noreferrer"><img src="https://www.svtstatic.se/image-news/1200/1.91:1/0.52/0.36/8bcb35c622b256d359d393fcc20cbc3117829b72a14918444f69ba5fa0836b99" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: SVT Kultur</span></div><div class="text">
 <p class="kicker">Feel-good</p>
-<h2><a href="https://www.svt.se/kultur/klart-steven-spielberg-far-gora-sin-dromfilm" rel="noopener noreferrer">Klart: Steven Spielberg får göra sin drömfilm</a></h2>
-<p class="excerpt">Steven Spielberg har länge pratat om att han vill göra en västernfilm. Nu blir det av – med ett manus av den Oscarsbelönade regissören Paul Thomas Anderson.</p>
+<h2><a href="https://www.svt.se/kultur/klart-steven-spielberg-far-gora-sin-dromfilm" rel="noopener noreferrer">Confirmed: Steven Spielberg gets to make his dream movie</a></h2>
+<p class="excerpt">Steven Spielberg has long talked about wanting to make a Western. Now it&#x27;s happening – with a screenplay by Oscar-winning director Paul Thomas Anderson.</p>
 <p class="byline">Read the full story at <a href="https://www.svt.se/kultur/klart-steven-spielberg-far-gora-sin-dromfilm" rel="noopener noreferrer">SVT Kultur</a>
  · Sweden · 24 Nov 2026</p>
 <p class="why">Why this story is here: Positive signals: drömfilm</p>
+<p class="why">Machine-translated from Swedish. Original headline: <span translate="no">Klart: Steven Spielberg får göra sin drömfilm</span></p>
 </div></article>
 <article class="card" id="s14cde24b98ff" data-region="Global"
  data-topic="Education &amp; young people" data-source="Good News Network" data-ts="1795524768">

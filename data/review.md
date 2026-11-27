@@ -4,6 +4,9 @@ Open each story and check it is positive and free to read in full.
 To publish one, add its link to `approve` in `overrides.json`.
 To reject one or remove a published story, add its link to `block`.
 
+- **”Vi lever i en allt farligare fred”** (SVT Nyheter, score 0.5)
+  - Mixed headline (farligare), needs a human look
+  - https://www.svt.se/nyheter/inrikes/vi-lever-i-en-allt-farligare-fred
 - **Estonia's defense tech sector accelerates innovation amid war in Ukraine** (ERR News, score 0.5)
   - Mixed headline (war), needs a human look
   - https://news.err.ee/1610208820/estonia-s-defense-tech-sector-accelerates-innovation-amid-war-in-ukraine

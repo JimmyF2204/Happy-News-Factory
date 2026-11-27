@@ -52,7 +52,7 @@ letter-spacing:.08em;text-transform:uppercase}
 <p class="tagline">Good news from around the world</p>
 <div class="dateline"><span>Friday, 27 November 2026</span>
 <nav><a href="index.html">Front page</a><a href="about.html">About</a><a href="feed.xml">RSS</a></nav>
-<span>Updated 14:01 UTC</span></div></header>
+<span>Updated 14:27 UTC</span></div></header>
 <div class="langbar" translate="no"><label for="lang">Language</label>
 <select id="lang" onchange="setLanguage(this.value)">
 <option value="" selected disabled>Choose…</option>
@@ -60,7 +60,7 @@ letter-spacing:.08em;text-transform:uppercase}
 <script>
 function setLanguage(code) {
   const file = location.pathname.split('/').pop() || 'index.html';
-  const url = "https://github.io/jimmyf2204/smiling-times" + '/' + file;
+  const url = "https://jimmyf2204.github.io/Happy-News-Factory" + '/' + file;
   window.top.location.href = code === 'en' ? url
     : 'https://translate.google.com/translate?sl=en&tl=' + code + '&u=' + encodeURIComponent(url);
 }

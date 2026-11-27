@@ -4,42 +4,75 @@
 <title>About Smiling Times</title>
 <link rel="alternate" type="application/rss+xml" title="Smiling Times" href="feed.xml">
 <style>
-:root{--bg:#fffaf2;--card:#fff;--ink:#2b2a28;--soft:#6b665e;--accent:#d9822b;--line:#eadfce}
+:root{--paper:#f7f3ea;--ink:#1c1b19;--soft:#5f5a52;--hair:#cfc7b8;--accent:#8a2b1e}
 *{box-sizing:border-box}[hidden]{display:none!important}
-body{margin:0;font:17px/1.6 Georgia,serif;background:var(--bg);color:var(--ink)}
-header,main,footer{max-width:760px;margin:0 auto;padding:1rem}
-header h1{margin:.5rem 0 0;font-size:2.2rem}header h1 a{color:var(--ink);text-decoration:none}
-header p{margin:0;color:var(--soft)}nav{margin-top:.5rem}a{color:#9a5510}
-.filters{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0}
-select{font:inherit;padding:.4rem;border:1px solid var(--line);border-radius:6px;background:#fff}
-.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1rem 1.2rem;margin:0 0 1rem}
-.card h2{font-size:1.25rem;line-height:1.35;margin:.3rem 0}.card h2 a{color:var(--ink)}
-.meta,.src,.why,footer,.updated{font:14px/1.5 system-ui,sans-serif;color:var(--soft);margin:.3rem 0}
-.tag{background:var(--accent);color:#fff;border-radius:99px;padding:.1rem .6rem;margin-right:.4rem}
-.excerpt{margin:.4rem 0}
-</style></head><body>
-<header><h1><a href="index.html">Smiling Times</a></h1>
-<p>Good news from around the world</p>
-<nav><a href="index.html">Stories</a> · <a href="about.html">About</a> · <a href="feed.xml">RSS feed</a></nav>
-</header><main><h2>About Smiling Times</h2>
-<p>Smiling Times collects uplifting news from public RSS feeds and links to the original articles.</p>
+body{margin:0;background:var(--paper);color:var(--ink);
+font:17px/1.55 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 1.2rem}
+.masthead{text-align:center;padding:1.6rem 0 0}
+.masthead h1{margin:0;font:900 clamp(2.6rem,8vw,5.2rem)/1 "Bodoni MT",Didot,"Playfair Display","Times New Roman",serif}
+.masthead h1 a{text-decoration:none}
+.tagline{margin:.4rem 0 0;font-style:italic;color:var(--soft)}
+.dateline{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.3rem 1rem;
+border-top:3px double var(--ink);border-bottom:1px solid var(--ink);padding:.45rem 0;margin-top:.9rem;
+font:12px/1.4 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.dateline a{text-decoration:none;margin:0 .4rem}.dateline a:hover{text-decoration:underline}
+.filters{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;padding:.8rem 0;
+border-bottom:1px solid var(--hair)}
+select{font:13px system-ui,sans-serif;padding:.35rem .5rem;border:1px solid var(--hair);
+background:transparent;color:var(--ink);border-radius:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0 2.2rem;padding-top:1.5rem}
+.card{padding:0 0 1.3rem;margin:0 0 1.3rem;border-bottom:1px solid var(--hair);min-width:0}
+.card.lead{grid-column:1/-1;display:grid;grid-template-columns:3fr 2fr;gap:2.2rem;
+align-items:start;border-bottom:3px double var(--ink)}
+.lead .text:only-child{grid-column:1/-1}
+.photo{margin:0 0 .7rem}
+.photo img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:#e6dfd0}
+.credit{display:block;font:11px/1.6 system-ui,sans-serif;color:var(--soft);text-align:right}
+.kicker{font:700 11px/1.4 system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;
+color:var(--accent);margin:0 0 .3rem}
+.card h2{font:700 1.3rem/1.2 Georgia,"Times New Roman",serif;margin:0 0 .45rem}
+.card h2 a{text-decoration:none}.card h2 a:hover{text-decoration:underline}
+.lead h2{font-size:clamp(1.7rem,3.6vw,2.6rem);line-height:1.1}
+.excerpt{margin:0 0 .5rem;color:#33312d}.lead .excerpt{font-size:1.1rem}
+.byline,.why{font:12px/1.5 system-ui,sans-serif;color:var(--soft);margin:.2rem 0}
+.why{font-style:italic}
+.prose{max-width:680px;margin:2rem auto}.prose a{color:var(--accent)}
+footer{border-top:3px double var(--ink);margin-top:1rem;padding:1rem 0 2rem;text-align:center;
+font:13px/1.5 system-ui,sans-serif;color:var(--soft)}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.grid,.card.lead{grid-template-columns:1fr}.card.lead{gap:0}}
+</style></head><body><div class="wrap">
+<header class="masthead"><h1><a href="index.html">Smiling Times</a></h1>
+<p class="tagline">Good news from around the world</p>
+<div class="dateline"><span>Friday, 27 November 2026</span>
+<nav><a href="index.html">Front page</a><a href="about.html">About</a><a href="feed.xml">RSS</a></nav>
+<span>Updated 13:39 UTC</span></div></header>
+<main><div class="prose"><h2>About Smiling Times</h2>
+<p>Smiling Times collects good and hopeful news from public RSS feeds and links to the original articles.</p>
 <h3>What is included</h3>
-<p>Stories about a concrete positive development: peace agreements, acts of kindness, medical and
-scientific progress, conservation successes, rescues, recoveries and hopeful human-interest stories.</p>
+<p>Peace agreements, kindness, health and science progress, discoveries, nature and wildlife,
+clean energy, culture, sport, and other stories that are not bad news.</p>
 <h3>What is left out</h3>
-<p>Stories mainly about violence, tragedy, disasters, ongoing wars, environmental damage, economic
-hardship, political outrage, crime or gossip, and articles that need payment or an account to read.</p>
+<p>Stories whose headline is about violence, death, disasters, war, crime or economic hardship,
+unless they report peace or a clearly hopeful development. Articles that are certain to need
+payment or an account are also left out.</p>
 <h3>How it works</h3>
-<p>A program checks the feeds every hour and scores each headline and summary with word lists.
-High-scoring stories are published automatically once the article page loads in full without sign-in.
-Uncertain stories wait for a human editor. The region shown is the publisher's region. Summaries are
-short excerpts from the publisher's own feed and are not AI-generated.</p>
+<p>A program checks the feeds every hour and screens each headline and summary with English and
+Swedish word lists. Articles with a clear paywall are dropped; when access is uncertain the story
+is still shown. A few mixed cases wait for a human editor. The region shown is the publisher's
+region. Summaries are short excerpts from the publisher's own feed and are not AI-generated.</p>
+<h3>Photos</h3>
+<p>Photos are the publishers' own preview images, loaded from their websites and credited to them.
+Publishers who want a photo or story removed can write to the address below.</p>
 <h3>Limitations</h3>
 <p>Automatic filtering makes mistakes, and this site is neither complete nor perfectly objective.
 Facts are not independently verified; please rely on the original publisher.</p>
-<h3>Sources</h3><ul><li>SVT Nyheter (Sweden)</li><li>SVT Vetenskap (Sweden)</li><li>Expressen (Sweden)</li><li>Sveriges Radio Ekot (Sweden)</li><li>Forskning.se (Sweden)</li><li>Sveriges Natur (Sweden)</li><li>Warp News (Sweden)</li><li>Good News Network (Global)</li><li>Positive News (Europe)</li><li>Reasons to be Cheerful (Global)</li><li>The Optimist Daily (Global)</li><li>The Better India (Asia)</li><li>Not All News Is Bad (Global)</li></ul>
+<h3>Sources</h3><ul><li>SVT Nyheter (Sweden)</li><li>SVT Vetenskap (Sweden)</li><li>SVT Kultur (Sweden)</li><li>Expressen (Sweden)</li><li>Aftonbladet (Sweden)</li><li>Sveriges Radio Ekot (Sweden)</li><li>Radio Sweden (Sweden)</li><li>Forskning.se (Sweden)</li><li>Sveriges Natur (Sweden)</li><li>Warp News (Sweden)</li><li>BBC News Europe (Europe)</li><li>BBC Science &amp; Environment (Europe)</li><li>The Guardian Europe (Europe)</li><li>The Guardian Science (Europe)</li><li>DW (Europe)</li><li>France 24 Europe (Europe)</li><li>Euronews (Europe)</li><li>Yle News (Europe)</li><li>RTÉ News (Europe)</li><li>ERR News (Europe)</li><li>Radio Prague International (Europe)</li><li>Notes from Poland (Europe)</li><li>DutchNews.nl (Europe)</li><li>The Brussels Times (Europe)</li><li>The Portugal News (Europe)</li><li>Positive News (Europe)</li><li>Squirrel News (Europe)</li><li>Good News from Finland (Europe)</li><li>Good News Network (Global)</li><li>Reasons to be Cheerful (Global)</li><li>The Optimist Daily (Global)</li><li>The Better India (Asia)</li><li>Not All News Is Bad (Global)</li></ul>
 <h3>Funding</h3><p>Smiling Times is a non-commercial personal project with no sponsors, just for fun and learning.</p>
 <h3>Corrections and contact</h3>
-<p>Spotted a problem or want a story removed? Write to <a href="mailto:jimmy.forsberg@onetwo.se">jimmy.forsberg@onetwo.se</a>.</p></main>
+<p>Spotted a problem or want something removed? Write to <a href="mailto:jimmy.forsberg@onetwo.se">jimmy.forsberg@onetwo.se</a>.</p></div></main>
 <footer>Smiling Times links to the original publishers and does not republish their articles.
-<a href="about.html">How stories are chosen</a></footer></body></html>
+Photos belong to the publishers named beside them. <a href="about.html">How stories are chosen</a></footer>
+</div></body></html>

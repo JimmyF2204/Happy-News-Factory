@@ -890,6 +890,103 @@ def render_index(published):
     return _tech_base_render_index(published)
 # --- end Technology topic ---
 
+# --- The Daily Grin column ---
+SMILE_TITLE = "The Daily Grin"
+SMILE_TAGLINE = "Little stories making you smile"
+SMILE_MAX = int(CONFIG.get("smile_count", 12))
+SMILE_PER_SOURCE = 3
+SMILE = rx([
+    "funny", "funniest", r"hilarious\w*", r"adorabl\w*", "cute", "cutest", r"giggl\w*",
+    r"laugh\w*", r"prank\w*", r"toddler\w*", "heartwarming", "heart-warming", "wholesome",
+    "golden buzzer", "got talent", "idol", r"audition\w*", "standing ovation",
+    r"photobomb\w*", r"go(?:es|ne|ing)? viral", r"viral (?:video|clip|moment|sensation)",
+    r"bloopers?", "sweetest", "priceless", r"dad jokes?", r"pupp(?:y|ies)", r"kitten\w*",
+    r"rolig\w*", r"gullig\w*", r"skratt\w*", r"busig\w*", r"hjärtevärm\w*", "talang",
+    r"valp\w*", r"kattunge\w*",
+])
+POSITIVE = re.compile(POSITIVE.pattern + "|" + SMILE.pattern, re.I)
+SMILE_FEEDS = {s["feed"] for s in SOURCES if s.get("smile")}
+_smile_base_collect = collect
+
+
+def collect(stories, state):
+    before = set(stories)
+    _smile_base_collect(stories, state)
+    for sid, story in stories.items():
+        from_feed = story.get("feed") in SMILE_FEEDS
+        if "smile" not in story:
+            story["smile"] = from_feed or bool(SMILE.search(story["title"]))
+        if (from_feed and sid not in before and story["status"] == "excluded"
+                and story["reason"] == "No clear positive signal"):
+            access, note, image = check_access(story["link"])
+            if access == "restricted":
+                story["reason"] = f"Not free to read: {note}"
+            else:
+                story.update(status="published", score=0.6, image=image,
+                             reason="A light-hearted story with no bad-news words")
+                print(f"smile     0.60  {story['title'][:70]}")
+
+
+def grin_item(story):
+    e = html.escape
+    link = e(story["link"])
+    date = datetime.fromtimestamp(story["published"], timezone.utc).strftime("%d %b")
+    thumb = ""
+    if SHOW_IMAGES and story.get("image"):
+        thumb = f"""<a class="thumb" href="{link}" rel="noopener noreferrer"><img
+ src="{e(story["image"])}" alt="" loading="lazy" referrerpolicy="no-referrer"
+ onerror="this.closest('.thumb').remove()"></a>"""
+    translated = " · machine-translated" if story.get("title_original") else ""
+    return f"""<article class="grin-item" id="s{story["id"]}">{thumb}<div class="text">
+<h3><a href="{link}" rel="noopener noreferrer">{e(story["title"])}</a></h3>
+<p>{e(story["source"])} · {date}{translated}</p></div></article>"""
+
+
+_smile_base_render_index = render_index
+
+
+def render_index(published):
+    smiles, per_source = [], {}
+    for story in published:
+        count = per_source.get(story["source"], 0)
+        if story.get("smile") and count < SMILE_PER_SOURCE and len(smiles) < SMILE_MAX:
+            smiles.append(story)
+            per_source[story["source"]] = count + 1
+    if not smiles:
+        return _smile_base_render_index(published)
+    main_stories = [s for s in published if not s.get("smile")]
+    out = _smile_base_render_index(main_stories)
+    column = (
+        f'<div class="layout"><aside class="grin" aria-label="{SMILE_TITLE}">'
+        f'<div class="grin-head"><h2>{SMILE_TITLE}</h2><p>{SMILE_TAGLINE}</p></div>'
+        + "".join(grin_item(s) for s in smiles)
+        + '</aside><div class="grid">'
+    )
+    out = out.replace('<div class="grid">', column, 1)
+    return out.replace('<p id="empty"', '</div><p id="empty"', 1)
+
+
+CSS += """
+.layout{display:grid;grid-template-columns:250px minmax(0,1fr);gap:0 2.2rem;align-items:start}
+.layout .grid{grid-template-columns:repeat(2,1fr)}
+.grin{padding-top:1.5rem}
+.grin-head{text-align:center;border-top:3px double var(--ink);border-bottom:1px solid var(--ink);
+padding:.55rem 0;margin-bottom:1rem}
+.grin-head h2{margin:0;font:italic 700 1.7rem/1.1 Georgia,"Times New Roman",serif}
+.grin-head p{margin:.25rem 0 0;font:700 10px/1.4 system-ui,sans-serif;letter-spacing:.12em;
+text-transform:uppercase;color:var(--accent)}
+.grin-item{display:flex;gap:.7rem;padding:0 0 .8rem;margin:0 0 .8rem;border-bottom:1px dotted var(--hair)}
+.grin-item .thumb{flex:0 0 72px}
+.grin-item img{display:block;width:72px;height:72px;object-fit:cover;background:#e6dfd0}
+.grin-item .text{flex:1;min-width:0}
+.grin-item h3{margin:0;font:700 .95rem/1.25 Georgia,"Times New Roman",serif}
+.grin-item h3 a{text-decoration:none}.grin-item h3 a:hover{text-decoration:underline}
+.grin-item p{margin:.25rem 0 0;font:11px/1.4 system-ui,sans-serif;color:var(--soft)}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.grin{order:2}}
+@media(max-width:600px){.layout .grid{grid-template-columns:1fr}}
+"""
+# --- end The Daily Grin column ---
+
 def main():
     DATA.mkdir(exist_ok=True)
     OUT.mkdir(exist_ok=True)

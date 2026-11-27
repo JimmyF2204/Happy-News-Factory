@@ -1,0 +1,46 @@
+{
+ "https://www.svt.se/nyheter/rss.xml": {
+  "etag": null,
+  "modified": null
+ },
+ "https://www.svt.se/nyheter/vetenskap/rss.xml": {
+  "etag": null,
+  "modified": null
+ },
+ "https://feeds.expressen.se/nyheter/": {
+  "etag": "W/\"3862-rrbJmyZjfXPs8tBQAnYWVxTasmY\"",
+  "modified": null
+ },
+ "https://api.sr.se/api/rss/program/83": {
+  "etag": null,
+  "modified": null
+ },
+ "https://www.forskning.se/feed/": {
+  "etag": "\"b7f00bdf4a446555815f94b155884e7f\"",
+  "modified": "Fri, 27 Nov 2026 12:16:28 GMT"
+ },
+ "https://www.sverigesnatur.org/feed/": {
+  "etag": "\"8d75bf057d915a3a1fcfd7bd5a540668\"",
+  "modified": "Thu, 26 Nov 2026 15:00:40 GMT"
+ },
+ "https://www.goodnewsnetwork.org/feed/": {
+  "etag": "W/\"eae5a12290894e34296091783da6efb0\"",
+  "modified": "Thu, 26 Nov 2026 15:22:27 GMT"
+ },
+ "https://reasonstobecheerful.world/feed/": {
+  "etag": null,
+  "modified": "Fri, 27 Nov 2026 08:00:59 GMT"
+ },
+ "https://www.optimistdaily.com/feed/": {
+  "etag": "\"65509b94cf2b4e39b6694ec6ae24d6a0-gzip\"",
+  "modified": "Wed, 25 Nov 2026 19:16:43 GMT"
+ },
+ "https://www.thebetterindia.com/feed/": {
+  "etag": null,
+  "modified": "Fri, 27 Nov 2026 13:10:43 GMT"
+ },
+ "https://notallnewsisbad.com/feed/": {
+  "etag": null,
+  "modified": "Thu, 26 Nov 2026 15:00:06 GMT"
+ }
+}

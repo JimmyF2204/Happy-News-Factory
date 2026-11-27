@@ -987,6 +987,136 @@ text-transform:uppercase;color:var(--accent)}
 """
 # --- end The Daily Grin column ---
 
+# --- The Groan Zone joke box ---
+import random
+
+PUN_TITLE = "The Groan Zone"
+PUN_TAGLINE = "A fresh pun every 30 seconds"
+PUN_SECONDS = 30
+PUN_PAGES = 4        # pages of 30 jokes fetched per run
+PUN_MAX_CHARS = 160  # longer jokes are skipped to keep the box small
+PUN_FALLBACK = [
+    "I'm reading a book about anti-gravity. It's impossible to put down.",
+    "Why don't scientists trust atoms? Because they make up everything.",
+    "I used to be a baker, but I couldn't make enough dough.",
+    "What do you call a fake noodle? An impasta.",
+    "I would tell you a construction joke, but I'm still working on it.",
+    "Why did the scarecrow win an award? He was outstanding in his field.",
+]
+
+
+def fetch_jokes():
+    """Collect jokes from the free icanhazdadjoke.com service. Returns [] on failure."""
+    headers = {"Accept": "application/json", "User-Agent": UA}
+    jokes, used, total_pages = [], set(), 10
+    for _ in range(PUN_PAGES):
+        choices = [p for p in range(1, total_pages + 1) if p not in used]
+        if not choices:
+            break
+        page_no = random.choice(choices)
+        used.add(page_no)
+        time.sleep(0.5)
+        try:
+            resp = requests.get("https://icanhazdadjoke.com/search",
+                                params={"limit": 30, "page": page_no},
+                                headers=headers, timeout=15)
+            data = resp.json()
+            total_pages = max(1, int(data.get("total_pages") or total_pages))
+            results = data.get("results") or []
+            for item in results:
+                text = re.sub(r"\s+", " ", str(item.get("joke") or "")).strip()
+                if text and len(text) <= PUN_MAX_CHARS and not SEVERE.search(text):
+                    jokes.append(text)
+        except (requests.RequestException, ValueError, TypeError, AttributeError):
+            break
+    return list(dict.fromkeys(jokes))
+
+
+def load_jokes():
+    path = DATA / "jokes.json"
+    jokes = fetch_jokes()
+    if len(jokes) >= 10:
+        path.write_text(json.dumps(jokes, indent=1, ensure_ascii=False), encoding="utf-8")
+        print(f"Collected {len(jokes)} jokes for {PUN_TITLE}")
+    else:
+        print("! Joke service unavailable, reusing earlier jokes")
+        jokes = load(path, []) or list(PUN_FALLBACK)
+    random.shuffle(jokes)
+    return jokes
+
+
+PUN_HTML = """<section class="punbox__CLASS__" aria-label="__TITLE__">
+<h2>__TITLE__</h2>
+<p class="pun-tag">__TAGLINE__</p>
+<p class="pun-text" id="pun" translate="no"></p>
+<button type="button" id="pun-next">Another one</button>
+<p class="pun-credit">Jokes from <a href="https://icanhazdadjoke.com/" rel="noopener noreferrer">icanhazdadjoke.com</a></p>
+</section>
+<script>
+(function () {
+  const jokes = __JOKES__;
+  const box = document.getElementById('pun');
+  let i = Math.floor(Math.random() * jokes.length);
+  let timer;
+  function next() {
+    const text = jokes[i];
+    i = (i + 1) % jokes.length;
+    return text;
+  }
+  function show() {
+    box.style.opacity = 0;
+    setTimeout(function () { box.textContent = next(); box.style.opacity = 1; }, 400);
+  }
+  function start() {
+    clearInterval(timer);
+    timer = setInterval(show, __SECONDS__ * 1000);
+  }
+  document.getElementById('pun-next').addEventListener('click', function () { show(); start(); });
+  box.textContent = next();
+  start();
+})();
+</script>
+"""
+
+
+def pun_box(extra=""):
+    jokes = json.dumps(load_jokes(), ensure_ascii=False).replace("<", "\\u003c")
+    return (PUN_HTML.replace("__CLASS__", extra)
+            .replace("__TITLE__", html.escape(PUN_TITLE))
+            .replace("__TAGLINE__", html.escape(PUN_TAGLINE))
+            .replace("__SECONDS__", str(int(PUN_SECONDS)))
+            .replace("__JOKES__", jokes))
+
+
+_pun_base_render_index = render_index
+
+
+def render_index(published):
+    out = _pun_base_render_index(published)
+    if '<div class="grin-head">' in out:  # top of the left column
+        return out.replace('<div class="grin-head">', pun_box() + '<div class="grin-head">', 1)
+    return out.replace('<div class="grid">', pun_box(" solo") + '<div class="grid">', 1)
+
+
+CSS += """
+.punbox{border:1px solid var(--ink);outline:1px solid var(--ink);outline-offset:3px;
+padding:.8rem .9rem .7rem;margin:3px 3px 1.5rem;text-align:center}
+.punbox.solo{max-width:420px;margin:1.5rem auto 0}
+.punbox h2{margin:0;font:italic 700 1.35rem/1.1 Georgia,"Times New Roman",serif}
+.pun-tag{margin:.25rem 0 .6rem;padding-bottom:.5rem;border-bottom:1px solid var(--hair);
+font:700 10px/1.4 system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.pun-text{margin:0;min-height:8.2em;display:flex;align-items:center;justify-content:center;
+font:1rem/1.35 Georgia,"Times New Roman",serif;transition:opacity .4s}
+.punbox.solo .pun-text{min-height:4.5em}
+.punbox button{margin:.5rem 0 .3rem;padding:.3rem .8rem;border:1px solid var(--ink);
+background:transparent;color:var(--ink);font:700 10px/1.4 system-ui,sans-serif;
+letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
+.punbox button:hover{background:var(--ink);color:var(--paper)}
+.pun-credit{margin:0;font:10px/1.4 system-ui,sans-serif;color:var(--soft)}
+.pun-credit a{color:inherit}
+"""
+# --- end The Groan Zone joke box ---
+
 def main():
     DATA.mkdir(exist_ok=True)
     OUT.mkdir(exist_ok=True)

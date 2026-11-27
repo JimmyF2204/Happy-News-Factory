@@ -4,6 +4,12 @@ Open each story and check it is positive and free to read in full.
 To publish one, add its link to `approve` in `overrides.json`.
 To reject one or remove a published story, add its link to `block`.
 
+- **“Sick Of It”: Hollywood Star Faces Fresh Backlash As Her Blunt Thanksgiving Message Resurfaces** (Bored Panda, score 0.5)
+  - Mixed headline (backlash), needs a human look
+  - https://www.boredpanda.com/shailene-woodley-thanksgiving-message-backlash/
+- **Kristen Bell’s Tribute To Dax Shepard Draws Criticism As It Goes Viral Again, And People Can’t Stop Zooming In** (Bored Panda, score 0.5)
+  - Mixed headline (criticism), needs a human look
+  - https://www.boredpanda.com/kristen-bell-tribute-dax-shepard-shoes-bed-debate/
 - **From cyberbullying to extremist content, can EU Kids Act protect minors online?** (France 24 Europe, score 0.5)
   - Mixed headline (extremist), needs a human look
   - https://www.france24.com/en/tv-shows/talking-europe/20261127-from-cyberbullying-to-extremist-content-can-eu-kids-act-protect-minors-online

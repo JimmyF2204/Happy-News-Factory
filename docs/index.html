@@ -65,12 +65,28 @@ text-transform:uppercase;color:var(--accent)}
 .grin-item p{margin:.25rem 0 0;font:11px/1.4 system-ui,sans-serif;color:var(--soft)}
 @media(max-width:900px){.layout{grid-template-columns:1fr}.grin{order:2}}
 @media(max-width:600px){.layout .grid{grid-template-columns:1fr}}
+
+.punbox{border:1px solid var(--ink);outline:1px solid var(--ink);outline-offset:3px;
+padding:.8rem .9rem .7rem;margin:3px 3px 1.5rem;text-align:center}
+.punbox.solo{max-width:420px;margin:1.5rem auto 0}
+.punbox h2{margin:0;font:italic 700 1.35rem/1.1 Georgia,"Times New Roman",serif}
+.pun-tag{margin:.25rem 0 .6rem;padding-bottom:.5rem;border-bottom:1px solid var(--hair);
+font:700 10px/1.4 system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.pun-text{margin:0;min-height:8.2em;display:flex;align-items:center;justify-content:center;
+font:1rem/1.35 Georgia,"Times New Roman",serif;transition:opacity .4s}
+.punbox.solo .pun-text{min-height:4.5em}
+.punbox button{margin:.5rem 0 .3rem;padding:.3rem .8rem;border:1px solid var(--ink);
+background:transparent;color:var(--ink);font:700 10px/1.4 system-ui,sans-serif;
+letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
+.punbox button:hover{background:var(--ink);color:var(--paper)}
+.pun-credit{margin:0;font:10px/1.4 system-ui,sans-serif;color:var(--soft)}
+.pun-credit a{color:inherit}
 </style></head><body><div class="wrap">
 <header class="masthead"><h1><a href="index.html">Smiling Times</a></h1>
 <p class="tagline">Good news from around the world</p>
 <div class="dateline"><span>Friday, 27 November 2026</span>
 <nav><a href="index.html">Front page</a><a href="about.html">About</a><a href="feed.xml">RSS</a></nav>
-<span>Updated 15:51 UTC</span></div></header>
+<span>Updated 16:02 UTC</span></div></header>
 <div class="langbar" translate="no"><label for="lang">Language</label>
 <select id="lang" onchange="setLanguage(this.value)">
 <option value="" selected disabled>Choose…</option>
@@ -83,7 +99,42 @@ function setLanguage(code) {
     : 'https://translate.google.com/translate?sl=en&tl=' + code + '&u=' + encodeURIComponent(url);
 }
 </script>
-<main><div class="filters"><select id="region" aria-label="All regions"><option value="">All regions</option><option value="Africa">Africa</option><option value="Asia">Asia</option><option value="Europe">Europe</option><option value="Global">Global</option><option value="North America">North America</option><option value="Sweden">Sweden</option></select><select id="topic" aria-label="All topics"><option value="">All topics</option><option value="Animals &amp; wildlife">Animals &amp; wildlife</option><option value="Arts &amp; culture">Arts &amp; culture</option><option value="Clean energy &amp; climate solutions">Clean energy &amp; climate solutions</option><option value="Community &amp; kindness">Community &amp; kindness</option><option value="Education &amp; young people">Education &amp; young people</option><option value="Feel-good">Feel-good</option><option value="Food &amp; travel">Food &amp; travel</option><option value="Health &amp; medicine">Health &amp; medicine</option><option value="Nature &amp; environment">Nature &amp; environment</option><option value="Peace &amp; diplomacy">Peace &amp; diplomacy</option><option value="Progress &amp; economy">Progress &amp; economy</option><option value="Science &amp; research">Science &amp; research</option><option value="Space &amp; discovery">Space &amp; discovery</option><option value="Sport &amp; achievement">Sport &amp; achievement</option><option value="Technology">Technology</option></select><select id="source" aria-label="All sources"><option value="">All sources</option><option value="Aftonbladet">Aftonbladet</option><option value="BBC Science &amp; Environment">BBC Science &amp; Environment</option><option value="BBC Technology">BBC Technology</option><option value="DW">DW</option><option value="DutchNews.nl">DutchNews.nl</option><option value="Electrek">Electrek</option><option value="Engadget">Engadget</option><option value="Euronews">Euronews</option><option value="Expressen">Expressen</option><option value="Feber">Feber</option><option value="Hackaday">Hackaday</option><option value="IEEE Spectrum">IEEE Spectrum</option><option value="M3">M3</option><option value="New Atlas">New Atlas</option><option value="Not All News Is Bad">Not All News Is Bad</option><option value="RTÉ News">RTÉ News</option><option value="Radio Prague International">Radio Prague International</option><option value="Reasons to be Cheerful">Reasons to be Cheerful</option><option value="SVT Nyheter">SVT Nyheter</option><option value="Sveriges Radio Ekot">Sveriges Radio Ekot</option><option value="SweClockers">SweClockers</option><option value="TechCabal">TechCabal</option><option value="TechCrunch">TechCrunch</option><option value="The Better India">The Better India</option><option value="The Guardian Europe">The Guardian Europe</option><option value="The Guardian Technology">The Guardian Technology</option><option value="The Next Web">The Next Web</option><option value="The Portugal News">The Portugal News</option><option value="The Register">The Register</option><option value="The Verge">The Verge</option><option value="Yle News">Yle News</option></select><select id="days" aria-label="Any date"><option value="">Any date</option><option value="1">Last 24 hours</option><option value="7">Last 7 days</option></select></div><div class="layout"><aside class="grin" aria-label="The Daily Grin"><div class="grin-head"><h2>The Daily Grin</h2><p>Little stories making you smile</p></div><article class="grin-item" id="s1d70adc63d7e"><a class="thumb" href="https://www.upworthy.com/people-once-needed-the-popes-permission-to-put-butter-in-this-beloved-christmas-bread/" rel="noopener noreferrer"><img
+<main><div class="filters"><select id="region" aria-label="All regions"><option value="">All regions</option><option value="Africa">Africa</option><option value="Asia">Asia</option><option value="Europe">Europe</option><option value="Global">Global</option><option value="North America">North America</option><option value="Sweden">Sweden</option></select><select id="topic" aria-label="All topics"><option value="">All topics</option><option value="Animals &amp; wildlife">Animals &amp; wildlife</option><option value="Arts &amp; culture">Arts &amp; culture</option><option value="Clean energy &amp; climate solutions">Clean energy &amp; climate solutions</option><option value="Community &amp; kindness">Community &amp; kindness</option><option value="Education &amp; young people">Education &amp; young people</option><option value="Feel-good">Feel-good</option><option value="Food &amp; travel">Food &amp; travel</option><option value="Health &amp; medicine">Health &amp; medicine</option><option value="Nature &amp; environment">Nature &amp; environment</option><option value="Peace &amp; diplomacy">Peace &amp; diplomacy</option><option value="Progress &amp; economy">Progress &amp; economy</option><option value="Science &amp; research">Science &amp; research</option><option value="Space &amp; discovery">Space &amp; discovery</option><option value="Sport &amp; achievement">Sport &amp; achievement</option><option value="Technology">Technology</option></select><select id="source" aria-label="All sources"><option value="">All sources</option><option value="Aftonbladet">Aftonbladet</option><option value="BBC Science &amp; Environment">BBC Science &amp; Environment</option><option value="BBC Technology">BBC Technology</option><option value="DW">DW</option><option value="DutchNews.nl">DutchNews.nl</option><option value="Electrek">Electrek</option><option value="Engadget">Engadget</option><option value="Euronews">Euronews</option><option value="Expressen">Expressen</option><option value="Feber">Feber</option><option value="Hackaday">Hackaday</option><option value="IEEE Spectrum">IEEE Spectrum</option><option value="M3">M3</option><option value="New Atlas">New Atlas</option><option value="Not All News Is Bad">Not All News Is Bad</option><option value="RTÉ News">RTÉ News</option><option value="Radio Prague International">Radio Prague International</option><option value="Reasons to be Cheerful">Reasons to be Cheerful</option><option value="SVT Nyheter">SVT Nyheter</option><option value="Sveriges Radio Ekot">Sveriges Radio Ekot</option><option value="SweClockers">SweClockers</option><option value="TechCabal">TechCabal</option><option value="TechCrunch">TechCrunch</option><option value="The Better India">The Better India</option><option value="The Guardian Europe">The Guardian Europe</option><option value="The Guardian Technology">The Guardian Technology</option><option value="The Next Web">The Next Web</option><option value="The Portugal News">The Portugal News</option><option value="The Register">The Register</option><option value="The Verge">The Verge</option><option value="Yle News">Yle News</option></select><select id="days" aria-label="Any date"><option value="">Any date</option><option value="1">Last 24 hours</option><option value="7">Last 7 days</option></select></div><div class="layout"><aside class="grin" aria-label="The Daily Grin"><section class="punbox" aria-label="The Groan Zone">
+<h2>The Groan Zone</h2>
+<p class="pun-tag">A fresh pun every 30 seconds</p>
+<p class="pun-text" id="pun" translate="no"></p>
+<button type="button" id="pun-next">Another one</button>
+<p class="pun-credit">Jokes from <a href="https://icanhazdadjoke.com/" rel="noopener noreferrer">icanhazdadjoke.com</a></p>
+</section>
+<script>
+(function () {
+  const jokes = ["I burned 2000 calories today, I left my food in the oven for too long.", "Why are giraffes so slow to apologize? Because it takes them a long time to swallow their pride.", "My friend said to me: \"What rhymes with orange\" I said: \"no it doesn't\"", "What do you call a duck that gets all A's? A wise quacker.", "What do you call an alligator in a vest? An in-vest-igator!", "Thanks for explaining the word \"many\" to me. It means a lot.", "A horse walks into a bar. The bar tender says \"Hey.\" The horse says \"Sure.\"", "Why was Pavlov's beard so soft? Because he conditioned it.", "I had a rough day, and then somebody went and ripped the front and back pages from my dictionary. It just goes from bad to worse.", "What are the strongest days of the week? Saturday and Sunday...the rest are weekdays.", "When will the little snake arrive? I don't know but he won't be long...", "What do you call an eagle who can play the piano? Talonted!", "What did celery say when he broke up with his girlfriend? She wasn't right for me, so I really don't carrot all.", "Two guys walked into a bar, the third one ducked.", "I asked a frenchman if he played video games. He said \"Wii\"", "What did the 0 say to the 8? Nice belt.", "Did you know that protons have mass? I didn't even know they were catholic.", "The shovel was a ground-breaking invention.", "How many South Americans does it take to change a lightbulb? A Brazilian", "I once lost a banana at court but then I appealed.", "What did the grape do when he got stepped on? He let out a little wine.", "What's the difference between a poorly dressed man on a tricycle and a well dressed man on a bicycle? Attire.", "Some people say that comedians who tell one too many light bulb jokes soon burn out, but they don't know watt they are talking about. They're not that bright.", "A police officer caught two kids playing with a firework and a car battery. He charged one and let the other one off.", "The invention of the wheel was what got things rolling", "Man, I really love my furniture... me and my recliner go way back.", "Want to hear my pizza joke? Never mind, it's too cheesy.", "A man tried to sell me a coffin today. I told him that's the last thing I need.", "Why did the man run around his bed? Because he was trying to catch up on his sleep!", "There’s a new type of broom out, it’s sweeping the nation.", "What did the traffic light say to the car as it passed? \"Don't look I'm changing!\"", "Where does batman go to the bathroom? The batroom.", "Why did the kid throw the clock out the window? He wanted to see time fly!", "What kind of pants do ghosts wear? Boo jeans.", "I adopted my dog from a blacksmith. As soon as we got home he made a bolt for the door.", "Have you heard about corduroy pillows? They're making headlines!", "Hear about the new restaurant called Karma? There’s no menu: You get what you deserve.", "The best time on a clock is 6:30--hands down.", "My dentist is the best, he even has a little plaque!", "What do you call a cow on a trampoline? A milk shake!", "Why don’t seagulls fly over the bay? Because then they’d be bay-gulls!", "Conjunctivitis.com – now that’s a site for sore eyes.", "What did the calculator say to the student? You can count on me.", "It doesn't matter how much you push the envelope. It will still be stationary.", "What is red and smells like blue paint? Red paint!", "I just wrote a book on reverse psychology. Do not read it!", "What do you call a guy lying on your doorstep? Matt.", "Dad I’m hungry’ … ‘Hi hungry I’m dad", "What do Alexander the Great and Winnie the Pooh have in common? Same middle name.", "\"Hey, dad, did you get a haircut?\" \"No, I got them all cut.\"", "Which is the fastest growing city in the world? Dublin'", "Why do you never see elephants hiding in trees? Because they're so good at it.", "I went on a date last night with a girl from the zoo. It was great. She’s a keeper.", "Parallel lines have so much in common. It’s a shame they’ll never meet.", "What do you call a magician who has lost their magic? Ian.", "What do you call a beehive without the b's? An eehive.", "Cosmetic surgery used to be such a taboo subject. Now you can talk about Botox and nobody raises an eyebrow.", "\"Dad, I'm hungry.\" Hello, Hungry. I'm Dad.", "Two peanuts were walking down the street. One was a salted.", "A butcher accidentally backed into his meat grinder and got a little behind in his work that day.", "So, I heard this pun about cows, but it’s kinda offensive so I won’t say it. I don’t want there to be any beef between us.", "I was fired from the keyboard factory yesterday. I wasn't putting in enough shifts.", "*Reversing the car* \"Ah, this takes me back\"", "How did the hipster burn the roof of his mouth? He ate the pizza before it was cool.", "What cheese can never be yours? Nacho cheese.", "When do doctors get angry? When they run out of patients.", "I really want to buy one of those supermarket checkout dividers, but the cashier keeps putting it back.", "What do you call a boomerang that won't come back? A stick.", "What do you call a nervous javelin thrower? Shakespeare.", "What do you call two guys hanging out by your window? Kurt & Rod.", "I don't trust stairs. They're always up to something.", "I wouldn't buy anything with velcro. It's a total rip-off.", "What kind of music do planets listen to? Nep-tunes.", "How do locomotives know where they're going? Lots of training", "What biscuit does a short person like? Shortbread.", "Why did the cookie cry? Because his mother was a wafer so long", "Have you heard the story about the magic tractor? It drove down the road and turned into a field.", "Why was the picture sent to prison? It was framed.", "Do I enjoy making courthouse puns? Guilty", "What do you do on a remote island? Try and find the TV island it belongs to.", "Why was the broom late for the meeting? He overswept.", "I used to work for an origami company but they folded.", "Sometimes I tuck my knees into my chest and lean forward. That’s just how I roll.", "What do you call a snake who builds houses? A boa constructor!", "Did you hear about the guy who invented Lifesavers? They say he made a mint.", "Why was the robot angry? Because someone kept pressing his buttons!", "What did one wall say to the other wall? I'll meet you at the corner!", "What's brown and sticky? A stick.", "My son is studying to be a surgeon, I just hope he makes the cut.", "Why do fish live in salt water? Because pepper makes them sneeze!", "Why is Peter Pan always flying? Because he Neverlands.", "How can you tell a vampire has a cold? They start coffin.", "I have the heart of a lion... and a lifetime ban from the San Diego Zoo.", "Did you hear about the new restaurant on the moon? The food is great, but there’s just no atmosphere.", "I am so good at sleeping I can do it with my eyes closed!", "What lies at the bottom of the ocean and twitches? A nervous wreck.", "At the boxing match, the dad got into the popcorn line and the line for hot dogs, but he wanted to stay out of the punchline.", "I met this girl on a dating site and, I don't know, we just clicked.", "What is a vampire's favorite fruit? A blood orange.", "What did the shy pebble wish for? That she was a little boulder.", "Why is there always a gate around cemeteries? Because people are always dying to get in.", "Why did the belt go to prison? He held up a pair of pants!", "It was so cold yesterday my computer froze. My own fault though, I left too many windows open.", "What do you call a gorilla wearing headphones? Anything you'd like, it can't hear you.", "A cannibal is someone who is fed up with people.", "Doctor you've got to help me, I'm addicted to Twitter. Doctor: I don't follow you.", "Shout out to my grandma, that's the only way she can hear.", "I'm practicing for a bug-eating contest and I've got butterflies in my stomach.", "Whoever invented the knock-knock joke should get a no bell prize.", "Why couldn't the kid see the pirate movie? Because it was rated arrr!"];
+  const box = document.getElementById('pun');
+  let i = Math.floor(Math.random() * jokes.length);
+  let timer;
+  function next() {
+    const text = jokes[i];
+    i = (i + 1) % jokes.length;
+    return text;
+  }
+  function show() {
+    box.style.opacity = 0;
+    setTimeout(function () { box.textContent = next(); box.style.opacity = 1; }, 400);
+  }
+  function start() {
+    clearInterval(timer);
+    timer = setInterval(show, 30 * 1000);
+  }
+  document.getElementById('pun-next').addEventListener('click', function () { show(); start(); });
+  box.textContent = next();
+  start();
+})();
+</script>
+<div class="grin-head"><h2>The Daily Grin</h2><p>Little stories making you smile</p></div><article class="grin-item" id="sc6bdc0e417b0"><a class="thumb" href="https://www.boredpanda.com/black-friday-deals-beauty/" rel="noopener noreferrer"><img
+ src="https://static.boredpanda.com/blog/wp-content/uploads/2026/11/black-friday-deals-beauty-fb.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"
+ onerror="this.closest('.thumb').remove()"></a><div class="text">
+<h3><a href="https://www.boredpanda.com/black-friday-deals-beauty/" rel="noopener noreferrer">17 Trending Black Friday Beauty Deals That Turn Your Makeup Bag Into A Very Smart Investment</a></h3>
+<p>Bored Panda · 27 Nov</p></div></article><article class="grin-item" id="s1d70adc63d7e"><a class="thumb" href="https://www.upworthy.com/people-once-needed-the-popes-permission-to-put-butter-in-this-beloved-christmas-bread/" rel="noopener noreferrer"><img
  src="https://www.upworthy.com/wp-content/uploads/sites/2/2026/11/stollen-bread-recipe.jpg?w=1200&amp;quality=82" alt="" loading="lazy" referrerpolicy="no-referrer"
  onerror="this.closest('.thumb').remove()"></a><div class="text">
 <h3><a href="https://www.upworthy.com/people-once-needed-the-popes-permission-to-put-butter-in-this-beloved-christmas-bread/" rel="noopener noreferrer">People once needed the pope’s permission to put butter in this beloved Christmas bread</a></h3>
@@ -119,11 +170,7 @@ function setLanguage(code) {
  src="https://pub-1c31579dfca6402ebca842d57e4a19b2.r2.dev/uploads/door-dash-elderly-6b0981fe5097b7.00175119.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"
  onerror="this.closest('.thumb').remove()"></a><div class="text">
 <h3><a href="https://www.sunnyskyz.com/good-news/6365/79-Year-Old-DoorDash-Driver-Reminds-Woman-of-Her-Grandpa-What-Happens-Next-Is-Incredible" rel="noopener noreferrer">79-Year-Old DoorDash Driver Reminds Woman of Her Grandpa. What Happens Next Is Incredible</a></h3>
-<p>Sunny Skyz · 27 Nov</p></div></article><article class="grin-item" id="scda911385b81"><a class="thumb" href="https://www.boredpanda.com/black-friday-biggest-tech-deals/" rel="noopener noreferrer"><img
- src="https://static.boredpanda.com/blog/wp-content/uploads/2026/11/black-friday-biggest-tech-deals-fb.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"
- onerror="this.closest('.thumb').remove()"></a><div class="text">
-<h3><a href="https://www.boredpanda.com/black-friday-biggest-tech-deals/" rel="noopener noreferrer">18 Black Friday Tech And Appliance Deals Big Enough To Start A Stampede At The Store Entrance</a></h3>
-<p>Bored Panda · 27 Nov</p></div></article><article class="grin-item" id="sb360a4b024f5"><a class="thumb" href="https://thebetterindia.com/parenting/traditional-indian-games-stapu-lagori-kho-kho-screen-free-childhood-india-12843878" rel="noopener noreferrer"><img
+<p>Sunny Skyz · 27 Nov</p></div></article><article class="grin-item" id="sb360a4b024f5"><a class="thumb" href="https://thebetterindia.com/parenting/traditional-indian-games-stapu-lagori-kho-kho-screen-free-childhood-india-12843878" rel="noopener noreferrer"><img
  src="https://img-cdn.publive.online/fit-in/1280x960/english-betterindia/media/media_files/2026/11/26/children-games-2026-11-26-19-38-21.png" alt="" loading="lazy" referrerpolicy="no-referrer"
  onerror="this.closest('.thumb').remove()"></a><div class="text">
 <h3><a href="https://thebetterindia.com/parenting/traditional-indian-games-stapu-lagori-kho-kho-screen-free-childhood-india-12843878" rel="noopener noreferrer">6 Indian Childhood Games to Get Your Kids Moving, Laughing &amp; Off Screens This Winter Break</a></h3>
@@ -141,10 +188,20 @@ function setLanguage(code) {
  · Europe · 27 Nov 2026</p>
 <p class="why">Why this story is here: Positive signals: comeback</p>
 </div></article>
+<article class="card" id="saf03c2c669a5" data-region="Europe"
+ data-topic="Food &amp; travel" data-source="DutchNews.nl" data-ts="1795794762">
+<div class="photo"><a href="https://www.dutchnews.nl/2026/11/judges-say-no-requirement-to-help-gazans-travel-to-nl/" rel="noopener noreferrer"><img src="https://www.dutchnews.nl/wpcms/wp-content/uploads/2026/09/Court-case-1111.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: DutchNews.nl</span></div><div class="text">
+<p class="kicker">Food &amp; travel</p>
+<h2><a href="https://www.dutchnews.nl/2026/11/judges-say-no-requirement-to-help-gazans-travel-to-nl/" rel="noopener noreferrer">Judges say no requirement to help Gazans travel to NL</a></h2>
+<p class="excerpt">The Netherlands is not required to provide consular services to Gazans who are unable to travel abroad to obtain Dutch...</p>
+<p class="byline">Read the full story at <a href="https://www.dutchnews.nl/2026/11/judges-say-no-requirement-to-help-gazans-travel-to-nl/" rel="noopener noreferrer">DutchNews.nl</a>
+ · Europe · 27 Nov 2026</p>
+<p class="why">Why this story is here: Positive signals: help</p>
+</div></article>
 <article class="card" id="s8827e15af0ae" data-region="Sweden"
- data-topic="Feel-good" data-source="Expressen" data-ts="1795794049">
+ data-topic="Peace &amp; diplomacy" data-source="Expressen" data-ts="1795794049">
 <div class="photo"><a href="https://www.expressen.se/nyheter/varlden/kushners-hyllning-till-putins-taktik/" rel="noopener noreferrer"><img src="https://static.bonniernews.se/images/81/44/8144a9961214464f85fe48f3c381d9cd/16x9/original.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: Expressen</span></div><div class="text">
-<p class="kicker">Feel-good</p>
+<p class="kicker">Peace &amp; diplomacy</p>
 <h2><a href="https://www.expressen.se/nyheter/varlden/kushners-hyllning-till-putins-taktik/" rel="noopener noreferrer">Kushner&#x27;s tribute to Putin&#x27;s tactics</a></h2>
 <p class="excerpt">Trump&#x27;s son-in-law and peace mediator in the Ukraine war heaps praise on Putin. Jared Kushner believes that the Russian president has shown &quot;restraint&quot; by refraining from using nuclear weapons in the war.…</p>
 <p class="byline">Read the full story at <a href="https://www.expressen.se/nyheter/varlden/kushners-hyllning-till-putins-taktik/" rel="noopener noreferrer">Expressen</a>
@@ -256,9 +313,9 @@ function setLanguage(code) {
 <p class="why">Why this story is here: From a dedicated good-news publisher</p>
 </div></article>
 <article class="card" id="sfd15da94fff7" data-region="Sweden"
- data-topic="Technology" data-source="Feber" data-ts="1795791600">
+ data-topic="Food &amp; travel" data-source="Feber" data-ts="1795791600">
 <div class="text">
-<p class="kicker">Technology</p>
+<p class="kicker">Food &amp; travel</p>
 <h2><a href="https://feber.se/video/det-regnar-kalkoner-fran-skyn/500097/?utm_source=rss&amp;utm_medium=feed" rel="noopener noreferrer">It&#x27;s raining turkeys from the sky</a></h2>
 <p class="excerpt">So that people in remote locations can also celebrate Thanksgiving The American holiday of Thanksgiving and turkey dinner are synonymous. But not everyone may have the opportunity to get hold of a turkey to cook…</p>
 <p class="byline">Read the full story at <a href="https://feber.se/video/det-regnar-kalkoner-fran-skyn/500097/?utm_source=rss&amp;utm_medium=feed" rel="noopener noreferrer">Feber</a>
@@ -267,9 +324,9 @@ function setLanguage(code) {
 <p class="why">Machine-translated from Swedish. Original headline: <span translate="no">Det regnar kalkoner från skyn</span></p>
 </div></article>
 <article class="card" id="sd5f9ac72ec53" data-region="Sweden"
- data-topic="Technology" data-source="SweClockers" data-ts="1795791600">
+ data-topic="Food &amp; travel" data-source="SweClockers" data-ts="1795791600">
 <div class="photo"><a href="https://www.sweclockers.com/artikel/43134-snabbtest-fractal-refine-2-ar-battre-pa-nastan-allt" rel="noopener noreferrer"><img src="https://www.sweclockers.com/artikel/43134/og-image" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: SweClockers</span></div><div class="text">
-<p class="kicker">Technology</p>
+<p class="kicker">Food &amp; travel</p>
 <h2><a href="https://www.sweclockers.com/artikel/43134-snabbtest-fractal-refine-2-ar-battre-pa-nastan-allt" rel="noopener noreferrer">Quick test: Fractal Refine 2 is better at almost everything</a></h2>
 <p class="excerpt">The basic recipe is the same, but the armrests now lock, the seat is softer, and several annoyances have been eliminated.</p>
 <p class="byline">Read the full story at <a href="https://www.sweclockers.com/artikel/43134-snabbtest-fractal-refine-2-ar-battre-pa-nastan-allt" rel="noopener noreferrer">SweClockers</a>
@@ -1424,26 +1481,6 @@ function setLanguage(code) {
 <h2><a href="https://techcrunch.com/2026/11/26/a-month-with-the-iphone-duo-has-changed-how-i-use-my-phone/" rel="noopener noreferrer">A month with the iPhone Duo has changed how I use my phone</a></h2>
 <p class="excerpt">From reading more books to breaking mindless scrolling habits, Apple&#x27;s foldable has changed my daily routines in ways I didn&#x27;t anticipate.</p>
 <p class="byline">Read the full story at <a href="https://techcrunch.com/2026/11/26/a-month-with-the-iphone-duo-has-changed-how-i-use-my-phone/" rel="noopener noreferrer">TechCrunch</a>
- · North America · 26 Nov 2026</p>
-<p class="why">Why this story is here: Technology news with no bad-news words</p>
-</div></article>
-<article class="card" id="sfbf4e5f4deef" data-region="Global"
- data-topic="Technology" data-source="New Atlas" data-ts="1795712220">
-<div class="photo"><a href="https://newatlas.com/consumer-tech/ninm-long-time-no-see-too-transparent-cd-player-bluetooth-speaker/" rel="noopener noreferrer"><img src="https://assets.newatlas.com/dims4/default/4bdec07/2147483647/strip/true/crop/2400x1260+0+170/resize/1200x630!/quality/90/?url=https%3A%2F%2Fnewatlas-brightspot.s3.ap-southeast-2.amazonaws.com%2F2a%2F1f%2Fa76d218f451594fec2129f746d63%2Flongtimenoseetoo-mood-5.jpg&amp;na.image_optimisation=0" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: New Atlas</span></div><div class="text">
-<p class="kicker">Technology</p>
-<h2><a href="https://newatlas.com/consumer-tech/ninm-long-time-no-see-too-transparent-cd-player-bluetooth-speaker/" rel="noopener noreferrer">Crystal-clear CD player adds on detachable Bluetooth speaker</a></h2>
-<p class="excerpt">Six years after launching its Long Time No See portable CD player, Ninm Lab is giving its transparent throwback another go-around. The Long Time No See Too keeps the jewel-case-inspired body and its…</p>
-<p class="byline">Read the full story at <a href="https://newatlas.com/consumer-tech/ninm-long-time-no-see-too-transparent-cd-player-bluetooth-speaker/" rel="noopener noreferrer">New Atlas</a>
- · Global · 26 Nov 2026</p>
-<p class="why">Why this story is here: Technology news with no bad-news words</p>
-</div></article>
-<article class="card" id="s8ec3c12ec105" data-region="North America"
- data-topic="Technology" data-source="Engadget" data-ts="1795712038">
-<div class="photo"><a href="https://www.engadget.com/2329177/workers-gta-6-studio-rockstar-games-vote-against-union-recognition/" rel="noopener noreferrer"><img src="https://www.engadget.com/img/gallery/workers-at-gta-6-studio-rockstar-games-vote-overwhelmingly-against-union-recognition/l-intro-1795711860.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: Engadget</span></div><div class="text">
-<p class="kicker">Technology</p>
-<h2><a href="https://www.engadget.com/2329177/workers-gta-6-studio-rockstar-games-vote-against-union-recognition/" rel="noopener noreferrer">Workers at GTA 6 studio Rockstar Games vote overwhelmingly against union recognition</a></h2>
-<p class="excerpt">The IWGB Rockstar Game Workers Union will continue to organize after only a quarter of workers voted in favor of a formal deal with the studio.</p>
-<p class="byline">Read the full story at <a href="https://www.engadget.com/2329177/workers-gta-6-studio-rockstar-games-vote-against-union-recognition/" rel="noopener noreferrer">Engadget</a>
  · North America · 26 Nov 2026</p>
 <p class="why">Why this story is here: Technology news with no bad-news words</p>
 </div></article></div></div><p id="empty" hidden>No stories to show yet.</p></main>

@@ -13,7 +13,7 @@
   "modified": null
  },
  "https://feeds.expressen.se/nyheter/": {
-  "etag": "W/\"341a-/MgtjJbdUL46So0a8LC9RLdzdZI\"",
+  "etag": "W/\"36a7-xRhcEVY/O4cUbDuqDxCVnCTT9IM\"",
   "modified": null
  },
  "https://rss.aftonbladet.se/rss2/small/pages/sections/senastenytt/": {
@@ -45,11 +45,11 @@
   "modified": null
  },
  "https://www.theguardian.com/world/europe-news/rss": {
-  "etag": "W/\"hash2718207805086832731\"",
+  "etag": "W/\"hash-8765170602962664011\"",
   "modified": null
  },
  "https://www.theguardian.com/science/rss": {
-  "etag": "W/\"hash7841217956459869584\"",
+  "etag": "W/\"hash2580472006026012646\"",
   "modified": null
  },
  "https://rss.dw.com/rdf/rss-en-all": {
@@ -65,24 +65,24 @@
   "modified": "Fri, 27 Nov 2026 18:48:24 GMT"
  },
  "https://feeds.yle.fi/uutiset/v1/recent.rss?publisherIds=YLE_NEWS": {
-  "etag": "W/\"25d5-dYPZrCrQMyhrvNTGIDAd6vz9mlg\"",
+  "etag": "W/\"25d5-U8BpQZydEKKBkgPyYvEbGeKRMVI\"",
   "modified": null
  },
  "https://www.rte.ie/feeds/rss/?index=/news/": {
   "etag": null,
-  "modified": "Fri, 27 Nov 2026 19:57:49 GMT"
+  "modified": "Fri, 27 Nov 2026 21:06:05 GMT"
  },
  "https://news.err.ee/rss": {
   "etag": null,
   "modified": null
  },
  "https://english.radio.cz/rcz-rss/en": {
-  "etag": "\"1795809488-1\"",
-  "modified": "Fri, 27 Nov 2026 19:58:08 GMT"
+  "etag": "\"1795813100-1\"",
+  "modified": "Fri, 27 Nov 2026 20:58:20 GMT"
  },
  "https://notesfrompoland.com/feed/": {
-  "etag": "\"81c62be40a01c72ab014c321ada5e51f-gzip\"",
-  "modified": "Fri, 27 Nov 2026 20:07:41 GMT"
+  "etag": "\"cc137c988d8331995c5ae37c0622d764-gzip\"",
+  "modified": "Fri, 27 Nov 2026 21:04:46 GMT"
  },
  "https://www.dutchnews.nl/feed/": {
   "etag": "\"7d968c8d2c951a26e372fe0ebd672b6b-gzip\"",
@@ -133,7 +133,7 @@
   "modified": null
  },
  "https://www.theguardian.com/technology/rss": {
-  "etag": "W/\"hash2051180930679744604\"",
+  "etag": "W/\"hash-6173293711431692440\"",
   "modified": null
  },
  "https://www.theregister.com/headlines.atom": {
@@ -153,11 +153,11 @@
   "modified": "Fri, 27 Nov 2026 17:09:46 GMT"
  },
  "https://www.engadget.com/rss.xml": {
-  "etag": "\"0ce19796850a3b4b0a2c5877000d572d\"",
-  "modified": "Fri, 27 Nov 2026 19:45:23 GMT"
+  "etag": "\"79df2beb2fa968ddd6201cce16fcf9eb\"",
+  "modified": "Fri, 27 Nov 2026 20:06:02 GMT"
  },
  "https://www.theverge.com/rss/index.xml": {
-  "etag": "W/\"7c5035545f5f5b1cd597d3b92715c463\"",
+  "etag": "W/\"856c350a770332f238bfdc6bb7f16de2\"",
   "modified": null
  },
  "https://spectrum.ieee.org/feeds/feed.rss": {
@@ -165,20 +165,20 @@
   "modified": "Fri, 27 Nov 2026 14:01:57 GMT"
  },
  "https://electrek.co/feed/": {
-  "etag": "W/\"a8ce11b00c4c3792f9ae95b66a2917c9\"",
-  "modified": "Fri, 27 Nov 2026 19:22:03 GMT"
+  "etag": "W/\"4db2a5c0a32d5406b11f2cfbca9e671b\"",
+  "modified": "Fri, 27 Nov 2026 20:58:03 GMT"
  },
  "https://hackaday.com/blog/feed/": {
-  "etag": "W/\"d0c0b8e0b3879e4662348c495277e57c\"",
-  "modified": "Fri, 27 Nov 2026 19:30:18 GMT"
+  "etag": "W/\"3e1f8fc2c9ed2a293c47ec115135f222\"",
+  "modified": "Fri, 27 Nov 2026 20:39:48 GMT"
  },
  "https://newatlas.com/index.rss": {
   "etag": null,
-  "modified": "Fri, 27 Nov 2026 20:05:49 GMT"
+  "modified": "Fri, 27 Nov 2026 21:07:02 GMT"
  },
  "https://restofworld.org/feed/latest/": {
   "etag": null,
-  "modified": "Fri, 27 Nov 2026 20:04:23 GMT"
+  "modified": "Fri, 27 Nov 2026 21:09:39 GMT"
  },
  "https://techcabal.com/feed/": {
   "etag": "W/\"79fb3172840578e697c0f844d695d7f5\"",
@@ -205,8 +205,8 @@
   "modified": "Fri, 27 Nov 2026 15:43:41 GMT"
  },
  "https://www.boredpanda.com/feed/": {
-  "etag": "\"fb3440cafddae3db78bfd40c653e42a9\"",
-  "modified": "Fri, 27 Nov 2026 20:11:50 GMT"
+  "etag": "\"279dc63f3e438cbd0f14c031f74424aa\"",
+  "modified": "Fri, 27 Nov 2026 20:56:01 GMT"
  },
  "https://laughingsquid.com/feed/": {
   "etag": "W/\"2314f9777a7faa9de22b5c3b5c43c440\"",
@@ -214,7 +214,7 @@
  },
  "https://rss.upi.com/news/odd_news.rss": {
   "etag": null,
-  "modified": "Fri, 27 Nov 2026 20:11:41 GMT"
+  "modified": "Fri, 27 Nov 2026 21:09:42 GMT"
  },
  "https://feeds.skynews.com/feeds/rss/strange.xml": {
   "etag": "W/\"af11cc8eae0b3cc399f524eead3f9e3fe6eae2cc99547c0fa31d67d507161be6\"",

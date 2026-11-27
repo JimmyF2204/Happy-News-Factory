@@ -987,10 +987,10 @@ text-transform:uppercase;color:var(--accent)}
 """
 # --- end The Daily Grin column ---
 
-# --- The Groan Zone joke box ---
+# --- The PunZone joke box ---
 import random
 
-PUN_TITLE = "The Groan Zone"
+PUN_TITLE = "The PunZone"
 PUN_TAGLINE = "A fresh pun every 30 seconds"
 PUN_SECONDS = 30
 PUN_PAGES = 4        # pages of 30 jokes fetched per run
@@ -1115,7 +1115,7 @@ letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
 .pun-credit{margin:0;font:10px/1.4 system-ui,sans-serif;color:var(--soft)}
 .pun-credit a{color:inherit}
 """
-# --- end The Groan Zone joke box ---
+# --- end The PunZone joke box ---
 
 def main():
     DATA.mkdir(exist_ok=True)

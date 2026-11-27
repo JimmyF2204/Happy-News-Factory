@@ -47,12 +47,30 @@ font:13px/1.5 system-ui,sans-serif;color:var(--soft)}
 .langbar{text-align:center;padding:.7rem 0 0;font:12px/1.4 system-ui,sans-serif;
 letter-spacing:.08em;text-transform:uppercase}
 .langbar select{margin-left:.5rem}
+
+.layout{display:grid;grid-template-columns:250px minmax(0,1fr);gap:0 2.2rem;align-items:start}
+.layout .grid{grid-template-columns:repeat(2,1fr)}
+.grin{padding-top:1.5rem}
+.grin-head{text-align:center;border-top:3px double var(--ink);border-bottom:1px solid var(--ink);
+padding:.55rem 0;margin-bottom:1rem}
+.grin-head h2{margin:0;font:italic 700 1.7rem/1.1 Georgia,"Times New Roman",serif}
+.grin-head p{margin:.25rem 0 0;font:700 10px/1.4 system-ui,sans-serif;letter-spacing:.12em;
+text-transform:uppercase;color:var(--accent)}
+.grin-item{display:flex;gap:.7rem;padding:0 0 .8rem;margin:0 0 .8rem;border-bottom:1px dotted var(--hair)}
+.grin-item .thumb{flex:0 0 72px}
+.grin-item img{display:block;width:72px;height:72px;object-fit:cover;background:#e6dfd0}
+.grin-item .text{flex:1;min-width:0}
+.grin-item h3{margin:0;font:700 .95rem/1.25 Georgia,"Times New Roman",serif}
+.grin-item h3 a{text-decoration:none}.grin-item h3 a:hover{text-decoration:underline}
+.grin-item p{margin:.25rem 0 0;font:11px/1.4 system-ui,sans-serif;color:var(--soft)}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.grin{order:2}}
+@media(max-width:600px){.layout .grid{grid-template-columns:1fr}}
 </style></head><body><div class="wrap">
 <header class="masthead"><h1><a href="index.html">Smiling Times</a></h1>
 <p class="tagline">Good news from around the world</p>
 <div class="dateline"><span>Friday, 27 November 2026</span>
 <nav><a href="index.html">Front page</a><a href="about.html">About</a><a href="feed.xml">RSS</a></nav>
-<span>Updated 14:58 UTC</span></div></header>
+<span>Updated 15:51 UTC</span></div></header>
 <div class="langbar" translate="no"><label for="lang">Language</label>
 <select id="lang" onchange="setLanguage(this.value)">
 <option value="" selected disabled>Choose…</option>
@@ -65,15 +83,199 @@ function setLanguage(code) {
     : 'https://translate.google.com/translate?sl=en&tl=' + code + '&u=' + encodeURIComponent(url);
 }
 </script>
-<main><div class="filters"><select id="region" aria-label="All regions"><option value="">All regions</option><option value="Africa">Africa</option><option value="Asia">Asia</option><option value="Europe">Europe</option><option value="Global">Global</option><option value="North America">North America</option><option value="Sweden">Sweden</option></select><select id="topic" aria-label="All topics"><option value="">All topics</option><option value="Animals &amp; wildlife">Animals &amp; wildlife</option><option value="Arts &amp; culture">Arts &amp; culture</option><option value="Clean energy &amp; climate solutions">Clean energy &amp; climate solutions</option><option value="Community &amp; kindness">Community &amp; kindness</option><option value="Education &amp; young people">Education &amp; young people</option><option value="Feel-good">Feel-good</option><option value="Food &amp; travel">Food &amp; travel</option><option value="Health &amp; medicine">Health &amp; medicine</option><option value="Nature &amp; environment">Nature &amp; environment</option><option value="Peace &amp; diplomacy">Peace &amp; diplomacy</option><option value="Progress &amp; economy">Progress &amp; economy</option><option value="Science &amp; research">Science &amp; research</option><option value="Space &amp; discovery">Space &amp; discovery</option><option value="Sport &amp; achievement">Sport &amp; achievement</option><option value="Technology">Technology</option></select><select id="source" aria-label="All sources"><option value="">All sources</option><option value="Aftonbladet">Aftonbladet</option><option value="BBC Science &amp; Environment">BBC Science &amp; Environment</option><option value="BBC Technology">BBC Technology</option><option value="DW">DW</option><option value="DutchNews.nl">DutchNews.nl</option><option value="Electrek">Electrek</option><option value="Engadget">Engadget</option><option value="Euronews">Euronews</option><option value="Expressen">Expressen</option><option value="Feber">Feber</option><option value="France 24 Europe">France 24 Europe</option><option value="Good News Network">Good News Network</option><option value="Hackaday">Hackaday</option><option value="IEEE Spectrum">IEEE Spectrum</option><option value="M3">M3</option><option value="New Atlas">New Atlas</option><option value="Not All News Is Bad">Not All News Is Bad</option><option value="RTÉ News">RTÉ News</option><option value="Radio Prague International">Radio Prague International</option><option value="Reasons to be Cheerful">Reasons to be Cheerful</option><option value="SVT Nyheter">SVT Nyheter</option><option value="Sveriges Radio Ekot">Sveriges Radio Ekot</option><option value="SweClockers">SweClockers</option><option value="TechCabal">TechCabal</option><option value="TechCrunch">TechCrunch</option><option value="The Better India">The Better India</option><option value="The Guardian Europe">The Guardian Europe</option><option value="The Guardian Technology">The Guardian Technology</option><option value="The Next Web">The Next Web</option><option value="The Portugal News">The Portugal News</option><option value="The Register">The Register</option><option value="The Verge">The Verge</option><option value="Yle News">Yle News</option></select><select id="days" aria-label="Any date"><option value="">Any date</option><option value="1">Last 24 hours</option><option value="7">Last 7 days</option></select></div><div class="grid"><article class="card lead" id="s098fb54eb3fc" data-region="North America"
- data-topic="Technology" data-source="Electrek" data-ts="1795790895">
-<div class="photo"><a href="https://electrek.co/2026/11/27/tesla-ai5-optimus-real-reason-tsmc-3nm/" rel="noopener noreferrer"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/04/Tesla-AI5-chip-hero.jpeg?quality=82&amp;strip=all&amp;resize=1200,628" alt="" loading="eager" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: Electrek</span></div><div class="text">
+<main><div class="filters"><select id="region" aria-label="All regions"><option value="">All regions</option><option value="Africa">Africa</option><option value="Asia">Asia</option><option value="Europe">Europe</option><option value="Global">Global</option><option value="North America">North America</option><option value="Sweden">Sweden</option></select><select id="topic" aria-label="All topics"><option value="">All topics</option><option value="Animals &amp; wildlife">Animals &amp; wildlife</option><option value="Arts &amp; culture">Arts &amp; culture</option><option value="Clean energy &amp; climate solutions">Clean energy &amp; climate solutions</option><option value="Community &amp; kindness">Community &amp; kindness</option><option value="Education &amp; young people">Education &amp; young people</option><option value="Feel-good">Feel-good</option><option value="Food &amp; travel">Food &amp; travel</option><option value="Health &amp; medicine">Health &amp; medicine</option><option value="Nature &amp; environment">Nature &amp; environment</option><option value="Peace &amp; diplomacy">Peace &amp; diplomacy</option><option value="Progress &amp; economy">Progress &amp; economy</option><option value="Science &amp; research">Science &amp; research</option><option value="Space &amp; discovery">Space &amp; discovery</option><option value="Sport &amp; achievement">Sport &amp; achievement</option><option value="Technology">Technology</option></select><select id="source" aria-label="All sources"><option value="">All sources</option><option value="Aftonbladet">Aftonbladet</option><option value="BBC Science &amp; Environment">BBC Science &amp; Environment</option><option value="BBC Technology">BBC Technology</option><option value="DW">DW</option><option value="DutchNews.nl">DutchNews.nl</option><option value="Electrek">Electrek</option><option value="Engadget">Engadget</option><option value="Euronews">Euronews</option><option value="Expressen">Expressen</option><option value="Feber">Feber</option><option value="Hackaday">Hackaday</option><option value="IEEE Spectrum">IEEE Spectrum</option><option value="M3">M3</option><option value="New Atlas">New Atlas</option><option value="Not All News Is Bad">Not All News Is Bad</option><option value="RTÉ News">RTÉ News</option><option value="Radio Prague International">Radio Prague International</option><option value="Reasons to be Cheerful">Reasons to be Cheerful</option><option value="SVT Nyheter">SVT Nyheter</option><option value="Sveriges Radio Ekot">Sveriges Radio Ekot</option><option value="SweClockers">SweClockers</option><option value="TechCabal">TechCabal</option><option value="TechCrunch">TechCrunch</option><option value="The Better India">The Better India</option><option value="The Guardian Europe">The Guardian Europe</option><option value="The Guardian Technology">The Guardian Technology</option><option value="The Next Web">The Next Web</option><option value="The Portugal News">The Portugal News</option><option value="The Register">The Register</option><option value="The Verge">The Verge</option><option value="Yle News">Yle News</option></select><select id="days" aria-label="Any date"><option value="">Any date</option><option value="1">Last 24 hours</option><option value="7">Last 7 days</option></select></div><div class="layout"><aside class="grin" aria-label="The Daily Grin"><div class="grin-head"><h2>The Daily Grin</h2><p>Little stories making you smile</p></div><article class="grin-item" id="s1d70adc63d7e"><a class="thumb" href="https://www.upworthy.com/people-once-needed-the-popes-permission-to-put-butter-in-this-beloved-christmas-bread/" rel="noopener noreferrer"><img
+ src="https://www.upworthy.com/wp-content/uploads/sites/2/2026/11/stollen-bread-recipe.jpg?w=1200&amp;quality=82" alt="" loading="lazy" referrerpolicy="no-referrer"
+ onerror="this.closest('.thumb').remove()"></a><div class="text">
+<h3><a href="https://www.upworthy.com/people-once-needed-the-popes-permission-to-put-butter-in-this-beloved-christmas-bread/" rel="noopener noreferrer">People once needed the pope’s permission to put butter in this beloved Christmas bread</a></h3>
+<p>Upworthy · 27 Nov</p></div></article><article class="grin-item" id="s62cbee7a0072"><a class="thumb" href="https://www.upworthy.com/psychologist-shares-an-easy-way-to-reconnect-with-old-friends-without-making-things-awkward/" rel="noopener noreferrer"><img
+ src="https://www.upworthy.com/wp-content/uploads/sites/2/2026/11/woman-unsure-whether-to-call-a-friend.jpg?w=1200&amp;quality=82" alt="" loading="lazy" referrerpolicy="no-referrer"
+ onerror="this.closest('.thumb').remove()"></a><div class="text">
+<h3><a href="https://www.upworthy.com/psychologist-shares-an-easy-way-to-reconnect-with-old-friends-without-making-things-awkward/" rel="noopener noreferrer">Psychologist shares an easy way to reconnect with old friends without making things awkward</a></h3>
+<p>Upworthy · 27 Nov</p></div></article><article class="grin-item" id="sa590f6ab58a4"><a class="thumb" href="https://www.upworthy.com/a-sears-customer-could-order-a-house-by-mail-in-some-attics-the-lumber-still-has-its-address/" rel="noopener noreferrer"><img
+ src="https://www.upworthy.com/wp-content/uploads/sites/2/2026/11/Sears-house-rail.jpg?w=1200&amp;quality=82" alt="" loading="lazy" referrerpolicy="no-referrer"
+ onerror="this.closest('.thumb').remove()"></a><div class="text">
+<h3><a href="https://www.upworthy.com/a-sears-customer-could-order-a-house-by-mail-in-some-attics-the-lumber-still-has-its-address/" rel="noopener noreferrer">A Sears customer could order a house by mail. In some attics, the lumber still has its address.</a></h3>
+<p>Upworthy · 27 Nov</p></div></article><article class="grin-item" id="s1cacf88e51df"><a class="thumb" href="https://laughingsquid.com/countries-named-by-mistake/" rel="noopener noreferrer"><img
+ src="https://laughingsquid.com/wp-content/uploads/2026/11/Kanata-Canada.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer"
+ onerror="this.closest('.thumb').remove()"></a><div class="text">
+<h3><a href="https://laughingsquid.com/countries-named-by-mistake/" rel="noopener noreferrer">How Certain Countries Were Named by Mistake</a></h3>
+<p>Laughing Squid · 27 Nov</p></div></article><article class="grin-item" id="sc02b47b95fba"><a class="thumb" href="https://laughingsquid.com/japanese-calligrapher-cat-font-lowercase/" rel="noopener noreferrer"><img
+ src="https://laughingsquid.com/wp-content/uploads/2026/11/Cat-Font-Lowercase.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer"
+ onerror="this.closest('.thumb').remove()"></a><div class="text">
+<h3><a href="https://laughingsquid.com/japanese-calligrapher-cat-font-lowercase/" rel="noopener noreferrer">Japanese Calligrapher Shows How to Draw a Cat Font Alphabet</a></h3>
+<p>Laughing Squid · 27 Nov</p></div></article><article class="grin-item" id="s741f11f1cb98"><a class="thumb" href="https://www.boredpanda.com/health-and-wellness-black-friday-deals/" rel="noopener noreferrer"><img
+ src="https://static.boredpanda.com/blog/wp-content/uploads/2026/11/health-and-wellness-black-friday-deals-cover_720.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"
+ onerror="this.closest('.thumb').remove()"></a><div class="text">
+<h3><a href="https://www.boredpanda.com/health-and-wellness-black-friday-deals/" rel="noopener noreferrer">19 Health And Wellness Black Friday Finds For Anyone Ready To Treat Self Care Like A Real Investment</a></h3>
+<p>Bored Panda · 27 Nov</p></div></article><article class="grin-item" id="s23f0dba80396"><a class="thumb" href="https://talentrecap.com/how-much-alfonso-ribeiro-julianne-hough-make-dwts/" rel="noopener noreferrer"><img
+ src="https://cdn.talentrecap.com/wp-content/uploads/2023/11/Original_AlfonsoRiberio_JulianneHough_Disney_Eric-McCandless.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"
+ onerror="this.closest('.thumb').remove()"></a><div class="text">
+<h3><a href="https://talentrecap.com/how-much-alfonso-ribeiro-julianne-hough-make-dwts/" rel="noopener noreferrer">How Much do Alfonso Ribeiro, Julianne Hough ACTUALLY Make on ‘DWTS’?</a></h3>
+<p>Talent Recap · 27 Nov</p></div></article><article class="grin-item" id="sdd3b8b0c321d"><a class="thumb" href="https://www.boredpanda.com/film-photos-of-people-threads/" rel="noopener noreferrer"><img
+ src="https://static.boredpanda.com/blog/wp-content/uploads/2026/11/film-photos-of-people-threads-cover_720.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"
+ onerror="this.closest('.thumb').remove()"></a><div class="text">
+<h3><a href="https://www.boredpanda.com/film-photos-of-people-threads/" rel="noopener noreferrer">50 Film Pics From Threads Photographers That Capture People As They Really Are</a></h3>
+<p>Bored Panda · 27 Nov</p></div></article><article class="grin-item" id="se39245cf2e65"><a class="thumb" href="https://www.sunnyskyz.com/good-news/6365/79-Year-Old-DoorDash-Driver-Reminds-Woman-of-Her-Grandpa-What-Happens-Next-Is-Incredible" rel="noopener noreferrer"><img
+ src="https://pub-1c31579dfca6402ebca842d57e4a19b2.r2.dev/uploads/door-dash-elderly-6b0981fe5097b7.00175119.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"
+ onerror="this.closest('.thumb').remove()"></a><div class="text">
+<h3><a href="https://www.sunnyskyz.com/good-news/6365/79-Year-Old-DoorDash-Driver-Reminds-Woman-of-Her-Grandpa-What-Happens-Next-Is-Incredible" rel="noopener noreferrer">79-Year-Old DoorDash Driver Reminds Woman of Her Grandpa. What Happens Next Is Incredible</a></h3>
+<p>Sunny Skyz · 27 Nov</p></div></article><article class="grin-item" id="scda911385b81"><a class="thumb" href="https://www.boredpanda.com/black-friday-biggest-tech-deals/" rel="noopener noreferrer"><img
+ src="https://static.boredpanda.com/blog/wp-content/uploads/2026/11/black-friday-biggest-tech-deals-fb.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"
+ onerror="this.closest('.thumb').remove()"></a><div class="text">
+<h3><a href="https://www.boredpanda.com/black-friday-biggest-tech-deals/" rel="noopener noreferrer">18 Black Friday Tech And Appliance Deals Big Enough To Start A Stampede At The Store Entrance</a></h3>
+<p>Bored Panda · 27 Nov</p></div></article><article class="grin-item" id="sb360a4b024f5"><a class="thumb" href="https://thebetterindia.com/parenting/traditional-indian-games-stapu-lagori-kho-kho-screen-free-childhood-india-12843878" rel="noopener noreferrer"><img
+ src="https://img-cdn.publive.online/fit-in/1280x960/english-betterindia/media/media_files/2026/11/26/children-games-2026-11-26-19-38-21.png" alt="" loading="lazy" referrerpolicy="no-referrer"
+ onerror="this.closest('.thumb').remove()"></a><div class="text">
+<h3><a href="https://thebetterindia.com/parenting/traditional-indian-games-stapu-lagori-kho-kho-screen-free-childhood-india-12843878" rel="noopener noreferrer">6 Indian Childhood Games to Get Your Kids Moving, Laughing &amp; Off Screens This Winter Break</a></h3>
+<p>The Better India · 27 Nov</p></div></article><article class="grin-item" id="s56f0dd8eeab9"><a class="thumb" href="https://talentrecap.com/jenny-mccarthy-tried-get-cast-on-the-bachelorette/" rel="noopener noreferrer"><img
+ src="https://cdn.talentrecap.com/wp-content/uploads/2022/09/Original_JennyMcCarthy_John-ShearerGetty-Images.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"
+ onerror="this.closest('.thumb').remove()"></a><div class="text">
+<h3><a href="https://talentrecap.com/jenny-mccarthy-tried-get-cast-on-the-bachelorette/" rel="noopener noreferrer">Jenny McCarthy Tried Get Cast on ‘The Bachelorette’ After Her Divorce</a></h3>
+<p>Talent Recap · 26 Nov</p></div></article></aside><div class="grid"><article class="card lead" id="s5f412aa92497" data-region="Europe"
+ data-topic="Technology" data-source="The Register" data-ts="1795793580">
+<div class="photo"><a href="https://www.theregister.com/personal-tech/2026/11/27/smartphone-shipments-face-another-bleak-year-before-modest-2028-comeback/5312580" rel="noopener noreferrer"><img src="https://image.theregister.com/?imageId=5228637&amp;width=800" alt="" loading="eager" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: The Register</span></div><div class="text">
 <p class="kicker">Technology</p>
-<h2><a href="https://electrek.co/2026/11/27/tesla-ai5-optimus-real-reason-tsmc-3nm/" rel="noopener noreferrer">This might be the real reason Elon Musk says Tesla’s AI5 chip is going to Optimus</a></h2>
-<p class="excerpt">Elon Musk says Tesla’s cars don’t need the next-generation AI5 chip, so it’s going to Optimus first. A new report from Taiwan’s chip supply chain gives a more practical reason: Tesla won’t have…</p>
-<p class="byline">Read the full story at <a href="https://electrek.co/2026/11/27/tesla-ai5-optimus-real-reason-tsmc-3nm/" rel="noopener noreferrer">Electrek</a>
+<h2><a href="https://www.theregister.com/personal-tech/2026/11/27/smartphone-shipments-face-another-bleak-year-before-modest-2028-comeback/5312580" rel="noopener noreferrer">Smartphone shipments face another bleak year before modest 2028 comeback</a></h2>
+<p class="excerpt">Counterpoint forecasts another 6% shipment drop in 2027, with volumes still below 2025 levels by decade&#x27;s end</p>
+<p class="byline">Read the full story at <a href="https://www.theregister.com/personal-tech/2026/11/27/smartphone-shipments-face-another-bleak-year-before-modest-2028-comeback/5312580" rel="noopener noreferrer">The Register</a>
+ · Europe · 27 Nov 2026</p>
+<p class="why">Why this story is here: Positive signals: comeback</p>
+</div></article>
+<article class="card" id="s8827e15af0ae" data-region="Sweden"
+ data-topic="Feel-good" data-source="Expressen" data-ts="1795794049">
+<div class="photo"><a href="https://www.expressen.se/nyheter/varlden/kushners-hyllning-till-putins-taktik/" rel="noopener noreferrer"><img src="https://static.bonniernews.se/images/81/44/8144a9961214464f85fe48f3c381d9cd/16x9/original.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: Expressen</span></div><div class="text">
+<p class="kicker">Feel-good</p>
+<h2><a href="https://www.expressen.se/nyheter/varlden/kushners-hyllning-till-putins-taktik/" rel="noopener noreferrer">Kushner&#x27;s tribute to Putin&#x27;s tactics</a></h2>
+<p class="excerpt">Trump&#x27;s son-in-law and peace mediator in the Ukraine war heaps praise on Putin. Jared Kushner believes that the Russian president has shown &quot;restraint&quot; by refraining from using nuclear weapons in the war.…</p>
+<p class="byline">Read the full story at <a href="https://www.expressen.se/nyheter/varlden/kushners-hyllning-till-putins-taktik/" rel="noopener noreferrer">Expressen</a>
+ · Sweden · 27 Nov 2026</p>
+<p class="why">Why this story is here: Positive signals: historisk, hyllning</p>
+<p class="why">Machine-translated from Swedish. Original headline: <span translate="no">Kushners hyllning till Putins taktik</span></p>
+</div></article>
+<article class="card" id="s6bd1863ff727" data-region="Sweden"
+ data-topic="Technology" data-source="Feber" data-ts="1795793400">
+<div class="text">
+<p class="kicker">Technology</p>
+<h2><a href="https://feber.se/spel/lenny-kravitz-dyker-upp-i-hitman-world-of-assassination/500115/?utm_source=rss&amp;utm_medium=feed" rel="noopener noreferrer">Lenny Kravitz appears in Hitman World of Assassination</a></h2>
+<p class="excerpt">Plays Pirate King Bawma from 007 First Light The Danish game studio IO Interactive has unveiled a new addition to Hitman World of Assassination, where players will get to know…</p>
+<p class="byline">Read the full story at <a href="https://feber.se/spel/lenny-kravitz-dyker-upp-i-hitman-world-of-assassination/500115/?utm_source=rss&amp;utm_medium=feed" rel="noopener noreferrer">Feber</a>
+ · Sweden · 27 Nov 2026</p>
+<p class="why">Why this story is here: Technology news with no bad-news words</p>
+<p class="why">Machine-translated from Swedish. Original headline: <span translate="no">Lenny Kravitz dyker upp i Hitman World of Assassination</span></p>
+</div></article>
+<article class="card" id="s1ca6e8834054" data-region="North America"
+ data-topic="Technology" data-source="The Verge" data-ts="1795793400">
+<div class="photo"><a href="https://www.theverge.com/gadgets/1043272/zepath-rechargeable-aa-batteries-black-friday-2026-deal-sale" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/usb-aa-sean-hollister-verge-331A1632.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.741906587151%2C100%2C78.516186825698&amp;w=1200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: The Verge</span></div><div class="text">
+<p class="kicker">Technology</p>
+<h2><a href="https://www.theverge.com/gadgets/1043272/zepath-rechargeable-aa-batteries-black-friday-2026-deal-sale" rel="noopener noreferrer">You can grab a 12-pack of Zepath’s rechargeable AA batteries for just $24</a></h2>
+<p class="excerpt">If you’re picking up any gifts that require AA batteries, it’s not a bad idea to buy a set you can keep using long after the holidays. Thankfully, you can currently get a 12-pack of Zepath’s…</p>
+<p class="byline">Read the full story at <a href="https://www.theverge.com/gadgets/1043272/zepath-rechargeable-aa-batteries-black-friday-2026-deal-sale" rel="noopener noreferrer">The Verge</a>
  · North America · 27 Nov 2026</p>
 <p class="why">Why this story is here: Technology news with no bad-news words</p>
+</div></article>
+<article class="card" id="sd1a2a3fa34e4" data-region="Europe"
+ data-topic="Feel-good" data-source="BBC Science &amp; Environment" data-ts="1795793220">
+<div class="photo"><a href="https://www.bbc.co.uk/news/videos/cmx29qd8ew4xo?at_medium=RSS&amp;at_campaign=rss" rel="noopener noreferrer"><img src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/257b/live/9b91c8f0-ea72-11f1-99a1-253766e7ad8b.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: BBC Science &amp; Environment</span></div><div class="text">
+<p class="kicker">Feel-good</p>
+<h2><a href="https://www.bbc.co.uk/news/videos/cmx29qd8ew4xo?at_medium=RSS&amp;at_campaign=rss" rel="noopener noreferrer">&#x27;Can&#x27;t control the weather&#x27;: Sadness as Macy&#x27;s Thanksgiving parade postponed</a></h2>
+<p class="excerpt">Macy&#x27;s postpones its 100th annual Thanksgiving Day Parade in New York because of severe weather.</p>
+<p class="byline">Read the full story at <a href="https://www.bbc.co.uk/news/videos/cmx29qd8ew4xo?at_medium=RSS&amp;at_campaign=rss" rel="noopener noreferrer">BBC Science &amp; Environment</a>
+ · Europe · 27 Nov 2026</p>
+<p class="why">Why this story is here: Positive signals: thanksgiving</p>
+</div></article>
+<article class="card" id="s830087f40f78" data-region="Sweden"
+ data-topic="Technology" data-source="Feber" data-ts="1795792800">
+<div class="text">
+<p class="kicker">Technology</p>
+<h2><a href="https://feber.se/pryl/kop-unik-leica-kamera-pa-auktion/500144/?utm_source=rss&amp;utm_medium=feed" rel="noopener noreferrer">Buy a unique Leica camera at auction</a></h2>
+<p class="excerpt">A prototype of the Leica BOX can be yours for a few million. This weekend, a camera auction is being held that will probably make camera collectors in general, and Leica fans in particular, drool.…</p>
+<p class="byline">Read the full story at <a href="https://feber.se/pryl/kop-unik-leica-kamera-pa-auktion/500144/?utm_source=rss&amp;utm_medium=feed" rel="noopener noreferrer">Feber</a>
+ · Sweden · 27 Nov 2026</p>
+<p class="why">Why this story is here: Technology news with no bad-news words</p>
+<p class="why">Machine-translated from Swedish. Original headline: <span translate="no">Köp unik Leica-kamera på auktion</span></p>
+</div></article>
+<article class="card" id="s9ae3fa8ff2a7" data-region="North America"
+ data-topic="Technology" data-source="The Verge" data-ts="1795792528">
+<div class="photo"><a href="https://www.theverge.com/gadgets/1039978/airpods-pro-3-apple-earbuds-black-friday-2026-deal-sale" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/257943_Airpods_Pro3_AKrales_0108.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: The Verge</span></div><div class="text">
+<p class="kicker">Technology</p>
+<h2><a href="https://www.theverge.com/gadgets/1039978/airpods-pro-3-apple-earbuds-black-friday-2026-deal-sale" rel="noopener noreferrer">Apple’s AirPods Pro 3 are a whopping $100 off for Black Friday</a></h2>
+<p class="excerpt">The AirPods Pro 3 are cheaper than ever. Despite receiving an early discount last week, Apple’s latest flagship wireless earbuds are still on sale for just $149 at Amazon, Best Buy, and Walmart. They…</p>
+<p class="byline">Read the full story at <a href="https://www.theverge.com/gadgets/1039978/airpods-pro-3-apple-earbuds-black-friday-2026-deal-sale" rel="noopener noreferrer">The Verge</a>
+ · North America · 27 Nov 2026</p>
+<p class="why">Why this story is here: Technology news with no bad-news words</p>
+</div></article>
+<article class="card" id="sd6c9782311a4" data-region="Europe"
+ data-topic="Arts &amp; culture" data-source="The Guardian Europe" data-ts="1795792323">
+<div class="photo"><a href="https://www.theguardian.com/lifeandstyle/2026/nov/27/jellycat-soft-toys-kidults-harrods-cafe-galerie-lafayette" rel="noopener noreferrer"><img src="https://i.guim.co.uk/img/media/6f597af9e0d80ba1b5206caae69f9cae963e48fa/0_2458_6048_4838/master/6048.jpg?width=140&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=fa257d3244f8202121f30f1f59be13af" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: The Guardian Europe</span></div><div class="text">
+<p class="kicker">Arts &amp; culture</p>
+<h2><a href="https://www.theguardian.com/lifeandstyle/2026/nov/27/jellycat-soft-toys-kidults-harrods-cafe-galerie-lafayette" rel="noopener noreferrer">Too old for soft toys? Tell that to kidults booking up Harrods Jellycat cafe</a></h2>
+<p class="excerpt">Department stores are hosting in-person events for those who find comfort in collecting the British soft toy brand They’re cute, cuddly and taking over the homes of young adults. Jellycat, a British…</p>
+<p class="byline">Read the full story at <a href="https://www.theguardian.com/lifeandstyle/2026/nov/27/jellycat-soft-toys-kidults-harrods-cafe-galerie-lafayette" rel="noopener noreferrer">The Guardian Europe</a>
+ · Europe · 27 Nov 2026</p>
+<p class="why">Why this story is here: Positive signals: cute, smiley</p>
+</div></article>
+<article class="card" id="s01c59f524726" data-region="North America"
+ data-topic="Technology" data-source="Electrek" data-ts="1795792293">
+<div class="photo"><a href="https://electrek.co/2026/11/27/hyundai-reveals-new-mercury-ev-concept-launch-as-ioniq-m-images/" rel="noopener noreferrer"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/11/Hyundai-Mercury-EV-Concept-1.jpeg?quality=82&amp;strip=all&amp;resize=1200,628" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: Electrek</span></div><div class="text">
+<p class="kicker">Technology</p>
+<h2><a href="https://electrek.co/2026/11/27/hyundai-reveals-new-mercury-ev-concept-launch-as-ioniq-m-images/" rel="noopener noreferrer">Hyundai’s new Mercury EV Concept will launch as the IONIQ M in 2027 [Images]</a></h2>
+<p class="excerpt">Hyundai unveiled the Mercury Concept, a preview of its upcoming entry-level electric SUV set to launch as the IONIQ M in 2027. more…</p>
+<p class="byline">Read the full story at <a href="https://electrek.co/2026/11/27/hyundai-reveals-new-mercury-ev-concept-launch-as-ioniq-m-images/" rel="noopener noreferrer">Electrek</a>
+ · North America · 27 Nov 2026</p>
+<p class="why">Why this story is here: Technology news with no bad-news words</p>
+</div></article>
+<article class="card" id="s2371a157be67" data-region="Sweden"
+ data-topic="Technology" data-source="Feber" data-ts="1795792200">
+<div class="text">
+<p class="kicker">Technology</p>
+<h2><a href="https://feber.se/spel/kan-du-halla-blocken-borta-fran-mitten/500142/?utm_source=rss&amp;utm_medium=feed" rel="noopener noreferrer">Can you keep the blocks away from the center?</a></h2>
+<p class="excerpt">New game lets you take control of the red chalk Now, some red lines have started to loosen when it comes to the actual formation of a government, but if you&#x27;re keen to draw some red lines yourself…</p>
+<p class="byline">Read the full story at <a href="https://feber.se/spel/kan-du-halla-blocken-borta-fran-mitten/500142/?utm_source=rss&amp;utm_medium=feed" rel="noopener noreferrer">Feber</a>
+ · Sweden · 27 Nov 2026</p>
+<p class="why">Why this story is here: Technology news with no bad-news words</p>
+<p class="why">Machine-translated from Swedish. Original headline: <span translate="no">Kan du hålla blocken borta från mitten?</span></p>
+</div></article>
+<article class="card" id="sbf73612b73ae" data-region="Europe"
+ data-topic="Technology" data-source="The Next Web" data-ts="1795792193">
+<div class="photo"><a href="https://thenextweb.com/news/google-data-centre-wallonia-halt-farciennes-permit" rel="noopener noreferrer"><img src="https://media.thenextweb.com/2026/11/google-saint-ghislain-data-centre-aerial-belgium.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: The Next Web</span></div><div class="text">
+<p class="kicker">Technology</p>
+<h2><a href="https://thenextweb.com/news/google-data-centre-wallonia-halt-farciennes-permit" rel="noopener noreferrer">Belgium’s Wallonia halts Google data centre after permit was revoked</a></h2>
+<p class="excerpt">The Walloon Region has ordered Google to stop building its data centre near Charleroi in Belgium. Work had carried on for months at the site in Farciennes and Aiseau-Presles without a valid permit.…</p>
+<p class="byline">Read the full story at <a href="https://thenextweb.com/news/google-data-centre-wallonia-halt-farciennes-permit" rel="noopener noreferrer">The Next Web</a>
+ · Europe · 27 Nov 2026</p>
+<p class="why">Why this story is here: Technology news with no bad-news words</p>
+</div></article>
+<article class="card" id="s5d1443a1c04f" data-region="Global"
+ data-topic="Clean energy &amp; climate solutions" data-source="Not All News Is Bad" data-ts="1795791647">
+<div class="photo"><a href="https://notallnewsisbad.com/terra-gen-marks-completion-of-950-million-lockhart-solar-and-storage-complex-in-san-bernardino-county-the-mojave-beat/" rel="noopener noreferrer"><img src="https://nanib.b-cdn.net/wp-content/uploads/2026/11/Nov-10-Lockhart-ribbon-cutting.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: Not All News Is Bad</span></div><div class="text">
+<p class="kicker">Clean energy &amp; climate solutions</p>
+<h2><a href="https://notallnewsisbad.com/terra-gen-marks-completion-of-950-million-lockhart-solar-and-storage-complex-in-san-bernardino-county-the-mojave-beat/" rel="noopener noreferrer">Terra-Gen marks completion of $950 million Lockhart solar and storage complex in San Bernardino County | The Mojave Beat</a></h2>
+<p class="excerpt">Site was part of plants that made up most of world’s solar power in the 1990s Source: Terra-Gen marks completion of $950 million Lockhart solar and storage complex in San Bernardino County | The…</p>
+<p class="byline">Read the full story at <a href="https://notallnewsisbad.com/terra-gen-marks-completion-of-950-million-lockhart-solar-and-storage-complex-in-san-bernardino-county-the-mojave-beat/" rel="noopener noreferrer">Not All News Is Bad</a>
+ · Global · 27 Nov 2026</p>
+<p class="why">Why this story is here: From a dedicated good-news publisher</p>
+</div></article>
+<article class="card" id="sfd15da94fff7" data-region="Sweden"
+ data-topic="Technology" data-source="Feber" data-ts="1795791600">
+<div class="text">
+<p class="kicker">Technology</p>
+<h2><a href="https://feber.se/video/det-regnar-kalkoner-fran-skyn/500097/?utm_source=rss&amp;utm_medium=feed" rel="noopener noreferrer">It&#x27;s raining turkeys from the sky</a></h2>
+<p class="excerpt">So that people in remote locations can also celebrate Thanksgiving The American holiday of Thanksgiving and turkey dinner are synonymous. But not everyone may have the opportunity to get hold of a turkey to cook…</p>
+<p class="byline">Read the full story at <a href="https://feber.se/video/det-regnar-kalkoner-fran-skyn/500097/?utm_source=rss&amp;utm_medium=feed" rel="noopener noreferrer">Feber</a>
+ · Sweden · 27 Nov 2026</p>
+<p class="why">Why this story is here: Positive signals: doneras, fira, hjälper, thanksgiving</p>
+<p class="why">Machine-translated from Swedish. Original headline: <span translate="no">Det regnar kalkoner från skyn</span></p>
+</div></article>
+<article class="card" id="sd5f9ac72ec53" data-region="Sweden"
+ data-topic="Technology" data-source="SweClockers" data-ts="1795791600">
+<div class="photo"><a href="https://www.sweclockers.com/artikel/43134-snabbtest-fractal-refine-2-ar-battre-pa-nastan-allt" rel="noopener noreferrer"><img src="https://www.sweclockers.com/artikel/43134/og-image" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: SweClockers</span></div><div class="text">
+<p class="kicker">Technology</p>
+<h2><a href="https://www.sweclockers.com/artikel/43134-snabbtest-fractal-refine-2-ar-battre-pa-nastan-allt" rel="noopener noreferrer">Quick test: Fractal Refine 2 is better at almost everything</a></h2>
+<p class="excerpt">The basic recipe is the same, but the armrests now lock, the seat is softer, and several annoyances have been eliminated.</p>
+<p class="byline">Read the full story at <a href="https://www.sweclockers.com/artikel/43134-snabbtest-fractal-refine-2-ar-battre-pa-nastan-allt" rel="noopener noreferrer">SweClockers</a>
+ · Sweden · 27 Nov 2026</p>
+<p class="why">Why this story is here: Technology news with no bad-news words</p>
+<p class="why">Machine-translated from Swedish. Original headline: <span translate="no">Snabbtest: Fractal Refine 2 är bättre på nästan allt</span></p>
 </div></article>
 <article class="card" id="sd0f3f33fd367" data-region="Europe"
  data-topic="Animals &amp; wildlife" data-source="BBC Science &amp; Environment" data-ts="1795790999">
@@ -94,6 +296,16 @@ function setLanguage(code) {
 <p class="byline">Read the full story at <a href="https://www.euronews.com/video/2026/11/27/uk-londons-cake-and-bake-show-honours-david-attenboroughs-centenary" rel="noopener noreferrer">Euronews</a>
  · Europe · 27 Nov 2026</p>
 <p class="why">Why this story is here: Positive signals: celebrating, honours, inspired</p>
+</div></article>
+<article class="card" id="s098fb54eb3fc" data-region="North America"
+ data-topic="Technology" data-source="Electrek" data-ts="1795790895">
+<div class="photo"><a href="https://electrek.co/2026/11/27/tesla-ai5-optimus-real-reason-tsmc-3nm/" rel="noopener noreferrer"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/04/Tesla-AI5-chip-hero.jpeg?quality=82&amp;strip=all&amp;resize=1200,628" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: Electrek</span></div><div class="text">
+<p class="kicker">Technology</p>
+<h2><a href="https://electrek.co/2026/11/27/tesla-ai5-optimus-real-reason-tsmc-3nm/" rel="noopener noreferrer">This might be the real reason Elon Musk says Tesla’s AI5 chip is going to Optimus</a></h2>
+<p class="excerpt">Elon Musk says Tesla’s cars don’t need the next-generation AI5 chip, so it’s going to Optimus first. A new report from Taiwan’s chip supply chain gives a more practical reason: Tesla won’t have…</p>
+<p class="byline">Read the full story at <a href="https://electrek.co/2026/11/27/tesla-ai5-optimus-real-reason-tsmc-3nm/" rel="noopener noreferrer">Electrek</a>
+ · North America · 27 Nov 2026</p>
+<p class="why">Why this story is here: Technology news with no bad-news words</p>
 </div></article>
 <article class="card" id="sc330924cbb7f" data-region="Europe"
  data-topic="Technology" data-source="The Next Web" data-ts="1795790764">
@@ -264,9 +476,9 @@ function setLanguage(code) {
 <p class="why">Why this story is here: A hopeful angle on a difficult subject</p>
 </div></article>
 <article class="card" id="s8fa8d86ea75c" data-region="Sweden"
- data-topic="Sport &amp; achievement" data-source="Feber" data-ts="1795784400">
+ data-topic="Technology" data-source="Feber" data-ts="1795784400">
 <div class="text">
-<p class="kicker">Sport &amp; achievement</p>
+<p class="kicker">Technology</p>
 <h2><a href="https://feber.se/bil/xiaomi-har-vassat-su7-ultra-ytterligare/500096/?utm_source=rss&amp;utm_medium=feed" rel="noopener noreferrer">Xiaomi has further enhanced the SU7 Ultra</a></h2>
 <p class="excerpt">Is that enough to reclaim the record? No one can accuse Xiaomi&#x27;s SU7 Ultra model of being sluggish. It has already proven what it can do several times, but those who have much still want more. Now there is an updated and…</p>
 <p class="byline">Read the full story at <a href="https://feber.se/bil/xiaomi-har-vassat-su7-ultra-ytterligare/500096/?utm_source=rss&amp;utm_medium=feed" rel="noopener noreferrer">Feber</a>
@@ -491,9 +703,9 @@ function setLanguage(code) {
 <p class="why">Machine-translated from Swedish. Original headline: <span translate="no">Vad gömmer sig i SweClockers Hårdvarukalender?</span></p>
 </div></article>
 <article class="card" id="s7502083e65f7" data-region="Sweden"
- data-topic="Technology" data-source="Feber" data-ts="1795776600">
+ data-topic="Nature &amp; environment" data-source="Feber" data-ts="1795776600">
 <div class="text">
-<p class="kicker">Technology</p>
+<p class="kicker">Nature &amp; environment</p>
 <h2><a href="https://feber.se/samhalle/nu-ar-datumen-spikade-for-arets-julgransflygningar/500128/?utm_source=rss&amp;utm_medium=feed" rel="noopener noreferrer">The dates for this year&#x27;s Christmas tree flights have now been set</a></h2>
 <p class="excerpt">Starting as early as December 1, the Swedish Air Force has now released the schedule for this year&#x27;s traditional Christmas tree flights. The first stop is the Norrland coast on December 1, when the Christmas tree formation will fly from Piteå down…</p>
 <p class="byline">Read the full story at <a href="https://feber.se/samhalle/nu-ar-datumen-spikade-for-arets-julgransflygningar/500128/?utm_source=rss&amp;utm_medium=feed" rel="noopener noreferrer">Feber</a>
@@ -892,16 +1104,6 @@ function setLanguage(code) {
  · Global · 27 Nov 2026</p>
 <p class="why">Why this story is here: Technology news with no bad-news words</p>
 </div></article>
-<article class="card" id="sb360a4b024f5" data-region="Asia"
- data-topic="Feel-good" data-source="The Better India" data-ts="1795760889">
-<div class="photo"><a href="https://thebetterindia.com/parenting/traditional-indian-games-stapu-lagori-kho-kho-screen-free-childhood-india-12843878" rel="noopener noreferrer"><img src="https://img-cdn.publive.online/fit-in/1280x960/english-betterindia/media/media_files/2026/11/26/children-games-2026-11-26-19-38-21.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: The Better India</span></div><div class="text">
-<p class="kicker">Feel-good</p>
-<h2><a href="https://thebetterindia.com/parenting/traditional-indian-games-stapu-lagori-kho-kho-screen-free-childhood-india-12843878" rel="noopener noreferrer">6 Indian Childhood Games to Get Your Kids Moving, Laughing &amp; Off Screens This Winter Break</a></h2>
-<p class="excerpt">“Just five more minutes!” If you&#x27;ve ever tried getting a child to put down a phone or tablet, chances are you&#x27;ve heard this familiar refrain. But long before cartoons were available at the tap of a…</p>
-<p class="byline">Read the full story at <a href="https://thebetterindia.com/parenting/traditional-indian-games-stapu-lagori-kho-kho-screen-free-childhood-india-12843878" rel="noopener noreferrer">The Better India</a>
- · Asia · 27 Nov 2026</p>
-<p class="why">Why this story is here: From a dedicated good-news publisher</p>
-</div></article>
 <article class="card" id="sda53ac3b83c0" data-region="North America"
  data-topic="Technology" data-source="Hackaday" data-ts="1795759246">
 <div class="photo"><a href="https://hackaday.com/2026/11/26/a-modular-6502-computer/" rel="noopener noreferrer"><img src="https://hackaday.com/wp-content/uploads/2026/11/The-20c-Episodio-0-Hola-0-0-screenshot.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: Hackaday</span></div><div class="text">
@@ -1244,362 +1446,7 @@ function setLanguage(code) {
 <p class="byline">Read the full story at <a href="https://www.engadget.com/2329177/workers-gta-6-studio-rockstar-games-vote-against-union-recognition/" rel="noopener noreferrer">Engadget</a>
  · North America · 26 Nov 2026</p>
 <p class="why">Why this story is here: Technology news with no bad-news words</p>
-</div></article>
-<article class="card" id="sbc83bd77648d" data-region="Global"
- data-topic="Community &amp; kindness" data-source="Good News Network" data-ts="1795710618">
-<div class="photo"><a href="https://www.goodnewsnetwork.org/town-rewards-a-woman-whose-thanksgiving-meal-feeds-thousands-with-a-new-car/" rel="noopener noreferrer"><img src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/maxresdefault-7.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: Good News Network</span></div><div class="text">
-<p class="kicker">Community &amp; kindness</p>
-<h2><a href="https://www.goodnewsnetwork.org/town-rewards-a-woman-whose-thanksgiving-meal-feeds-thousands-with-a-new-car/" rel="noopener noreferrer">Town Rewards a Woman Whose Thanksgiving Meal Feeds Thousands with a New Car</a></h2>
-<p class="excerpt">After 37 years of eating Gloria Kennard’s Thanksgiving dinners, a Texas community was hungry to return the kindness. The devout woman cooks for 2,000 people every year, but as she prepared for this…</p>
-<p class="byline">Read the full story at <a href="https://www.goodnewsnetwork.org/town-rewards-a-woman-whose-thanksgiving-meal-feeds-thousands-with-a-new-car/" rel="noopener noreferrer">Good News Network</a>
- · Global · 26 Nov 2026</p>
-<p class="why">Why this story is here: From a dedicated good-news publisher</p>
-</div></article>
-<article class="card" id="scb6452bf4625" data-region="Europe"
- data-topic="Technology" data-source="BBC Science &amp; Environment" data-ts="1795709910">
-<div class="photo"><a href="https://www.bbc.co.uk/news/videos/c6n4e3yypylxo?at_medium=RSS&amp;at_campaign=rss" rel="noopener noreferrer"><img src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/cfc7/live/da987b80-e9b3-11f1-a094-5fdc692f3e33.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: BBC Science &amp; Environment</span></div><div class="text">
-<p class="kicker">Technology</p>
-<h2><a href="https://www.bbc.co.uk/news/videos/c6n4e3yypylxo?at_medium=RSS&amp;at_campaign=rss" rel="noopener noreferrer">Fireball steals the show during Thanksgiving drone display in Indiana</a></h2>
-<p class="excerpt">The glowing object was captured on video as holiday-themed drones illuminated the night sky.</p>
-<p class="byline">Read the full story at <a href="https://www.bbc.co.uk/news/videos/c6n4e3yypylxo?at_medium=RSS&amp;at_campaign=rss" rel="noopener noreferrer">BBC Science &amp; Environment</a>
- · Europe · 26 Nov 2026</p>
-<p class="why">Why this story is here: Positive signals: thanksgiving</p>
-</div></article>
-<article class="card" id="scdb65a294c5b" data-region="Global"
- data-topic="Food &amp; travel" data-source="Good News Network" data-ts="1795709731">
-<div class="photo"><a href="https://www.goodnewsnetwork.org/for-this-nyc-restaurant-owner-thanksgiving-comes-every-wednesday/" rel="noopener noreferrer"><img src="https://www.goodnewsnetwork.org/wp-content/uploads/2015/11/turkey-tribune-video-permission.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: Good News Network</span></div><div class="text">
-<p class="kicker">Food &amp; travel</p>
-<h2><a href="https://www.goodnewsnetwork.org/for-this-nyc-restaurant-owner-thanksgiving-comes-every-wednesday/" rel="noopener noreferrer">For This NYC Restaurant Owner, Thanksgiving Comes Every Wednesday</a></h2>
-<p class="excerpt">This story came to us from PassItOn.com, which is part of The Foundation for a Better Life. Their goal is to offer inspirational messages to people everywhere as a contribution toward promoting…</p>
-<p class="byline">Read the full story at <a href="https://www.goodnewsnetwork.org/for-this-nyc-restaurant-owner-thanksgiving-comes-every-wednesday/" rel="noopener noreferrer">Good News Network</a>
- · Global · 26 Nov 2026</p>
-<p class="why">Why this story is here: From a dedicated good-news publisher</p>
-</div></article>
-<article class="card" id="s1229194b8395" data-region="Europe"
- data-topic="Education &amp; young people" data-source="The Portugal News" data-ts="1795709460">
-<div class="text">
-<p class="kicker">Education &amp; young people</p>
-<h2><a href="https://www.theportugalnews.com/news/2026-11-26/empowering-young-voices-to-inspire-change/1123028" rel="noopener noreferrer">Empowering Young Voices to Inspire Change</a></h2>
-<p class="excerpt">Few experiences leave a lasting impression quite like hearing from someone who has helped shape the course of history. For one student, that opportunity came at this year&#x27;s Game Changers Forum in…</p>
-<p class="byline">Read the full story at <a href="https://www.theportugalnews.com/news/2026-11-26/empowering-young-voices-to-inspire-change/1123028" rel="noopener noreferrer">The Portugal News</a>
- · Europe · 26 Nov 2026</p>
-<p class="why">Why this story is here: Positive signals: helped, inspire</p>
-</div></article>
-<article class="card" id="s582366130ae8" data-region="Asia"
- data-topic="Feel-good" data-source="The Better India" data-ts="1795707031">
-<div class="photo"><a href="https://thebetterindia.com/videos/film/batman-on-a-buffalo-meet-the-creator-behind-desi-batman-12844399" rel="noopener noreferrer"><img src="https://img-cdn.publive.online/fit-in/1280x960/english-betterindia/media/youtube_thumbnails/vi/WA_zZQvYyLM/maxresdefault.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: The Better India</span></div><div class="text">
-<p class="kicker">Feel-good</p>
-<h2><a href="https://thebetterindia.com/videos/film/batman-on-a-buffalo-meet-the-creator-behind-desi-batman-12844399" rel="noopener noreferrer">Batman on a Buffalo?! Meet the Creator Behind Desi Batman!</a></h2>
-<p class="excerpt">Who needs the Batmobile when you have a buffalo? Meet Sujjal Jaiswal, the creator who gave Batman a desi makeover, complete with a buffalo ride, a Joker in an auto-rickshaw and Madhuri Dixit’s iconic…</p>
-<p class="byline">Read the full story at <a href="https://thebetterindia.com/videos/film/batman-on-a-buffalo-meet-the-creator-behind-desi-batman-12844399" rel="noopener noreferrer">The Better India</a>
- · Asia · 26 Nov 2026</p>
-<p class="why">Why this story is here: From a dedicated good-news publisher</p>
-</div></article>
-<article class="card" id="s5977ddc1e4a2" data-region="Global"
- data-topic="Clean energy &amp; climate solutions" data-source="New Atlas" data-ts="1795706069">
-<div class="photo"><a href="https://newatlas.com/motorcycles/sigma-regen-superbike-fireblade/" rel="noopener noreferrer"><img src="https://assets.newatlas.com/dims4/default/4f44c55/2147483647/strip/true/crop/2048x1075+0+145/resize/1200x630!/quality/90/?url=https%3A%2F%2Fnewatlas-brightspot.s3.ap-southeast-2.amazonaws.com%2Fdf%2F02%2F0c311f544b008f71e5ddd7d19ca8%2F1794829576871.jpg&amp;na.image_optimisation=0" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: New Atlas</span></div><div class="text">
-<p class="kicker">Clean energy &amp; climate solutions</p>
-<h2><a href="https://newatlas.com/motorcycles/sigma-regen-superbike-fireblade/" rel="noopener noreferrer">340-hp AWD Fireblade superbike targets Le Mans</a></h2>
-<p class="excerpt">Once upon a time, electric motorcycles were seen as the haloed solution to every problem that gas-powered motorcycles had. More power, zero tailpipe emissions, less maintenance, no gears to worry…</p>
-<p class="byline">Read the full story at <a href="https://newatlas.com/motorcycles/sigma-regen-superbike-fireblade/" rel="noopener noreferrer">New Atlas</a>
- · Global · 26 Nov 2026</p>
-<p class="why">Why this story is here: Technology news with no bad-news words</p>
-</div></article>
-<article class="card" id="s3d244173244d" data-region="Asia"
- data-topic="Feel-good" data-source="The Better India" data-ts="1795705237">
-<div class="photo"><a href="https://thebetterindia.com/web-stories/organic-farming/deepak-sabharwal-organic-farming-business-lessons-12840226" rel="noopener noreferrer"><img src="https://img-cdn.publive.online/fit-in/1280x960/english-betterindia/media/media_files/2026/11/25/organic-farming-business-lessons-2026-11-25-14-45-02.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: The Better India</span></div><div class="text">
-<p class="kicker">Feel-good</p>
-<h2><a href="https://thebetterindia.com/web-stories/organic-farming/deepak-sabharwal-organic-farming-business-lessons-12840226" rel="noopener noreferrer">He Spent 4 Years Learning Farming on Weekends. Here Are His 7 Tips to Start an Organic Farm</a></h2>
-
-<p class="byline">Read the full story at <a href="https://thebetterindia.com/web-stories/organic-farming/deepak-sabharwal-organic-farming-business-lessons-12840226" rel="noopener noreferrer">The Better India</a>
- · Asia · 26 Nov 2026</p>
-<p class="why">Why this story is here: From a dedicated good-news publisher</p>
-</div></article>
-<article class="card" id="s7bac83204418" data-region="Global"
- data-topic="Feel-good" data-source="Not All News Is Bad" data-ts="1795705206">
-<div class="photo"><a href="https://notallnewsisbad.com/after-giving-away-one-car-texas-husband-and-wife-give-away-eight-more/" rel="noopener noreferrer"><img src="https://nanib.b-cdn.net/wp-content/uploads/2026/11/car-scaled.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: Not All News Is Bad</span></div><div class="text">
-<p class="kicker">Feel-good</p>
-<h2><a href="https://notallnewsisbad.com/after-giving-away-one-car-texas-husband-and-wife-give-away-eight-more/" rel="noopener noreferrer">After giving away one car, Texas husband and wife give away eight more</a></h2>
-<p class="excerpt">Dane and Cathy Bailey started “Autos of Love” to provide transportation to people in need. Source: After giving away one car, Texas husband and wife give away eight more What a great idea.</p>
-<p class="byline">Read the full story at <a href="https://notallnewsisbad.com/after-giving-away-one-car-texas-husband-and-wife-give-away-eight-more/" rel="noopener noreferrer">Not All News Is Bad</a>
- · Global · 26 Nov 2026</p>
-<p class="why">Why this story is here: From a dedicated good-news publisher</p>
-</div></article>
-<article class="card" id="s6a1283c91e7a" data-region="Global"
- data-topic="Health &amp; medicine" data-source="Good News Network" data-ts="1795701654">
-<div class="photo"><a href="https://www.goodnewsnetwork.org/girl-given-weeks-to-live-on-christmas-eve-makes-miracle-recovery-after-serendipitous-call-to-st-jude/" rel="noopener noreferrer"><img src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/The-Mehtabd-family-with-Imani-on-the-right-credit-family-photo.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: Good News Network</span></div><div class="text">
-<p class="kicker">Health &amp; medicine</p>
-<h2><a href="https://www.goodnewsnetwork.org/girl-given-weeks-to-live-on-christmas-eve-makes-miracle-recovery-after-serendipitous-call-to-st-jude/" rel="noopener noreferrer">Family Is Thankful Their Baby, Given Weeks to Live on Christmas Eve, Now Brain Cancer-Free</a></h2>
-<p class="excerpt">An infant girl with weeks to live from aggressive brain cancer has made a full recovery after her case arrived at the desk of a hospital which had just finished a rigorous study on her form of…</p>
-<p class="byline">Read the full story at <a href="https://www.goodnewsnetwork.org/girl-given-weeks-to-live-on-christmas-eve-makes-miracle-recovery-after-serendipitous-call-to-st-jude/" rel="noopener noreferrer">Good News Network</a>
- · Global · 26 Nov 2026</p>
-<p class="why">Why this story is here: From a dedicated good-news publisher</p>
-</div></article>
-<article class="card" id="s4f9eb777cf0c" data-region="Sweden"
- data-topic="Technology" data-source="SweClockers" data-ts="1795701600">
-<div class="photo"><a href="https://www.sweclockers.com/artikel/43475-redaktionens-favoriter-under-svarta-veckan" rel="noopener noreferrer"><img src="https://www.sweclockers.com/artikel/43475/og-image" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: SweClockers</span></div><div class="text">
-<p class="kicker">Technology</p>
-<h2><a href="https://www.sweclockers.com/artikel/43475-redaktionens-favoriter-under-svarta-veckan" rel="noopener noreferrer">The editorial team&#x27;s favorites during Black Week</a></h2>
-<p class="excerpt">We pick our most personal cherries from the cake. What are yours?</p>
-<p class="byline">Read the full story at <a href="https://www.sweclockers.com/artikel/43475-redaktionens-favoriter-under-svarta-veckan" rel="noopener noreferrer">SweClockers</a>
- · Sweden · 26 Nov 2026</p>
-<p class="why">Why this story is here: Technology news with no bad-news words</p>
-<p class="why">Machine-translated from Swedish. Original headline: <span translate="no">Redaktionens favoriter under svarta veckan</span></p>
-</div></article>
-<article class="card" id="s92e6dfc85a8c" data-region="North America"
- data-topic="Technology" data-source="Engadget" data-ts="1795701546">
-<div class="photo"><a href="https://www.engadget.com/2329115/the-screens-app-will-let-you-turn-your-iphone-duo-into-an-itty-bitty-macbook/" rel="noopener noreferrer"><img src="https://www.engadget.com/img/gallery/the-screens-app-will-let-you-turn-your-iphone-duo-into-an-itty-bitty-macbook/l-intro-1795701363.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: Engadget</span></div><div class="text">
-<p class="kicker">Technology</p>
-<h2><a href="https://www.engadget.com/2329115/the-screens-app-will-let-you-turn-your-iphone-duo-into-an-itty-bitty-macbook/" rel="noopener noreferrer">The Screens app will let you turn your iPhone Duo into an itty bitty MacBook</a></h2>
-<p class="excerpt">Edovia has updated its Screens remote desktop app with a new Laptop Mode for the iPhone Duo.</p>
-<p class="byline">Read the full story at <a href="https://www.engadget.com/2329115/the-screens-app-will-let-you-turn-your-iphone-duo-into-an-itty-bitty-macbook/" rel="noopener noreferrer">Engadget</a>
- · North America · 26 Nov 2026</p>
-<p class="why">Why this story is here: Technology news with no bad-news words</p>
-</div></article>
-<article class="card" id="s0e5182f38018" data-region="North America"
- data-topic="Technology" data-source="Electrek" data-ts="1795701465">
-<div class="photo"><a href="https://electrek.co/2026/11/26/thanksgiving-2026-green-deals-hub-evs-e-bikes-power-stations-tools-appliances-more/" rel="noopener noreferrer"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/11/9to5Toys-Black-Friday-electrek-2025.webp?resize=1200,628" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: Electrek</span></div><div class="text">
-<p class="kicker">Technology</p>
-<h2><a href="https://electrek.co/2026/11/26/thanksgiving-2026-green-deals-hub-evs-e-bikes-power-stations-tools-appliances-more/" rel="noopener noreferrer">Thanksgiving 2026 Green Deals Hub: EVs, e-bikes, power stations, tools, appliances, more</a></h2>
-<p class="excerpt">Happy Thanksgiving everyone! As Amazon’s full-swing Black Friday Sale event continues, you can find a ton of amazing Green Deals during the holiday. We’re seeing a bunch of the best prices of the…</p>
-<p class="byline">Read the full story at <a href="https://electrek.co/2026/11/26/thanksgiving-2026-green-deals-hub-evs-e-bikes-power-stations-tools-appliances-more/" rel="noopener noreferrer">Electrek</a>
- · North America · 26 Nov 2026</p>
-<p class="why">Why this story is here: Positive signals: amazing, happy, thanksgiving</p>
-</div></article>
-<article class="card" id="sd790d13b7f68" data-region="Asia"
- data-topic="Feel-good" data-source="The Better India" data-ts="1795701290">
-<div class="photo"><a href="https://thebetterindia.com/startup/reusable-birthday-party-decorations-textile-waste-bengaluru-startup-matter-party-12843776" rel="noopener noreferrer"><img src="https://img-cdn.publive.online/fit-in/1280x960/english-betterindia/media/media_files/2026/11/26/matter-party-2026-11-26-18-35-48.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: The Better India</span></div><div class="text">
-<p class="kicker">Feel-good</p>
-<h2><a href="https://thebetterindia.com/startup/reusable-birthday-party-decorations-textile-waste-bengaluru-startup-matter-party-12843776" rel="noopener noreferrer">‘The Kids Love It’: Meet the B’luru Mum Turning 100 Kg of Waste Fabric Into Decor You Can Rent</a></h2>
-<p class="excerpt">What’s a birthday party without balloons? For Bengaluru-based entrepreneur and mother of two, Sowmya Jagannath, this was a question she found herself thinking about while planning her daughter’s…</p>
-<p class="byline">Read the full story at <a href="https://thebetterindia.com/startup/reusable-birthday-party-decorations-textile-waste-bengaluru-startup-matter-party-12843776" rel="noopener noreferrer">The Better India</a>
- · Asia · 26 Nov 2026</p>
-<p class="why">Why this story is here: From a dedicated good-news publisher</p>
-</div></article>
-<article class="card" id="s7802ea0a2ac3" data-region="Europe"
- data-topic="Community &amp; kindness" data-source="France 24 Europe" data-ts="1795699918">
-<div class="photo"><a href="https://www.france24.com/en/europe-has-two-kinds-of-countries-small-countries-those-that-haven-t-yet-realised-they-re-small" rel="noopener noreferrer"><img src="https://s.france24.com/media/display/fa874ada-e994-11f1-97fb-77d069279b82/w:1024/p:16x9/EN-20261126-080650-081732-CS.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: France 24 Europe</span></div><div class="text">
-<p class="kicker">Community &amp; kindness</p>
-<h2><a href="https://www.france24.com/en/europe-has-two-kinds-of-countries-small-countries-those-that-haven-t-yet-realised-they-re-small" rel="noopener noreferrer">&#x27;Europe has two kinds of countries: Small countries &amp; those that haven’t yet realised they’re small’</a></h2>
-<p class="excerpt">“The implications of having the far right in power in Brussels are enormous,” warns Sophie Pornschlegel, Senior Advisor at the European Policy Centre. With elections approaching in several EU member…</p>
-<p class="byline">Read the full story at <a href="https://www.france24.com/en/europe-has-two-kinds-of-countries-small-countries-those-that-haven-t-yet-realised-they-re-small" rel="noopener noreferrer">France 24 Europe</a>
- · Europe · 26 Nov 2026</p>
-<p class="why">Why this story is here: Positive signals: adopt, kinds</p>
-</div></article>
-<article class="card" id="s3eb545ae21b1" data-region="North America"
- data-topic="Technology" data-source="Electrek" data-ts="1795699889">
-<div class="photo"><a href="https://electrek.co/2026/11/26/these-are-the-e-bike-sales-you-should-really-care-about-this-black-friday/" rel="noopener noreferrer"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/11/lectric-xp4-special-edition-header-e-bike.jpg?quality=82&amp;strip=all&amp;resize=1200,628" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: Electrek</span></div><div class="text">
-<p class="kicker">Technology</p>
-<h2><a href="https://electrek.co/2026/11/26/these-are-the-e-bike-sales-you-should-really-care-about-this-black-friday/" rel="noopener noreferrer">These are the e-bike sales you should really care about this Black Friday</a></h2>
-<p class="excerpt">It’s that time of year again; Black Friday approaches! And while the e-bike sales have been pretty good all month, there’s no better day than today to find an amazing deal on a new way around your…</p>
-<p class="byline">Read the full story at <a href="https://electrek.co/2026/11/26/these-are-the-e-bike-sales-you-should-really-care-about-this-black-friday/" rel="noopener noreferrer">Electrek</a>
- · North America · 26 Nov 2026</p>
-<p class="why">Why this story is here: Positive signals: amazing, friends</p>
-</div></article>
-<article class="card" id="s14b3e60e10f9" data-region="Europe"
- data-topic="Technology" data-source="The Register" data-ts="1795699320">
-<div class="text">
-<p class="kicker">Technology</p>
-<h2><a href="https://www.theregister.com/security/2026/11/26/company-was-religious-about-backups-but-sinned-by-leaving-them-exposed/5312234" rel="noopener noreferrer">Company was religious about backups but sinned by leaving them exposed</a></h2>
-<p class="excerpt">Never put the backup server in the same Windows domain as production</p>
-<p class="byline">Read the full story at <a href="https://www.theregister.com/security/2026/11/26/company-was-religious-about-backups-but-sinned-by-leaving-them-exposed/5312234" rel="noopener noreferrer">The Register</a>
- · Europe · 26 Nov 2026</p>
-<p class="why">Why this story is here: Technology news with no bad-news words</p>
-</div></article>
-<article class="card" id="s93095fbd118b" data-region="Europe"
- data-topic="Technology" data-source="The Register" data-ts="1795698900">
-<div class="text">
-<p class="kicker">Technology</p>
-<h2><a href="https://www.theregister.com/public-sector/2026/11/26/stale-links-on-uk-public-sector-websites-direct-visitors-to-gambling-dens/5312049" rel="noopener noreferrer">Stale links on UK public sector websites direct visitors to gambling dens</a></h2>
-<p class="excerpt">Consultancy finds 93 routes to casino promotions across 26 orgs, with defunct enterprise partnership domains repurposed</p>
-<p class="byline">Read the full story at <a href="https://www.theregister.com/public-sector/2026/11/26/stale-links-on-uk-public-sector-websites-direct-visitors-to-gambling-dens/5312049" rel="noopener noreferrer">The Register</a>
- · Europe · 26 Nov 2026</p>
-<p class="why">Why this story is here: Technology news with no bad-news words</p>
-</div></article>
-<article class="card" id="sc54df0c4eb34" data-region="North America"
- data-topic="Technology" data-source="Engadget" data-ts="1795698858">
-<div class="photo"><a href="https://www.engadget.com/2329106/casetifys-pokmon-30th-anniversary-collection-includes-a-pok-ball-case-for-your-airpods/" rel="noopener noreferrer"><img src="https://www.engadget.com/img/gallery/casetifys-pokmon-30th-anniversary-collection-includes-a-pok-ball-case-for-your-airpods/l-intro-1795698753.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: Engadget</span></div><div class="text">
-<p class="kicker">Technology</p>
-<h2><a href="https://www.engadget.com/2329106/casetifys-pokmon-30th-anniversary-collection-includes-a-pok-ball-case-for-your-airpods/" rel="noopener noreferrer">Casetify&#x27;s Pokémon 30th anniversary collection includes a Poké Ball case for your AirPods</a></h2>
-<p class="excerpt">Casetify is releasing a Pokémon collection on December 1, and it includes an AirPods case that looks like a pixel Poké Ball.</p>
-<p class="byline">Read the full story at <a href="https://www.engadget.com/2329106/casetifys-pokmon-30th-anniversary-collection-includes-a-pok-ball-case-for-your-airpods/" rel="noopener noreferrer">Engadget</a>
- · North America · 26 Nov 2026</p>
-<p class="why">Why this story is here: Technology news with no bad-news words</p>
-</div></article>
-<article class="card" id="s6f5dc4d9d7e5" data-region="Sweden"
- data-topic="Technology" data-source="SweClockers" data-ts="1795698000">
-<div class="photo"><a href="https://www.sweclockers.com/artikel/43476-quiz-hur-bra-koll-har-du-pa-svensk-teknik" rel="noopener noreferrer"><img src="https://www.sweclockers.com/artikel/43476/og-image" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: SweClockers</span></div><div class="text">
-<p class="kicker">Technology</p>
-<h2><a href="https://www.sweclockers.com/artikel/43476-quiz-hur-bra-koll-har-du-pa-svensk-teknik" rel="noopener noreferrer">Quiz: How well do you know Swedish technology?</a></h2>
-<p class="excerpt">From the ABC 80 to a console. How well do you know the gadgets that Sweden has given the world?</p>
-<p class="byline">Read the full story at <a href="https://www.sweclockers.com/artikel/43476-quiz-hur-bra-koll-har-du-pa-svensk-teknik" rel="noopener noreferrer">SweClockers</a>
- · Sweden · 26 Nov 2026</p>
-<p class="why">Why this story is here: Technology news with no bad-news words</p>
-<p class="why">Machine-translated from Swedish. Original headline: <span translate="no">Quiz: Hur bra koll har du på svensk teknik?</span></p>
-</div></article>
-<article class="card" id="s1fa4eaf200ad" data-region="Global"
- data-topic="Feel-good" data-source="Good News Network" data-ts="1795696216">
-<div class="photo"><a href="https://www.goodnewsnetwork.org/texans-work-for-free-on-farms-that-arent-theirs-to-send-others-kids-to-college/" rel="noopener noreferrer"><img src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/credit-Gruver-High-School.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: Good News Network</span></div><div class="text">
-<p class="kicker">Feel-good</p>
-<h2><a href="https://www.goodnewsnetwork.org/texans-work-for-free-on-farms-that-arent-theirs-to-send-others-kids-to-college/" rel="noopener noreferrer">Texans Work for Free on Farms That Aren’t Theirs to Send Others’ Kids to College</a></h2>
-<p class="excerpt">Texas residents are farming land that isn’t theirs for free in order to raise money to help send kids—who also aren’t theirs—off to college. As true to the spirit of Thanksgiving as anything you’ll…</p>
-<p class="byline">Read the full story at <a href="https://www.goodnewsnetwork.org/texans-work-for-free-on-farms-that-arent-theirs-to-send-others-kids-to-college/" rel="noopener noreferrer">Good News Network</a>
- · Global · 26 Nov 2026</p>
-<p class="why">Why this story is here: From a dedicated good-news publisher</p>
-</div></article>
-<article class="card" id="s2f18de2c302b" data-region="Europe"
- data-topic="Technology" data-source="Radio Prague International" data-ts="1795695120">
-<div class="text">
-<p class="kicker">Technology</p>
-<h2><a href="https://english.radio.cz/czech-researchers-test-microrobots-reproductive-health-8903689" rel="noopener noreferrer">Czech researchers test microrobots for reproductive health</a></h2>
-<p class="excerpt">Researchers at CEITEC, part of Brno University of Technology, are developing tiny magnetic particles to capture microplastics and tackle bacterial biofilms in the female reproductive system.…</p>
-<p class="byline">Read the full story at <a href="https://english.radio.cz/czech-researchers-test-microrobots-reproductive-health-8903689" rel="noopener noreferrer">Radio Prague International</a>
- · Europe · 26 Nov 2026</p>
-<p class="why">Why this story is here: Positive signals: health</p>
-</div></article>
-<article class="card" id="se1ac73a69ed9" data-region="Europe"
- data-topic="Technology" data-source="The Guardian Technology" data-ts="1795694434">
-<div class="photo"><a href="https://www.theguardian.com/games/2026/nov/26/dressmaker-review-delightful-business-sim-is-a-cut-above" rel="noopener noreferrer"><img src="https://i.guim.co.uk/img/media/d847b3ff22400983425dbf9acff6d72003d9ad3c/134_0_1125_900/master/1125.jpg?width=140&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=59c0f81017dcc236a1b13cf82a4c80a4" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: The Guardian Technology</span></div><div class="text">
-<p class="kicker">Technology</p>
-<h2><a href="https://www.theguardian.com/games/2026/nov/26/dressmaker-review-delightful-business-sim-is-a-cut-above" rel="noopener noreferrer">Dressmaker review – delightful business sim is a cut above</a></h2>
-<p class="excerpt">PC; Cosy Lives/Free Lives Catering to the exacting whims of a small town preparing for some grand visitors presents absorbing, beautifully designed – and surprisingly thrilling – challenges The small…</p>
-<p class="byline">Read the full story at <a href="https://www.theguardian.com/games/2026/nov/26/dressmaker-review-delightful-business-sim-is-a-cut-above" rel="noopener noreferrer">The Guardian Technology</a>
- · Europe · 26 Nov 2026</p>
-<p class="why">Why this story is here: Positive signals: delightful, loves</p>
-</div></article>
-<article class="card" id="s4c3826714dc5" data-region="Global"
- data-topic="Technology" data-source="New Atlas" data-ts="1795693929">
-<div class="photo"><a href="https://newatlas.com/mobile-technology/amoeba-one-keyring-phone-distraction-free/" rel="noopener noreferrer"><img src="https://assets.newatlas.com/dims4/default/ea9ff0f/2147483647/strip/true/crop/1200x630+0+437/resize/1200x630!/quality/90/?url=https%3A%2F%2Fnewatlas-brightspot.s3.ap-southeast-2.amazonaws.com%2F5e%2Ffd%2Fba412e8343c78141dabdfaeabbd2%2Fthe-ones-keyring-sized-build-changes-the-way-we-think-of-physically-handling-our-phones.jpg&amp;na.image_optimisation=0" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: New Atlas</span></div><div class="text">
-<p class="kicker">Technology</p>
-<h2><a href="https://newatlas.com/mobile-technology/amoeba-one-keyring-phone-distraction-free/" rel="noopener noreferrer">Is this keyring &#x27;amoeba&#x27; the ultimate dumb phone?</a></h2>
-<p class="excerpt">There&#x27;s a whole industry growing to help people cut down on screen time: software and dumb phones and not-so-dumb phones all aiming to keep you connected only enough to ensure you&#x27;re reachable and…</p>
-<p class="byline">Read the full story at <a href="https://newatlas.com/mobile-technology/amoeba-one-keyring-phone-distraction-free/" rel="noopener noreferrer">New Atlas</a>
- · Global · 26 Nov 2026</p>
-<p class="why">Why this story is here: Technology news with no bad-news words</p>
-</div></article>
-<article class="card" id="s9f5f34cea4e6" data-region="Asia"
- data-topic="Arts &amp; culture" data-source="The Better India" data-ts="1795693013">
-<div class="photo"><a href="https://thebetterindia.com/culture/indian-artists-winner-venice-biennale-exhibition-2026-12843418" rel="noopener noreferrer"><img src="https://img-cdn.publive.online/fit-in/1280x960/english-betterindia/media/media_files/2026/11/26/venice-biennale-2026-11-26-16-42-00.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: The Better India</span></div><div class="text">
-<p class="kicker">Arts &amp; culture</p>
-<h2><a href="https://thebetterindia.com/culture/indian-artists-winner-venice-biennale-exhibition-2026-12843418" rel="noopener noreferrer">5 Artists Used Bamboo, Thread &amp; Even Egg Trays To Create India’s Award-Winning Venice Exhibition</a></h2>
-<p class="excerpt">When the Delhi house where artist Sumakshi Singh spent her childhood summers was demolished, she found an extraordinary way to bring it back. Using delicate white threads, she recreated its doors,…</p>
-<p class="byline">Read the full story at <a href="https://thebetterindia.com/culture/indian-artists-winner-venice-biennale-exhibition-2026-12843418" rel="noopener noreferrer">The Better India</a>
- · Asia · 26 Nov 2026</p>
-<p class="why">Why this story is here: From a dedicated good-news publisher</p>
-</div></article>
-<article class="card" id="s1a5476265547" data-region="North America"
- data-topic="Technology" data-source="Engadget" data-ts="1795690892">
-<div class="photo"><a href="https://www.engadget.com/2329071/spacex-gets-fcc-approval-to-deploy-1-million-satellites-for-its-ai-orbital-data-center/" rel="noopener noreferrer"><img src="https://www.engadget.com/img/gallery/spacex-gets-fcc-approval-to-deploy-1-million-satellites-for-its-ai-orbital-data-center/l-intro-1795690830.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: Engadget</span></div><div class="text">
-<p class="kicker">Technology</p>
-<h2><a href="https://www.engadget.com/2329071/spacex-gets-fcc-approval-to-deploy-1-million-satellites-for-its-ai-orbital-data-center/" rel="noopener noreferrer">SpaceX gets FCC approval to deploy 1 million satellites for its AI orbital data center</a></h2>
-<p class="excerpt">The FCC has granted SpaceX&#x27;s request to deploy 1 million satellites to build an AI data center in orbit.</p>
-<p class="byline">Read the full story at <a href="https://www.engadget.com/2329071/spacex-gets-fcc-approval-to-deploy-1-million-satellites-for-its-ai-orbital-data-center/" rel="noopener noreferrer">Engadget</a>
- · North America · 26 Nov 2026</p>
-<p class="why">Why this story is here: Technology news with no bad-news words</p>
-</div></article>
-<article class="card" id="s03787a122bbd" data-region="Global"
- data-topic="Arts &amp; culture" data-source="Good News Network" data-ts="1795690841">
-<div class="photo"><a href="https://www.goodnewsnetwork.org/mission-joy-perfect-friendship-film-key-to-happiness/" rel="noopener noreferrer"><img src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/mission-joy-1-1.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: Good News Network</span></div><div class="text">
-<p class="kicker">Arts &amp; culture</p>
-<h2><a href="https://www.goodnewsnetwork.org/mission-joy-perfect-friendship-film-key-to-happiness/" rel="noopener noreferrer">This Year, The Perfect Thanksgiving Film Features Two Icons, One Friendship and Endless Joy</a></h2>
-<p class="excerpt">Thanksgiving is a time for gathering, giving thanks, and remembering that joy is possible even when life has been hard. Few films capture that spirit better than Mission: JOY. The documentary…</p>
-<p class="byline">Read the full story at <a href="https://www.goodnewsnetwork.org/mission-joy-perfect-friendship-film-key-to-happiness/" rel="noopener noreferrer">Good News Network</a>
- · Global · 26 Nov 2026</p>
-<p class="why">Why this story is here: From a dedicated good-news publisher</p>
-</div></article>
-<article class="card" id="s2df6a5f59d22" data-region="Asia"
- data-topic="Technology" data-source="The Better India" data-ts="1795689037">
-<div class="photo"><a href="https://thebetterindia.com/culture/iit-bombay-engineer-nitesh-tiwari-ramayana-filmmaker-journey-12842210" rel="noopener noreferrer"><img src="https://img-cdn.publive.online/fit-in/1280x960/english-betterindia/media/media_files/2026/11/26/1-2026-11-26-13-52-35.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: The Better India</span></div><div class="text">
-<p class="kicker">Technology</p>
-<h2><a href="https://thebetterindia.com/culture/iit-bombay-engineer-nitesh-tiwari-ramayana-filmmaker-journey-12842210" rel="noopener noreferrer">Before Directing Ramayana, Nitesh Tiwari Was an IIT Bombay Grad Who Quit His Tech Job to Write</a></h2>
-<p class="excerpt">When Nitesh Tiwari left a software company after four months, he had no film career waiting for him, only an IIT Bombay engineering degree and an interest in writing. Nearly three decades later, he…</p>
-<p class="byline">Read the full story at <a href="https://thebetterindia.com/culture/iit-bombay-engineer-nitesh-tiwari-ramayana-filmmaker-journey-12842210" rel="noopener noreferrer">The Better India</a>
- · Asia · 26 Nov 2026</p>
-<p class="why">Why this story is here: A hopeful angle on a difficult subject</p>
-</div></article>
-<article class="card" id="sb9ad90a23c0e" data-region="North America"
- data-topic="Technology" data-source="Electrek" data-ts="1795688576">
-<div class="photo"><a href="https://electrek.co/2026/11/26/if-i-could-only-use-one-bike-lock-itd-be-this-foldylock-elite-110-review/" rel="noopener noreferrer"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/11/foldylock-elite-head-1.jpg?quality=82&amp;strip=all&amp;resize=1200,628" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: Electrek</span></div><div class="text">
-<p class="kicker">Technology</p>
-<h2><a href="https://electrek.co/2026/11/26/if-i-could-only-use-one-bike-lock-itd-be-this-foldylock-elite-110-review/" rel="noopener noreferrer">If I could only use one bike lock, it’d be this: FoldyLock Elite 110 review</a></h2>
-<p class="excerpt">I ride e-bikes professionally, regularly testing new bikes and biking gear. I don’t even own a car – I get around almost exclusively on two wheels. So when it comes to important gear like bike locks…</p>
-<p class="byline">Read the full story at <a href="https://electrek.co/2026/11/26/if-i-could-only-use-one-bike-lock-itd-be-this-foldylock-elite-110-review/" rel="noopener noreferrer">Electrek</a>
- · North America · 26 Nov 2026</p>
-<p class="why">Why this story is here: Technology news with no bad-news words</p>
-</div></article>
-<article class="card" id="s140a281c412e" data-region="Europe"
- data-topic="Technology" data-source="The Guardian Technology" data-ts="1795687252">
-<div class="photo"><a href="https://www.theguardian.com/technology/2026/nov/26/jensen-huang-nvidia-tech" rel="noopener noreferrer"><img src="https://i.guim.co.uk/img/media/1c86eb468485514265ee27c663d10f3cb3fb8fb0/335_0_3331_2666/master/3331.jpg?width=140&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=994ad9b859c6d63dafa86aaf9b3936c3" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: The Guardian Technology</span></div><div class="text">
-<p class="kicker">Technology</p>
-<h2><a href="https://www.theguardian.com/technology/2026/nov/26/jensen-huang-nvidia-tech" rel="noopener noreferrer">A vocal cohort of tech leaders celebrates Huang’s Nvidia return, but others are keeping quiet</a></h2>
-<p class="excerpt">Elon Musk and Sam Altman among those rejoicing but Google, Meta and Apple chiefs have declined to weigh in The phrase “return of the king” rippled across social media on Monday. A vocal subsection of…</p>
-<p class="byline">Read the full story at <a href="https://www.theguardian.com/technology/2026/nov/26/jensen-huang-nvidia-tech" rel="noopener noreferrer">The Guardian Technology</a>
- · Europe · 26 Nov 2026</p>
-<p class="why">Why this story is here: Positive signals: celebrates, celebrating</p>
-</div></article>
-<article class="card" id="s57902ac8c68f" data-region="North America"
- data-topic="Technology" data-source="Engadget" data-ts="1795685184">
-<div class="photo"><a href="https://www.engadget.com/2329049/x-is-adding-its-first-ever-parental-controls/" rel="noopener noreferrer"><img src="https://www.engadget.com/img/gallery/x-is-adding-its-first-ever-parental-controls/l-intro-1795684809.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: Engadget</span></div><div class="text">
-<p class="kicker">Technology</p>
-<h2><a href="https://www.engadget.com/2329049/x-is-adding-its-first-ever-parental-controls/" rel="noopener noreferrer">X is adding its first-ever parental controls</a></h2>
-<p class="excerpt">X (and Twitter before it) have never really had real parental controls. Until now.</p>
-<p class="byline">Read the full story at <a href="https://www.engadget.com/2329049/x-is-adding-its-first-ever-parental-controls/" rel="noopener noreferrer">Engadget</a>
- · North America · 26 Nov 2026</p>
-<p class="why">Why this story is here: Positive signals: first-ever</p>
-</div></article>
-<article class="card" id="s468029741d22" data-region="Europe"
- data-topic="Feel-good" data-source="Yle News" data-ts="1795684477">
-<div class="photo"><a href="https://yle.fi/a/74-20259086?origin=rss" rel="noopener noreferrer"><img src="https://img.img-cdn.yle.fi/crop_extract,w_3091,h_1738,x_0,y_801/crop_fill,w_1200,h_628/f_auto/39-17287716ae0da63e0b88/1793120931" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: Yle News</span></div><div class="text">
-<p class="kicker">Feel-good</p>
-<h2><a href="https://yle.fi/a/74-20259086?origin=rss" rel="noopener noreferrer">WSJ: Stubb and Støre contacted Putin with help of Russian oligarch</a></h2>
-<p class="excerpt">The two leaders wanted to assure Russia that Nato would not blockade its ships in the Baltic.</p>
-<p class="byline">Read the full story at <a href="https://yle.fi/a/74-20259086?origin=rss" rel="noopener noreferrer">Yle News</a>
- · Europe · 26 Nov 2026</p>
-<p class="why">Why this story is here: Positive signals: help</p>
-</div></article>
-<article class="card" id="sac07bbe518c9" data-region="Sweden"
- data-topic="Technology" data-source="SweClockers" data-ts="1795683600">
-<div class="photo"><a href="https://www.sweclockers.com/artikel/43474-nya-nova-lake-specifikationer-lacker" rel="noopener noreferrer"><img src="https://www.sweclockers.com/artikel/43474/og-image" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: SweClockers</span></div><div class="text">
-<p class="kicker">Technology</p>
-<h2><a href="https://www.sweclockers.com/artikel/43474-nya-nova-lake-specifikationer-lacker" rel="noopener noreferrer">New Nova Lake specifications leaked</a></h2>
-<p class="excerpt">The list of specifications is now almost complete for the first seven processors.</p>
-<p class="byline">Read the full story at <a href="https://www.sweclockers.com/artikel/43474-nya-nova-lake-specifikationer-lacker" rel="noopener noreferrer">SweClockers</a>
- · Sweden · 26 Nov 2026</p>
-<p class="why">Why this story is here: Technology news with no bad-news words</p>
-<p class="why">Machine-translated from Swedish. Original headline: <span translate="no">Nya Nova Lake-specifikationer läcker</span></p>
-</div></article>
-<article class="card" id="saaee38c79b97" data-region="Asia"
- data-topic="Science &amp; research" data-source="The Better India" data-ts="1795681837">
-<div class="photo"><a href="https://thebetterindia.com/wildlife/new-frog-species-eastern-himalayas-research-delhi-university-harvard-arunachal-pradesh-12826972" rel="noopener noreferrer"><img src="https://img-cdn.publive.online/fit-in/1280x960/english-betterindia/media/media_files/2026/11/20/frogs-india-2026-11-20-17-52-17.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: The Better India</span></div><div class="text">
-<p class="kicker">Science &amp; research</p>
-<h2><a href="https://thebetterindia.com/wildlife/new-frog-species-eastern-himalayas-research-delhi-university-harvard-arunachal-pradesh-12826972" rel="noopener noreferrer">This Arunachal Frog Eats Entire Snails &amp; Scientists Just Found It After 5 Years Of Searching</a></h2>
-<p class="excerpt">Imagine walking through a forest in the Eastern Himalayas after sunset. The ground is damp, fallen leaves gather beneath towering trees, and the sounds of insects fill the night air. Somewhere among…</p>
-<p class="byline">Read the full story at <a href="https://thebetterindia.com/wildlife/new-frog-species-eastern-himalayas-research-delhi-university-harvard-arunachal-pradesh-12826972" rel="noopener noreferrer">The Better India</a>
- · Asia · 26 Nov 2026</p>
-<p class="why">Why this story is here: From a dedicated good-news publisher</p>
-</div></article>
-<article class="card" id="s1cb2072f994a" data-region="Sweden"
- data-topic="Technology" data-source="M3" data-ts="1795681666">
-<div class="photo"><a href="https://www.m3.se/article/3298055/whatsapp-schemalagga-meddelanden.html" rel="noopener noreferrer"><img src="https://www.m3.se/wp-content/uploads/2026/11/3298055-0-83482400-1795681669-4_cb02bf.png?w=1024" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: M3</span></div><div class="text">
-<p class="kicker">Technology</p>
-<h2><a href="https://www.m3.se/article/3298055/whatsapp-schemalagga-meddelanden.html" rel="noopener noreferrer">New WhatsApp feature lets you schedule messages</a></h2>
-<p class="excerpt">WhatsApp has started rolling out a long-awaited feature that allows you to schedule messages in both private conversations and group chats. To use the feature, press and hold…</p>
-<p class="byline">Read the full story at <a href="https://www.m3.se/article/3298055/whatsapp-schemalagga-meddelanden.html" rel="noopener noreferrer">M3</a>
- · Sweden · 26 Nov 2026</p>
-<p class="why">Why this story is here: Technology news with no bad-news words</p>
-<p class="why">Machine-translated from Swedish. Original headline: <span translate="no">Ny funktion i Whatsapp låter dig schemalägga meddelanden</span></p>
-</div></article>
-<article class="card" id="s9c6c478ac7a9" data-region="Sweden"
- data-topic="Technology" data-source="M3" data-ts="1795680480">
-<div class="photo"><a href="https://www.m3.se/article/3298024/huawei-watch-air.html" rel="noopener noreferrer"><img src="https://www.m3.se/wp-content/uploads/2026/11/3298024-0-90482600-1795680483-Namnlos-kopiera-1.jpg?quality=50&amp;strip=all&amp;w=1024" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.photo').remove()"></a><span class="credit">Photo: M3</span></div><div class="text">
-<p class="kicker">Technology</p>
-<h2><a href="https://www.m3.se/article/3298024/huawei-watch-air.html" rel="noopener noreferrer">Huawei&#x27;s new smartwatch is ridiculously thin</a></h2>
-<p class="excerpt">Smartwatches are rarely very discreet, but the Huawei Watch Air is an exception. The new watch weighs only 27 grams without the strap and has a titanium alloy case. To keep the thickness down, it has…</p>
-<p class="byline">Read the full story at <a href="https://www.m3.se/article/3298024/huawei-watch-air.html" rel="noopener noreferrer">M3</a>
- · Sweden · 26 Nov 2026</p>
-<p class="why">Why this story is here: Technology news with no bad-news words</p>
-<p class="why">Machine-translated from Swedish. Original headline: <span translate="no">Huaweis nya smartklocka är löjligt tunn</span></p>
-</div></article></div><p id="empty" hidden>No stories to show yet.</p></main>
+</div></article></div></div><p id="empty" hidden>No stories to show yet.</p></main>
 <footer>Smiling Times links to the original publishers and does not republish their articles.
 Photos belong to the publishers named beside them. <a href="about.html">How stories are chosen</a></footer>
 </div><script>

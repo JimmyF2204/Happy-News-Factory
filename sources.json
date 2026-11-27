@@ -1,4 +1,15 @@
 [
+  {"name": "Good News Network: Laughs", "feed": "https://www.goodnewsnetwork.org/category/news/laughs/feed/", "region": "Global", "positive_outlet": true, "smile": true},
+  {"name": "Sunny Skyz", "feed": "https://feeds.feedburner.com/SunnySkyz", "region": "Global", "positive_outlet": true, "smile": true},
+  {"name": "InspireMore", "feed": "https://www.inspiremore.com/feed/", "region": "Global", "positive_outlet": true, "smile": true},
+  {"name": "Tank's Good News", "feed": "https://tanksgoodnews.com/feed/", "region": "Global", "positive_outlet": true, "smile": true},
+  {"name": "Upworthy", "feed": "https://www.upworthy.com/feeds/feed.rss", "region": "Global", "positive_outlet": false, "smile": true},
+  {"name": "Bored Panda", "feed": "https://www.boredpanda.com/feed/", "region": "Global", "positive_outlet": false, "smile": true},
+  {"name": "Laughing Squid", "feed": "https://laughingsquid.com/feed/", "region": "Global", "positive_outlet": false, "smile": true},
+  {"name": "UPI Odd News", "feed": "https://rss.upi.com/news/odd_news.rss", "region": "Global", "positive_outlet": false, "smile": true},
+  {"name": "Sky News Offbeat", "feed": "https://feeds.skynews.com/feeds/rss/strange.xml", "region": "Global", "positive_outlet": false, "smile": true},
+  {"name": "Talent Recap", "feed": "https://talentrecap.com/feed/", "region": "Global", "positive_outlet": false, "smile": true},
+
   {"name": "Feber", "feed": "https://feber.se/rss/", "region": "Sweden", "positive_outlet": false, "tech": true, "lang": "sv"},
   {"name": "SweClockers", "feed": "https://www.sweclockers.com/feeds/nyheter", "region": "Sweden", "positive_outlet": false, "tech": true, "lang": "sv"},
   {"name": "Ny Teknik", "feed": "https://www.nyteknik.se/rss", "region": "Sweden", "positive_outlet": false, "tech": true, "lang": "sv"},
@@ -53,16 +64,5 @@
   {"name": "Reasons to be Cheerful", "feed": "https://reasonstobecheerful.world/feed/", "region": "Global", "positive_outlet": true},
   {"name": "The Optimist Daily", "feed": "https://www.optimistdaily.com/feed/", "region": "Global", "positive_outlet": true},
   {"name": "The Better India", "feed": "https://www.thebetterindia.com/feed/", "region": "Asia", "positive_outlet": true},
-  {"name": "Not All News Is Bad", "feed": "https://notallnewsisbad.com/feed/", "region": "Global", "positive_outlet": true},
-  
-  {"name": "Good News Network: Laughs", "feed": "https://www.goodnewsnetwork.org/category/news/laughs/feed/", "region": "Global", "positive_outlet": true, "smile": true},
-  {"name": "Sunny Skyz", "feed": "https://feeds.feedburner.com/SunnySkyz", "region": "Global", "positive_outlet": true, "smile": true},
-  {"name": "InspireMore", "feed": "https://www.inspiremore.com/feed/", "region": "Global", "positive_outlet": true, "smile": true},
-  {"name": "Tank's Good News", "feed": "https://tanksgoodnews.com/feed/", "region": "Global", "positive_outlet": true, "smile": true},
-  {"name": "Upworthy", "feed": "https://www.upworthy.com/feeds/feed.rss", "region": "Global", "positive_outlet": false, "smile": true},
-  {"name": "Bored Panda", "feed": "https://www.boredpanda.com/feed/", "region": "Global", "positive_outlet": false, "smile": true},
-  {"name": "Laughing Squid", "feed": "https://laughingsquid.com/feed/", "region": "Global", "positive_outlet": false, "smile": true},
-  {"name": "UPI Odd News", "feed": "https://rss.upi.com/news/odd_news.rss", "region": "Global", "positive_outlet": false, "smile": true},
-  {"name": "Sky News Offbeat", "feed": "https://feeds.skynews.com/feeds/rss/strange.xml", "region": "Global", "positive_outlet": false, "smile": true},
-  {"name": "Talent Recap", "feed": "https://talentrecap.com/feed/", "region": "Global", "positive_outlet": false, "smile": true},
+  {"name": "Not All News Is Bad", "feed": "https://notallnewsisbad.com/feed/", "region": "Global", "positive_outlet": true}
 ]

@@ -8837,5 +8837,37 @@
   "reason": "From a dedicated good-news publisher",
   "access_checked": 1795788075.0856495,
   "lang": "en"
+ },
+ "8d3ad77e111d": {
+  "id": "8d3ad77e111d",
+  "title": "”Vi lever i en allt farligare fred”",
+  "link": "https://www.svt.se/nyheter/inrikes/vi-lever-i-en-allt-farligare-fred",
+  "source": "SVT Nyheter",
+  "feed": "https://www.svt.se/nyheter/rss.xml",
+  "region": "Sweden",
+  "topic": "Peace & diplomacy",
+  "excerpt": "De mystiska incidenterna som drabbar Sverige och Europa blir allt fler – och allt värre. Nu finns tecken på att situationen skärpts och Sverige ses inte längre som lågprioriterat av Ryssland, enligt…",
+  "image": "",
+  "published": 1795788105,
+  "status": "review",
+  "score": 0.5,
+  "reason": "Mixed headline (farligare), needs a human look",
+  "access_checked": 1795788502.2890391
+ },
+ "ea9f0aad421e": {
+  "id": "ea9f0aad421e",
+  "title": "M, KD, L och C överens om ny klimatpolitik",
+  "link": "https://www.expressen.se/nyheter/politik/m-kd-l-och-c-overens-om-ny-klimatpolitik/",
+  "source": "Expressen",
+  "feed": "https://feeds.expressen.se/nyheter/",
+  "region": "Sweden",
+  "topic": "Clean energy & climate solutions",
+  "excerpt": "Partiledarna för Moderaterna, Kristdemokraterna, Liberalerna och Centerpartiet är överens om hur Sveriges klimatpolitik ska bli mer ambitiös. Det framgår i den inriktningsöverenskommelse som de har…",
+  "image": "",
+  "published": 1795788412,
+  "status": "excluded",
+  "score": 0.0,
+  "reason": "Duplicate of a story already listed",
+  "access_checked": 1795788502.2890391
  }
 }

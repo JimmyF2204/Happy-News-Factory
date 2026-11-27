@@ -13,7 +13,7 @@
   "modified": null
  },
  "https://feeds.expressen.se/nyheter/": {
-  "etag": "W/\"368a-6hx+ErJsmGRd+FterZQy5UkRO3U\"",
+  "etag": "W/\"3756-taYL3lbCv44MjlZiAizuvlj2GJY\"",
   "modified": null
  },
  "https://rss.aftonbladet.se/rss2/small/pages/sections/senastenytt/": {
@@ -45,11 +45,11 @@
   "modified": null
  },
  "https://www.theguardian.com/world/europe-news/rss": {
-  "etag": "W/\"hash-7215681635392427305\"",
+  "etag": "W/\"hash4371168949478048113\"",
   "modified": null
  },
  "https://www.theguardian.com/science/rss": {
-  "etag": "W/\"hash-8644722760072447837\"",
+  "etag": "W/\"hash-7737661291706075849\"",
   "modified": null
  },
  "https://rss.dw.com/rdf/rss-en-all": {
@@ -65,12 +65,12 @@
   "modified": "Fri, 27 Nov 2026 13:33:04 GMT"
  },
  "https://feeds.yle.fi/uutiset/v1/recent.rss?publisherIds=YLE_NEWS": {
-  "etag": "W/\"25d5-fRuByFfJUU7dl3Vlb2s62B6R3jU\"",
+  "etag": "W/\"25d5-vSj1cxP/Ug6QfGsHMsNpHDdsaxs\"",
   "modified": null
  },
  "https://www.rte.ie/feeds/rss/?index=/news/": {
   "etag": null,
-  "modified": "Fri, 27 Nov 2026 13:58:58 GMT"
+  "modified": "Fri, 27 Nov 2026 14:06:33 GMT"
  },
  "https://news.err.ee/rss": {
   "etag": null,
@@ -97,8 +97,8 @@
   "modified": "Wed, 25 Nov 2026 15:05:20 GMT"
  },
  "https://www.goodnewsnetwork.org/feed/": {
-  "etag": "W/\"cd708dc6bc7f464862025670855a0185\"",
-  "modified": "Fri, 27 Nov 2026 08:00:23 GMT"
+  "etag": "W/\"eae5a12290894e34296091783da6efb0\"",
+  "modified": "Thu, 26 Nov 2026 15:22:27 GMT"
  },
  "https://reasonstobecheerful.world/feed/": {
   "etag": null,

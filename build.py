@@ -691,6 +691,139 @@ def render_review(stories):
         lines.append("Nothing is waiting for review.")
     return "\n".join(lines) + "\n"
 
+# --- Translation and reader languages ---
+TRANSLATE_BATCH = 40  # stories translated per run
+LANG_NAMES = {"sv": "Swedish", "de": "German", "fr": "French", "es": "Spanish", "it": "Italian",
+              "nl": "Dutch", "da": "Danish", "no": "Norwegian", "fi": "Finnish", "pl": "Polish",
+              "pt": "Portuguese"}
+READER_LANGUAGES = [
+    ("sv", "Svenska"), ("de", "Deutsch"), ("fr", "Français"), ("es", "Español"),
+    ("it", "Italiano"), ("nl", "Nederlands"), ("pl", "Polski"), ("pt", "Português"),
+    ("fi", "Suomi"), ("no", "Norsk"), ("da", "Dansk"), ("uk", "Українська"),
+    ("ar", "العربية"), ("zh-CN", "中文"), ("ja", "日本語"), ("hi", "हिन्दी"),
+]
+SOURCE_LANG = {s["feed"]: s["lang"] for s in SOURCES if s.get("lang")}
+SWEDISH_WORD = re.compile(
+    r"\b(?:och|är|för|inte|på|som|av|det|att|från|efter|har|när|här|så|ska|får|blir|hos"
+    r"|över|eller|år|nya|sig|hon|ett|mot|vid|med|kan|om)\b", re.I)
+
+
+def detect_lang(text):
+    hits = len(SWEDISH_WORD.findall(text))
+    if hits >= 2 or (hits == 1 and re.search(r"[åäö]", text, re.I)):
+        return "sv"
+    return "en"
+
+
+def translate(text, lang):
+    """Translate text to English with the free MyMemory service. Returns "" on failure."""
+    text = text.encode("utf-8")[:480].decode("utf-8", errors="ignore")
+    params = {"q": text, "langpair": f"{lang}|en"}
+    email = CONFIG.get("contact_email", "")
+    if "@" in email and not email.endswith("example.com"):
+        params["de"] = email
+    time.sleep(0.3)
+    try:
+        resp = requests.get("https://api.mymemory.translated.net/get", params=params,
+                            headers={"User-Agent": UA}, timeout=15)
+        data = resp.json()
+    except (requests.RequestException, ValueError):
+        return ""
+    if not isinstance(data, dict) or str(data.get("responseStatus")) != "200":
+        return ""
+    result = html.unescape(str((data.get("responseData") or {}).get("translatedText") or "")).strip()
+    if not result or "MYMEMORY WARNING" in result.upper():
+        return ""
+    return result
+
+
+def translate_stories(stories):
+    queue = []
+    for story in stories.values():
+        if story["status"] not in ("published", "translating") or story.get("lang"):
+            continue
+        lang = SOURCE_LANG.get(story.get("feed")) or detect_lang(story["title"] + " " + story["excerpt"])
+        if lang == "en":
+            story["lang"] = "en"
+        else:
+            story["status"] = "translating"  # hidden until it is in English
+            queue.append((story, lang))
+    queue.sort(key=lambda item: -item[0]["published"])
+    failures = 0
+    for story, lang in queue[:TRANSLATE_BATCH]:
+        title = translate(story["title"], lang)
+        text = translate(story["excerpt"], lang) if title and story["excerpt"] else ""
+        if not title or (story["excerpt"] and not text):
+            failures += 1
+            if failures >= 3:
+                print("! Translation unavailable or daily limit reached, will retry next run")
+                break
+            continue
+        story.update(title_original=story["title"], title=title, excerpt=text,
+                     lang=lang, status="published")
+        print(f"translated       {title[:70]}")
+    waiting = sum(s["status"] == "translating" for s in stories.values())
+    if waiting:
+        print(f"{waiting} stories waiting for translation")
+
+
+_base_apply_overrides = apply_overrides
+
+
+def apply_overrides(stories):
+    _base_apply_overrides(stories)
+    translate_stories(stories)
+
+
+_base_card = card
+
+
+def card(story, lead=False):
+    out = _base_card(story, lead)
+    if story.get("title_original"):
+        name = LANG_NAMES.get(story.get("lang"), "another language")
+        note = (f'<p class="why">Machine-translated from {name}. Original headline: '
+                f'<span translate="no">{html.escape(story["title_original"])}</span></p>\n')
+        out = out.replace("</div></article>", note + "</div></article>", 1)
+    return out
+
+
+CSS += """
+.langbar{text-align:center;padding:.7rem 0 0;font:12px/1.4 system-ui,sans-serif;
+letter-spacing:.08em;text-transform:uppercase}
+.langbar select{margin-left:.5rem}
+"""
+_lang_options = "".join(f'<option value="{code}">{name}</option>' for code, name in READER_LANGUAGES)
+LANGUAGE_BAR = f"""<div class="langbar" translate="no"><label for="lang">Language</label>
+<select id="lang" onchange="setLanguage(this.value)">
+<option value="" selected disabled>Choose…</option>
+<option value="en">English (original)</option>{_lang_options}</select></div>
+<script>
+function setLanguage(code) {{
+  const file = location.pathname.split('/').pop() || 'index.html';
+  const url = {json.dumps(SITE_URL)} + '/' + file;
+  window.top.location.href = code === 'en' ? url
+    : 'https://translate.google.com/translate?sl=en&tl=' + code + '&u=' + encodeURIComponent(url);
+}}
+</script>
+"""
+_base_page = page
+
+
+def page(title, body, script=""):
+    return _base_page(title, body, script).replace("<main>", LANGUAGE_BAR + "<main>", 1)
+
+
+_base_render_about = render_about
+
+
+def render_about():
+    note = ("<h3>Translation</h3><p>Stories in other languages are machine-translated to English "
+            "by MyMemory and labelled, with the original headline shown. The language menu opens "
+            "the page through Google Translate. Machine translation makes mistakes; the original "
+            "article is the reliable version.</p>")
+    return _base_render_about().replace("<h3>Photos</h3>", note + "<h3>Photos</h3>", 1)
+# --- end translation and reader languages ---
 
 def main():
     DATA.mkdir(exist_ok=True)

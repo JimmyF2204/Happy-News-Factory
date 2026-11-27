@@ -338,6 +338,82 @@ def is_duplicate(title, titles):
             return True
     return False
 
+# --- Stricter positive filter ---
+DATA_VERSION = 3  # recheck all stories under the new rules
+PUBLISH_NEUTRAL = CONFIG.get("publish_neutral", False)
+
+
+def add_words(pattern, words):
+    return re.compile(pattern.pattern + "|" + rx(words).pattern, re.I)
+
+
+SEVERE = add_words(SEVERE, [
+    "deadly", r"fatal\w*", r"drown\w*", r"gunm[ae]n", r"airstrike\w*", r"tortur\w*",
+    r"molest\w*", r"paedophil\w*", r"pedophil\w*", r"execution\w*", "executed",
+    r"drunkn\w*", r"tortyr\w*", r"avrätt\w*", r"pedofil\w*",
+])
+NEGATIVE = add_words(NEGATIVE, [
+    r"clash\w*", "cuts", r"cutback\w*", "austerity", r"investigat\w*", "crimes?",
+    r"criminal\w*", "armed", r"militar\w*", "army", "troops?", r"soldier\w*", r"weapon\w*",
+    "guns?", "gunfire", r"raid\w*", "strikes?", r"protest\w*", r"feud\w*", r"dispute\w*",
+    r"conflict\w*", r"tension\w*", r"accus\w*", r"alleg\w*", "court", "charges",
+    "charged with", "sued", "sues", r"sentenc\w*", r"resign\w*", r"sack(?:ed|ing|s)",
+    r"fail\w*", r"loss(?:es)?", "lost", r"los(?:es|ing)", r"decline[sd]?", r"slump\w*",
+    r"plung\w*", r"shortage\w*", "debt", r"deficit\w*", r"tariff\w*", r"unemploy\w*",
+    "poverty", r"clos(?:ure|ures)", r"shut ?downs?", r"cancel\w*", r"delay\w*",
+    r"damag\w*", r"destroy\w*", r"danger\w*", r"concern\w*", "worries", "worried",
+    r"anger\w*", "angry", "fury", "furious", r"slam(?:s|med)", r"blame[sd]?",
+    r"criticis\w*", r"criticiz\w*", "backlash", r"controvers\w*", r"harass\w*",
+    r"extremis\w*", r"explosi\w*", r"explod\w*", "blaze", r"blast\w*", "emergency",
+    "missing", "chaos", r"panic\w*", "coup", "unrest", r"crackdown\w*", r"deport\w*",
+    r"smuggl\w*", r"traffick\w*", r"scam\w*", r"hack\w*", r"cyberattack\w*",
+    r"sabotag\w*", "espionage", r"spy\w*", "spies", r"gang\w*",
+    r"bråk\w*", r"konflikt\w*", r"nedskärning\w*", r"besparing\w*", r"sparkrav\w*",
+    r"utred\w*", r"kritik\w*", r"kritiser\w*", r"anklag\w*", r"strejk\w*", r"militär\w*",
+    r"försvarsmakt\w*", r"soldat\w*", r"vapen\w*", r"gäng\w*", r"skottlossning\w*",
+    r"anfall\w*", r"angrepp\w*", r"strid\w*", r"förlust\w*", r"förlora\w*",
+    r"misslyck\w*", r"avgå\w*", r"nedlägg\w*", r"brist\w*", r"skuld\w*", r"arbetslös\w*",
+    "rasar", r"farlig\w*", r"oroa\w*", r"ilska\w*", "rasande", "kaos", "larm", "larmar",
+    r"skad\w*", r"försvunn\w*", r"narkotika\w*", r"rättegång\w*", r"spion\w*",
+    r"bluff\w*", r"fusk\w*", r"upplopp\w*", r"hatbrott\w*", r"tullar\w*",
+])
+WAR_WORD = re.compile(r"wars?|conflict\w*|krig\w*|konflikt\w*|vapen\w*|strid\w*", re.I)
+
+
+def classify(title, summary, dedicated):
+    """Return (status, score, reason). Status: published, review or excluded."""
+    severe = found(SEVERE, title)
+    negative = found(NEGATIVE, title)
+    positive = found(POSITIVE, title)
+    bad = severe + negative
+    if bad:
+        words = ", ".join(bad[:4])
+        if PEACE.search(title):
+            if not severe and all(WAR_WORD.fullmatch(w) for w in negative):
+                return "published", 0.7, "Reports a step towards peace"
+            return "review", 0.5, f"Peace news with negative words ({words})"
+        if dedicated and not severe:
+            return "published", 0.6, "A hopeful angle on a difficult subject"
+        if positive:
+            return "review", 0.5, f"Mixed headline ({words}), needs a human look"
+        return "excluded", 0.0, f"Negative headline ({words})"
+    if OPINION.search(title):
+        return "review", 0.5, "Possible opinion or sponsored piece"
+    if dedicated:
+        return "published", 0.9, "From a dedicated good-news publisher"
+    pos_summary = found(POSITIVE, summary)
+    neg_summary = sorted(set(found(SEVERE, summary) + found(NEGATIVE, summary)))
+    signals = sorted(set(positive) | set(pos_summary))
+    if neg_summary and len(neg_summary) >= len(signals):
+        return "excluded", 0.1, "Summary is mainly negative (" + ", ".join(neg_summary[:4]) + ")"
+    if positive:
+        return "published", 0.8, "Positive signals: " + ", ".join(signals[:5])
+    if len(pos_summary) >= 2:
+        return "published", 0.7, "Positive signals: " + ", ".join(signals[:5])
+    if PUBLISH_NEUTRAL:
+        return "published", 0.5, "No negative content found"
+    return "excluded", 0.3, "No clear positive signal"
+# --- end stricter positive filter ---
 
 def collect(stories, state):
     titles = [s["title"].lower() for s in stories.values()]
@@ -605,7 +681,7 @@ def render_review(stories):
     lines = [
         "# Review queue", "",
         "Open each story and check it is positive and free to read in full.",
-        "To publish one, add its link s to `approve` in `overrides.json`.",
+        "To publish one, add its link to `approve` in `overrides.json`.",
         "To reject one or remove a published story, add its link to `block`.", "",
     ]
     for story in pending:

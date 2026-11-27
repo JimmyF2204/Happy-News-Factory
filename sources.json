@@ -6,7 +6,7 @@
   {"name": "Aftonbladet", "feed": "https://rss.aftonbladet.se/rss2/small/pages/sections/senastenytt/", "region": "Sweden", "positive_outlet": false},
   {"name": "Sveriges Radio Ekot", "feed": "https://api.sr.se/api/rss/program/83", "region": "Sweden", "positive_outlet": false},
   {"name": "Radio Sweden", "feed": "https://api.sr.se/api/rss/program/2054", "region": "Sweden", "positive_outlet": false},
-  {"name": "Forskningen.se", "feed": "https://www.forskning.se/feed/", "region": "Sweden", "positive_outlet": false},
+  {"name": "Forskning.se", "feed": "https://www.forskning.se/feed/", "region": "Sweden", "positive_outlet": false},
   {"name": "Sveriges Natur", "feed": "https://www.sverigesnatur.org/feed/", "region": "Sweden", "positive_outlet": false},
   {"name": "Warp News", "feed": "https://www.warpnews.se/rss/", "region": "Sweden", "positive_outlet": true},
 

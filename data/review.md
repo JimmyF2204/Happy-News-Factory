@@ -4,6 +4,15 @@ Open each story and check it is positive and free to read in full.
 To publish one, add its link to `approve` in `overrides.json`.
 To reject one or remove a published story, add its link to `block`.
 
+- **Grand Theft Anthropic: how GTA can inspire a fightback against AI | Alexander Hurst** (The Guardian Europe, score 0.5)
+  - Mixed headline (theft), needs a human look
+  - https://www.theguardian.com/commentisfree/2026/nov/28/grand-theft-anthropic-gta-fightback-against-ai
+- **Storing wind: Why are we losing renewable energy?** (RTÉ News, score 0.5)
+  - Mixed headline (losing), needs a human look
+  - https://www.rte.ie/news/business/2026/1128/1600865-battery-storage-wind/
+- **Service dog bites toddler visiting inmate at Tallinn Prison** (ERR News, score 0.5)
+  - Mixed headline (prison), needs a human look
+  - https://news.err.ee/1610209138/service-dog-bites-toddler-visiting-inmate-at-tallinn-prison
 - **WHO varnar för vaccinationsglapp: ”Inte i mål”** (Aftonbladet, score 0.5)
   - Mixed headline (varnar), needs a human look
   - https://www.aftonbladet.se/nyheter/a/JnJ1J4/who-varnar-for-vaccinationsglapp-inte-i-mal?utm_medium=rss

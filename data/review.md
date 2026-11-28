@@ -4,6 +4,9 @@ Open each story and check it is positive and free to read in full.
 To publish one, add its link to `approve` in `overrides.json`.
 To reject one or remove a published story, add its link to `block`.
 
+- **Ukraine war briefing: Zelenskyy criticises Trump for calling Putin his ‘friend’; Kyiv deploys new laser weapon** (The Guardian Europe, score 0.5)
+  - Mixed headline (criticises, war, weapon), needs a human look
+  - https://www.theguardian.com/world/2026/nov/28/ukraine-war-briefing-zelenskyy-criticises-trump-for-calling-putin-his-friend-kyiv-deploys-new-laser-weapon
 - **67 Fails, Funny Moments And Weird Takes That Might Make Scrolling Way More Enjoyable** (Bored Panda, score 0.5)
   - Mixed headline (fails), needs a human look
   - https://www.boredpanda.com/funny-fails-memes/

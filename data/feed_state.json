@@ -13,7 +13,7 @@
   "modified": null
  },
  "https://feeds.expressen.se/nyheter/": {
-  "etag": "W/\"39d0-B4ehOOgezMdjUKFHHApl7WlwGbU\"",
+  "etag": "W/\"398a-t7poKN2qHlhHwndI2DpOrJX5lWg\"",
   "modified": null
  },
  "https://rss.aftonbladet.se/rss2/small/pages/sections/senastenytt/": {
@@ -45,11 +45,11 @@
   "modified": null
  },
  "https://www.theguardian.com/world/europe-news/rss": {
-  "etag": "W/\"hash-5917963403147462078\"",
+  "etag": "W/\"hash7415305614008337918\"",
   "modified": null
  },
  "https://www.theguardian.com/science/rss": {
-  "etag": "W/\"hash-8888204252645423523\"",
+  "etag": "W/\"hash5688132998394946347\"",
   "modified": null
  },
  "https://rss.dw.com/rdf/rss-en-all": {
@@ -61,24 +61,24 @@
   "modified": null
  },
  "https://www.euronews.com/rss?format=mrss&level=theme&name=news": {
-  "etag": "\"916534b04002e081b1b07014a33d558a-gzip\"",
-  "modified": "Fri, 27 Nov 2026 18:48:24 GMT"
+  "etag": "\"937026c42f7bd6fa785fff74c0252539-gzip\"",
+  "modified": "Sat, 28 Nov 2026 06:05:32 GMT"
  },
  "https://feeds.yle.fi/uutiset/v1/recent.rss?publisherIds=YLE_NEWS": {
-  "etag": "W/\"25d5-APJYOqY3lI4A6jDl8W/CGgeSo7g\"",
+  "etag": "W/\"25d5-jpj6S6C+iq/pFTyX6xosug3XrS0\"",
   "modified": null
  },
  "https://www.rte.ie/feeds/rss/?index=/news/": {
   "etag": null,
-  "modified": "Sat, 28 Nov 2026 05:01:56 GMT"
+  "modified": "Sat, 28 Nov 2026 06:15:50 GMT"
  },
  "https://news.err.ee/rss": {
   "etag": null,
   "modified": null
  },
  "https://english.radio.cz/rcz-rss/en": {
-  "etag": "\"1795842010-1\"",
-  "modified": "Sat, 28 Nov 2026 05:00:10 GMT"
+  "etag": "\"1795845617-1\"",
+  "modified": "Sat, 28 Nov 2026 06:00:17 GMT"
  },
  "https://notesfrompoland.com/feed/": {
   "etag": "\"2473f4d96b6f6ea668a6fa5444a925fe-gzip\"",
@@ -97,8 +97,8 @@
   "modified": "Fri, 27 Nov 2026 14:59:28 GMT"
  },
  "https://www.goodnewsnetwork.org/feed/": {
-  "etag": "W/\"eae5a12290894e34296091783da6efb0\"",
-  "modified": "Thu, 26 Nov 2026 15:22:27 GMT"
+  "etag": "W/\"b594061c4f1d5e255fe6cd3d1eae746b\"",
+  "modified": "Fri, 27 Nov 2026 20:00:43 GMT"
  },
  "https://reasonstobecheerful.world/feed/": {
   "etag": null,
@@ -133,7 +133,7 @@
   "modified": null
  },
  "https://www.theguardian.com/technology/rss": {
-  "etag": "W/\"hash-5005366552485038429\"",
+  "etag": "W/\"hash-6058527688103154005\"",
   "modified": null
  },
  "https://www.theregister.com/headlines.atom": {
@@ -157,7 +157,7 @@
   "modified": "Sat, 28 Nov 2026 01:45:03 GMT"
  },
  "https://www.theverge.com/rss/index.xml": {
-  "etag": "W/\"e515382b37009edd560bdf9a8adfffa6\"",
+  "etag": "W/\"70a907ee9fdde16c662fb283e7064e93\"",
   "modified": null
  },
  "https://spectrum.ieee.org/feeds/feed.rss": {
@@ -169,16 +169,16 @@
   "modified": "Sat, 28 Nov 2026 00:21:10 GMT"
  },
  "https://hackaday.com/blog/feed/": {
-  "etag": "W/\"4cfa0aed1880c458b19f36f1226c6e18\"",
-  "modified": "Sat, 28 Nov 2026 04:38:14 GMT"
+  "etag": "W/\"ba83c8baa10876216c5f56c4170fd175\"",
+  "modified": "Sat, 28 Nov 2026 06:06:25 GMT"
  },
  "https://newatlas.com/index.rss": {
   "etag": null,
-  "modified": "Sat, 28 Nov 2026 05:12:09 GMT"
+  "modified": "Sat, 28 Nov 2026 06:12:55 GMT"
  },
  "https://restofworld.org/feed/latest/": {
   "etag": null,
-  "modified": "Sat, 28 Nov 2026 05:11:28 GMT"
+  "modified": "Sat, 28 Nov 2026 06:16:46 GMT"
  },
  "https://techcabal.com/feed/": {
   "etag": "W/\"79fb3172840578e697c0f844d695d7f5\"",
@@ -205,8 +205,8 @@
   "modified": "Fri, 27 Nov 2026 15:43:41 GMT"
  },
  "https://www.boredpanda.com/feed/": {
-  "etag": "\"eb7fa5fa12b00bf2afa3954825f68ff2\"",
-  "modified": "Sat, 28 Nov 2026 05:10:34 GMT"
+  "etag": "\"f3c4ccbd6944015834555f2b4390e2ec\"",
+  "modified": "Sat, 28 Nov 2026 05:15:58 GMT"
  },
  "https://laughingsquid.com/feed/": {
   "etag": "W/\"23f0bd594a216531e32a3ea24f89b669\"",
@@ -214,7 +214,7 @@
  },
  "https://rss.upi.com/news/odd_news.rss": {
   "etag": null,
-  "modified": "Sat, 28 Nov 2026 05:15:02 GMT"
+  "modified": "Sat, 28 Nov 2026 06:16:35 GMT"
  },
  "https://feeds.skynews.com/feeds/rss/strange.xml": {
   "etag": "W/\"af11cc8eae0b3cc399f524eead3f9e3fe6eae2cc99547c0fa31d67d507161be6\"",

@@ -4,6 +4,9 @@ Open each story and check it is positive and free to read in full.
 To publish one, add its link to `approve` in `overrides.json`.
 To reject one or remove a published story, add its link to `block`.
 
+- **More children reunited with their families amid war in Ukraine** (France 24 Europe, score 0.5)
+  - Mixed headline (war), needs a human look
+  - https://www.france24.com/en/more-children-reunited-with-their-families-amid-war-in-ukraine
 - **Grand Theft Anthropic: how GTA can inspire a fightback against AI | Alexander Hurst** (The Guardian Europe, score 0.5)
   - Mixed headline (theft), needs a human look
   - https://www.theguardian.com/commentisfree/2026/nov/28/grand-theft-anthropic-gta-fightback-against-ai

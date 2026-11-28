@@ -4,6 +4,12 @@ Open each story and check it is positive and free to read in full.
 To publish one, add its link to `approve` in `overrides.json`.
 To reject one or remove a published story, add its link to `block`.
 
+- **New York City: Macy’s 100th Thanksgiving Day Parade takes place after historic weather delay** (Euronews, score 0.5)
+  - Mixed headline (delay), needs a human look
+  - https://www.euronews.com/2026/11/28/new-york-city-macys-100th-thanksgiving-day-parade-takes-place-after-historic-weather-delay
+- **Happy Hacksgiving!*** (Hackaday, score 0.5)
+  - Mixed headline (hacksgiving), needs a human look
+  - https://hackaday.com/2026/11/28/happy-hacksgiving/
 - **More children reunited with their families amid war in Ukraine** (France 24 Europe, score 0.5)
   - Mixed headline (war), needs a human look
   - https://www.france24.com/en/more-children-reunited-with-their-families-amid-war-in-ukraine

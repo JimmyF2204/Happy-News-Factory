@@ -45,11 +45,11 @@
   "modified": null
  },
  "https://www.theguardian.com/world/europe-news/rss": {
-  "etag": "W/\"hash2371451019450354269\"",
+  "etag": "W/\"hash-8463503954039871009\"",
   "modified": null
  },
  "https://www.theguardian.com/science/rss": {
-  "etag": "W/\"hash-2651621669230379980\"",
+  "etag": "W/\"hash-5121105473383919504\"",
   "modified": null
  },
  "https://rss.dw.com/rdf/rss-en-all": {
@@ -65,20 +65,20 @@
   "modified": "Fri, 27 Nov 2026 18:48:24 GMT"
  },
  "https://feeds.yle.fi/uutiset/v1/recent.rss?publisherIds=YLE_NEWS": {
-  "etag": "W/\"25d5-QCAP8KYnT5wAf9vX/WB8MpSpp5k\"",
+  "etag": "W/\"25d5-5+PNhGQcARA+CePOaHVg1Jrj//U\"",
   "modified": null
  },
  "https://www.rte.ie/feeds/rss/?index=/news/": {
   "etag": null,
-  "modified": "Fri, 27 Nov 2026 23:03:12 GMT"
+  "modified": "Fri, 27 Nov 2026 23:58:15 GMT"
  },
  "https://news.err.ee/rss": {
   "etag": null,
   "modified": null
  },
  "https://english.radio.cz/rcz-rss/en": {
-  "etag": "\"1795820324-1\"",
-  "modified": "Fri, 27 Nov 2026 22:58:44 GMT"
+  "etag": "\"1795823937-1\"",
+  "modified": "Fri, 27 Nov 2026 23:58:57 GMT"
  },
  "https://notesfrompoland.com/feed/": {
   "etag": "\"2473f4d96b6f6ea668a6fa5444a925fe-gzip\"",
@@ -133,7 +133,7 @@
   "modified": null
  },
  "https://www.theguardian.com/technology/rss": {
-  "etag": "W/\"hash2745983865230045486\"",
+  "etag": "W/\"hash-1806635540516122494\"",
   "modified": null
  },
  "https://www.theregister.com/headlines.atom": {
@@ -157,7 +157,7 @@
   "modified": "Fri, 27 Nov 2026 22:46:29 GMT"
  },
  "https://www.theverge.com/rss/index.xml": {
-  "etag": "W/\"380b70e113225c7aed6d3c61b3a6c8ee\"",
+  "etag": "W/\"f894899bbf4eb72fd6ef72b722adc73c\"",
   "modified": null
  },
  "https://spectrum.ieee.org/feeds/feed.rss": {
@@ -169,16 +169,16 @@
   "modified": "Fri, 27 Nov 2026 20:58:03 GMT"
  },
  "https://hackaday.com/blog/feed/": {
-  "etag": "W/\"dc103deaf2945e2a8461039d97f0960a\"",
-  "modified": "Fri, 27 Nov 2026 22:56:57 GMT"
+  "etag": "W/\"f807faa2de55686c1e9a09eecfdc1b1f\"",
+  "modified": "Fri, 27 Nov 2026 23:46:39 GMT"
  },
  "https://newatlas.com/index.rss": {
   "etag": null,
-  "modified": "Fri, 27 Nov 2026 23:04:46 GMT"
+  "modified": "Fri, 27 Nov 2026 23:58:10 GMT"
  },
  "https://restofworld.org/feed/latest/": {
   "etag": null,
-  "modified": "Fri, 27 Nov 2026 23:05:02 GMT"
+  "modified": "Sat, 28 Nov 2026 00:00:10 GMT"
  },
  "https://techcabal.com/feed/": {
   "etag": "W/\"79fb3172840578e697c0f844d695d7f5\"",
@@ -205,8 +205,8 @@
   "modified": "Fri, 27 Nov 2026 15:43:41 GMT"
  },
  "https://www.boredpanda.com/feed/": {
-  "etag": "\"543bdf35089d6dcda00be1f5539129d1\"",
-  "modified": "Fri, 27 Nov 2026 23:00:02 GMT"
+  "etag": "\"bc94d532773ba662df95b9415bf1db8e\"",
+  "modified": "Sat, 28 Nov 2026 00:02:01 GMT"
  },
  "https://laughingsquid.com/feed/": {
   "etag": "W/\"2314f9777a7faa9de22b5c3b5c43c440\"",
@@ -214,7 +214,7 @@
  },
  "https://rss.upi.com/news/odd_news.rss": {
   "etag": null,
-  "modified": "Fri, 27 Nov 2026 23:08:10 GMT"
+  "modified": "Sat, 28 Nov 2026 00:01:45 GMT"
  },
  "https://feeds.skynews.com/feeds/rss/strange.xml": {
   "etag": "W/\"af11cc8eae0b3cc399f524eead3f9e3fe6eae2cc99547c0fa31d67d507161be6\"",

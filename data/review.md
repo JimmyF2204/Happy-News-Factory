@@ -4,6 +4,12 @@ Open each story and check it is positive and free to read in full.
 To publish one, add its link to `approve` in `overrides.json`.
 To reject one or remove a published story, add its link to `block`.
 
+- **WHO varnar för vaccinationsglapp: ”Inte i mål”** (Aftonbladet, score 0.5)
+  - Mixed headline (varnar), needs a human look
+  - https://www.aftonbladet.se/nyheter/a/JnJ1J4/who-varnar-for-vaccinationsglapp-inte-i-mal?utm_medium=rss
+- **Caroline vill rädda skadade igelkottar: ”Min barndomsdröm”** (SVT Nyheter, score 0.5)
+  - Mixed headline (skadade), needs a human look
+  - https://www.svt.se/nyheter/lokalt/ost/caroline-vill-radda-skadade-igelkottar-min-barndomsdrom
 - **Ukraine war briefing: Zelenskyy criticises Trump for calling Putin his ‘friend’; Kyiv deploys new laser weapon** (The Guardian Europe, score 0.5)
   - Mixed headline (criticises, war, weapon), needs a human look
   - https://www.theguardian.com/world/2026/nov/28/ukraine-war-briefing-zelenskyy-criticises-trump-for-calling-putin-his-friend-kyiv-deploys-new-laser-weapon

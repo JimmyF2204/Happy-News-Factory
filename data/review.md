@@ -4,6 +4,9 @@ Open each story and check it is positive and free to read in full.
 To publish one, add its link to `approve` in `overrides.json`.
 To reject one or remove a published story, add its link to `block`.
 
+- **67 Fails, Funny Moments And Weird Takes That Might Make Scrolling Way More Enjoyable** (Bored Panda, score 0.5)
+  - Mixed headline (fails), needs a human look
+  - https://www.boredpanda.com/funny-fails-memes/
 - **“Sick Of It”: Hollywood Star Faces Fresh Backlash As Her Blunt Thanksgiving Message Resurfaces** (Bored Panda, score 0.5)
   - Mixed headline (backlash), needs a human look
   - https://www.boredpanda.com/shailene-woodley-thanksgiving-message-backlash/

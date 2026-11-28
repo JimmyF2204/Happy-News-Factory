@@ -13,7 +13,7 @@
   "modified": null
  },
  "https://feeds.expressen.se/nyheter/": {
-  "etag": "W/\"31a6-aIHCpo42zdGcKYnQsCBEqFlr8d0\"",
+  "etag": "W/\"31ac-Zc+jqkfXj7WjtRgbVgjcvdKM2bk\"",
   "modified": null
  },
  "https://rss.aftonbladet.se/rss2/small/pages/sections/senastenytt/": {
@@ -45,11 +45,11 @@
   "modified": null
  },
  "https://www.theguardian.com/world/europe-news/rss": {
-  "etag": "W/\"hash-4409972333086039315\"",
+  "etag": "W/\"hash3543492796812840833\"",
   "modified": null
  },
  "https://www.theguardian.com/science/rss": {
-  "etag": "W/\"hash-6161334438734968361\"",
+  "etag": "W/\"hash1335540547432620703\"",
   "modified": null
  },
  "https://rss.dw.com/rdf/rss-en-all": {
@@ -65,20 +65,20 @@
   "modified": "Sat, 28 Nov 2026 13:05:32 GMT"
  },
  "https://feeds.yle.fi/uutiset/v1/recent.rss?publisherIds=YLE_NEWS": {
-  "etag": "W/\"268f-e+35qm5+0krlkiE12nYtHIczgkY\"",
+  "etag": "W/\"268f-nHZmifbrPa+qj0KmM2eYuszMQqU\"",
   "modified": null
  },
  "https://www.rte.ie/feeds/rss/?index=/news/": {
   "etag": null,
-  "modified": "Sat, 28 Nov 2026 14:16:47 GMT"
+  "modified": "Sat, 28 Nov 2026 14:59:12 GMT"
  },
  "https://news.err.ee/rss": {
   "etag": null,
   "modified": null
  },
  "https://english.radio.cz/rcz-rss/en": {
-  "etag": "\"1795874477-1\"",
-  "modified": "Sat, 28 Nov 2026 14:01:17 GMT"
+  "etag": "\"1795878083-1\"",
+  "modified": "Sat, 28 Nov 2026 15:01:23 GMT"
  },
  "https://notesfrompoland.com/feed/": {
   "etag": "\"77384bded0420a244fae0e6054ff3f12-gzip\"",
@@ -114,7 +114,7 @@
  },
  "https://notallnewsisbad.com/feed/": {
   "etag": null,
-  "modified": "Fri, 27 Nov 2026 15:00:47 GMT"
+  "modified": "Sat, 28 Nov 2026 15:00:18 GMT"
  },
  "https://feber.se/rss/": {
   "etag": null,
@@ -133,7 +133,7 @@
   "modified": null
  },
  "https://www.theguardian.com/technology/rss": {
-  "etag": "W/\"hash2058856101899600716\"",
+  "etag": "W/\"hash3072298417754464468\"",
   "modified": null
  },
  "https://www.theregister.com/headlines.atom": {
@@ -153,11 +153,11 @@
   "modified": "Sat, 28 Nov 2026 14:00:11 GMT"
  },
  "https://www.engadget.com/rss.xml": {
-  "etag": "\"a9fdea2396c2c954f16a0b8e4729dd66\"",
-  "modified": "Sat, 28 Nov 2026 14:00:00 GMT"
+  "etag": "\"04e02dc330632a10c080563766cd66ce\"",
+  "modified": "Sat, 28 Nov 2026 15:00:00 GMT"
  },
  "https://www.theverge.com/rss/index.xml": {
-  "etag": "W/\"8ee619b0a7d8a3b36f7c1e86499d95a3\"",
+  "etag": "W/\"e7b29b9c04f605301d49e260eacaa74b\"",
   "modified": null
  },
  "https://spectrum.ieee.org/feeds/feed.rss": {
@@ -169,16 +169,16 @@
   "modified": "Sat, 28 Nov 2026 14:00:54 GMT"
  },
  "https://hackaday.com/blog/feed/": {
-  "etag": "W/\"adcf38811a938a80f40f898e7afeec9d\"",
-  "modified": "Sat, 28 Nov 2026 14:03:27 GMT"
+  "etag": "W/\"5300e0d84785e2f887ec5f39d2ac8838\"",
+  "modified": "Sat, 28 Nov 2026 14:41:45 GMT"
  },
  "https://newatlas.com/index.rss": {
   "etag": null,
-  "modified": "Sat, 28 Nov 2026 14:11:32 GMT"
+  "modified": "Sat, 28 Nov 2026 15:01:56 GMT"
  },
  "https://restofworld.org/feed/latest/": {
   "etag": null,
-  "modified": "Sat, 28 Nov 2026 14:13:38 GMT"
+  "modified": "Sat, 28 Nov 2026 15:03:56 GMT"
  },
  "https://techcabal.com/feed/": {
   "etag": "W/\"959fc51d9004da0d1e6754e4585f079a\"",
@@ -205,16 +205,16 @@
   "modified": "Fri, 27 Nov 2026 15:43:41 GMT"
  },
  "https://www.boredpanda.com/feed/": {
-  "etag": "\"f3bc0da2c61720a1064e96b091d45b42\"",
-  "modified": "Sat, 28 Nov 2026 14:00:04 GMT"
+  "etag": "\"5f9201526786784a2429abb5538af9a0\"",
+  "modified": "Sat, 28 Nov 2026 15:00:01 GMT"
  },
  "https://laughingsquid.com/feed/": {
-  "etag": "W/\"23f0bd594a216531e32a3ea24f89b669\"",
-  "modified": "Sat, 28 Nov 2026 03:07:46 GMT"
+  "etag": "W/\"edad59265bad7bf9f45e460830bd283a\"",
+  "modified": "Sat, 28 Nov 2026 14:59:59 GMT"
  },
  "https://rss.upi.com/news/odd_news.rss": {
   "etag": null,
-  "modified": "Sat, 28 Nov 2026 14:15:42 GMT"
+  "modified": "Sat, 28 Nov 2026 15:06:14 GMT"
  },
  "https://feeds.skynews.com/feeds/rss/strange.xml": {
   "etag": "W/\"af11cc8eae0b3cc399f524eead3f9e3fe6eae2cc99547c0fa31d67d507161be6\"",

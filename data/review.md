@@ -4,6 +4,15 @@ Open each story and check it is positive and free to read in full.
 To publish one, add its link to `approve` in `overrides.json`.
 To reject one or remove a published story, add its link to `block`.
 
+- **Netanyahus drag: Roterande ledare i Israel** (Aftonbladet, score 0.5)
+  - Possible opinion or sponsored piece
+  - https://www.aftonbladet.se/nyheter/a/lME18o/netanyahus-drag-roterande-ledare-i-israel?utm_medium=rss
+- **Över 1 100 migranter räddade i Grekland – två döda** (Aftonbladet, score 0.5)
+  - Mixed headline (döda), needs a human look
+  - https://www.aftonbladet.se/nyheter/a/xJ3R1j/over-1100-migranter-raddade-i-grekland-tva-doda?utm_medium=rss
+- **B-21 Raider stealth bomber aces major milestone** (New Atlas, score 0.5)
+  - Mixed headline (bomber, raider), needs a human look
+  - https://newatlas.com/military/b-21-raider-bomber-drops-weapons-first-time/
 - **New York City: Macy’s 100th Thanksgiving Day Parade takes place after historic weather delay** (Euronews, score 0.5)
   - Mixed headline (delay), needs a human look
   - https://www.euronews.com/2026/11/28/new-york-city-macys-100th-thanksgiving-day-parade-takes-place-after-historic-weather-delay
